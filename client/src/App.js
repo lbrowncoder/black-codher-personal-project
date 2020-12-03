@@ -5,7 +5,9 @@ import userService from './services/userService';
 
 function App() {
   const [users, setusers] = useState(null);
+  
 
+           
   useEffect(() => {
     if (!users) {
       getusers();
@@ -17,14 +19,16 @@ function App() {
     setusers(res);
   };
 
+
+
   const renderUser = (user) => {
     return (
       <li key={user._id}>
         <h3>
-          {`${user.first_name} 
-          ${user.last_name}`}
+          {`${user.name} 
+          ${user.address}`}
         </h3>
-        <p>{user.location}</p>
+        <p>{user.postcode}</p>
       </li>
     );
   };
