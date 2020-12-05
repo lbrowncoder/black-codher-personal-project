@@ -1,0 +1,25 @@
+GET http://localhost:5000/api/info
+
+###
+
+POST http://localhost:5000/api/info
+Content-Type: application/json
+
+{
+"name": "this is a nursery",
+"address": "some street name"
+}
+
+###
+
+DELETE http://localhost:5000/api/info/5fcbdf7b602449349043b414
+Content-Type: application/json
+
+###
+PUT http://localhost:5000/api/info/5fc9778965279e0e881a5356
+Content-Type: application/json
+
+{
+    "name": "Montessori Explorers Nursery"
+}
+

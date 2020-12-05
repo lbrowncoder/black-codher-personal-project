@@ -1,42 +1,40 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 
-
-
 module.exports = (app) => {
-  app.get(`/api/user`, async (req, res) => {
-    const persons = await Info.find();
-    console.log(persons)
-    return res.status(200).send(persons);
+  app.get(`/api/info`, async (req, res) => {
+    const nursery = await Info.find();
+    console.log(nursery)
+    return res.status(200).send(nursery);
   });
 
-  app.post(`/api/user`, async (req, res) => {
-    const user = await Info.create(req.body);
+  app.post(`/api/info`, async (req, res) => {
+    const info = await Info.create(req.body);
     return res.status(201).send({
       error: false,
-      user,
+      info,
     });
   });
 
-  app.put(`/api/user/:id`, async (req, res) => {
+  app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
 
-    const user = await Info.findByIdAndUpdate(id, req.body);
+    const info = await Info.findByIdAndUpdate(id, req.body);
 
     return res.status(202).send({
       error: false,
-      user,
+      info,
     });
   });
 
-  app.delete(`/api/user/:id`, async (req, res) => {
+  app.delete(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
 
-    const user = await Info.findByIdAndDelete(id);
+    const info = await Info.findByIdAndDelete(id);
 
     return res.status(202).send({
       error: false,
-      user,
+      info,
     });
   });
 };

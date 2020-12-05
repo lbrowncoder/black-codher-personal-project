@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 // IMPORT YOUR MODELS
-require('./models/Users');
+require('./models/nurseryInfo');
 
 const app = express();
 
@@ -16,7 +16,6 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
-
 
 app.use(bodyParser.json());
 

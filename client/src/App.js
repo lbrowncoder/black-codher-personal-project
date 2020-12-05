@@ -4,31 +4,31 @@ import React, { useState, useEffect } from 'react';
 import userService from './services/userService';
 
 function App() {
-  const [users, setusers] = useState(null);
+  const [info, setinfo] = useState(null);
   
 
            
   useEffect(() => {
-    if (!users) {
-      getusers();
+    if (!info) {
+      getinfo();
     }
   });
 
-  const getusers = async () => {
+  const getinfo = async () => {
     let res = await userService.getAll();
-    setusers(res);
+    setinfo(res);
   };
 
 
 
-  const renderUser = (user) => {
+  const renderInfo = (info) => {
     return (
-      <li key={user._id}>
+      <li key={info._id}>
         <h3>
-          {`${user.name} 
-          ${user.address}`}
+          {`${info.name} 
+          ${info.address}`}
         </h3>
-        <p>{user.postcode}</p>
+        <p>{info.postcode}</p>
       </li>
     );
   };
@@ -36,10 +36,10 @@ function App() {
   return (
     <div>
       <ul>
-        {users && users.length > 0 ? (
-          users.map((user) => renderUser(user))
+        {info && info.length > 0 ? (
+          info.map((info) => renderInfo(info))
         ) : (
-          <p>No users found</p>
+          <p>No info found</p>
         )}
       </ul>
     </div>
