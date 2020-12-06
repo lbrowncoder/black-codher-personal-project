@@ -24,11 +24,19 @@ function App() {
   const renderInfo = (info) => {
     return (
       <li key={info._id}>
-        <h3>
-          {`${info.name} 
-          ${info.address}`}
+        <h2>
+          {info.name} 
+        </h2>
+          <h3>
+          {info.address}
         </h3>
         <p>{info.postcode}</p>
+        <p> Ofstead Rating: {info.ofsteadRating}</p>
+        <p>Opening Hours:{`${info.openingHours}`} </p>
+        <p>Opening Times: {info.openingTimes}</p>
+        <p>{info.writeUp}</p>
+        {/* <p>Fees: ${info.fees}</p> */}
+        <p>{`$info.firstAidTrained`}</p>
       </li>
     );
   };

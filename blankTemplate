@@ -1,0 +1,34 @@
+//blank template
+// {
+//     "name": "",
+//     "address": "",
+//     "pictures": "add link to "pictures"",
+//     ofstead: ,
+// "ofsteadRating":""
+//     "website": ,
+//     "openingHours": "",
+//     openingTimes: "",
+// "openBankHoildays": ,
+//     "phone": "",
+//     "email": "",
+//     "writeUp":"",
+//     "fees": {
+//         fullTime: "£", 
+//         "fullDay": "£",
+//         "halfDay": "£",
+//      },
+// "firstAidTrained": ,
+//" ageRange": ,
+// "fifteenhoursFee": ,
+// thirtyHoursFre ,
+// "dietaryRequirmtsCatered": ,
+// "numberOfPlaces": ,
+// "staffQualification": [
+//     {
+//         "Number of staff": "",
+//         "Qualification levels": {
+//            "level 2-6": ""
+//         },
+//     }],
+// "cctv": 
+// }

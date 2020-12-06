@@ -39,11 +39,11 @@
                     "level 2-6": "12"
                 }
         }],
-    "cctv": true
+        "cctv": true
     },
 
     {
-       " name": "Wonderland Day Nursery",
+        "name": "Wonderland Day Nursery",
         "address": "57 Holyhead Road, Wednesbury,West Midlands",
         "postcode": "WS10 7DF",
         "profilePicture": "./images/wonderland/room07",
@@ -83,10 +83,10 @@
                 }
             }],
         "cctv": true 
-},
+    },
 
-{
-       " name": "Montessori Explorers Nursery",
+    {
+        "name": "Montessori Explorers Nursery",
         "address": "327 Birmingham Road, Sutton Coldfield",
         "postcode": "B72 1DL ",
         "profilePicture": "/images/montessori explores/MOntessoriroom.jpg",
@@ -111,7 +111,7 @@
             "fullTime": "£223.25", 
             "fullDay": "£47",
             "halfDay": "£35"
-         },
+                },
         "firstAidTrained": true,
        "ageRange": "6 weeks to 5 years ",
         "fifteenhoursFee": true ,
@@ -126,10 +126,10 @@
                 }
             }],
         "cctv": true
-        },
+    },
 
     {
-       " name": "Shooting Stars Nurseries",
+        "name": "Shooting Stars Nurseries",
         "address": "Barbara Hart House, 132 Monyhull Hall Road,Birmingham",
         "postcode": "B30 3QJ",
         "profilePicture": "./images/shootingStars/download.jpg",
@@ -143,7 +143,7 @@
         },
         "ofstead": "N/A",
         "ofsteadRating":"N/A",
-        "website": https://www.myshootingstars.com/our-nurseries/hinckley-nursery/,
+        "website": "https://www.myshootingstars.com/our-nurseries/hinckley-nursery/",
         "openingHours": "7.30am - 6.00pm",
         "openingTimes": "52 weeks",
         "openBankHoildays": false,
@@ -163,16 +163,16 @@
         "numberOfPlaces": "93",
         "staffQualification": [
             {
-                "Number of staff": "",
+                "Number of staff": "17",
                 "Qualification levels": {
-                   "level 2-6": ""
+                   "level 2-6": "14"
                 }
             }],
         "cctv": true
-        },
+    },
 
-        {
-       " name": "Smarty Pants @ Lightwoods House",
+    {
+        "name": "Smarty Pants @ Lightwoods House",
         "address": " Adkins Lane, Bearwood, Smethwick",
         "postcode": "B67 5DP",
         "profilePicture": "./images/5Star/118791386_946300545780851_4026259334390032169_o.jpg",
@@ -184,7 +184,7 @@
             "imageFive": "./images/5Star/118785594_946300702447502_1637824356479618519_o.jpg",
             "imageSix": "./images/5Star/Oldbury-nursery-gallery-8-400x284.jpg",
         },
-        "ofstead": N/A,
+        "ofstead": "N/A",
         "ofsteadRating":"N/A",
         "website":"http://www.smartypantsnurseries.co.uk/smarty-pants-lightwoods-house",
         "openingHours": "7:30am-6:00pm",
@@ -196,26 +196,26 @@
         "fees": {
                 "fullTime": "£214", 
                  "fullDay": "£53.50",
-                 "halfDay": "£28",
+                 "halfDay": "£28"
                  },
         "firstAidTrained": true ,
        " ageRange": "6 weeks - 5 years",
         "fifteenhoursFee": true,
         "thirtyHoursFree": true ,
         "dietaryRequirmtsCatered": true,
-        "numberOfPlaces": ,
+        "numberOfPlaces": 35,
         "staffQualification": [
                {
-                "Number of staff": "",
+                "Number of staff": "9",
                 "Qualification levels": {
-                "level 2-6": ""
+                "level 2-6": "8"
                 }
                }],
          "cctv": true
-        },
+    },
 
-        {
-       " name": "5 Star Day Nursery ",
+    {
+        "name": "5 Star Day Nursery ",
         "address": "69 Moat Road, Elder Lodge, Barnford Hill Park, Oldbury, Birmingham",
         "postcode": "B68 8ED",
         "profilePicture": "./images/5Star",
@@ -229,7 +229,7 @@
         },
         "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY482368",
         "ofsteadRating":"Good",
-        "website":  www.5stardaynursery.co.uk,
+        "website":  "www.5stardaynursery.co.uk",
         "openingHours": "8:00am - 6:00pm ",
         "openingTimes": "52 weeks",
         "openBankHoildays": false,
@@ -255,10 +255,10 @@
                    }
                   }],
          "cctv": true
-        },
+    },
 
-        {
-       " name": "Bloxcidge House",
+    {
+        "name": "Bloxcidge House",
         "address": "53 Bloxcidge Street, OLDBURY, West Midlands",
         "postcode": "B68 8QH",
         "profilePicture": "./images/bloxcidgeHouse/1000723_649465328409621_2093377699_n.jpg",
@@ -298,10 +298,10 @@
                 }
               }],
         "cctv": true 
-        },
+    },
 
-        {
-       " name": "The Nest Nursery",
+    {
+        "name": "The Nest Nursery",
         "address": "300 Gillott Rd",
         "postcode": "B16 0RR",
         "profilePicture": "./images/theNest/120222014_1010324546074435_4543609015849553689_n.jpg",
@@ -344,7 +344,7 @@
             },
 
     {
-       " name": "The Organic Nursery",
+        "name": "The Organic Nursery",
         "address": "2 Blossomfield Rd, Solihull",
         "postcode": "B91 1LD",
         "profilePicture": "./images/organicNursery/72571056_2363435993762537_7927827076508286976_o.jpg",
@@ -356,7 +356,7 @@
             "imageFive": "./images/organicNursery/",
             "imageSix": "./images/organicNursery/"
         },
-        "ofstead": N/a,
+        "ofstead": "N/A",
         "ofsteadRating":"N/A",
         "website": "https://theorganicnursery.co.uk",
         "openingHours": "7.30 am – 6.00pm",
@@ -387,7 +387,7 @@
     },
 
     {
-       " name": "Lilliput Lodge",
+        "name": "Lilliput Lodge",
         "address": "Thimblemill Road, Smethwick, West Midlands",
         "postcode": "B67 6NR",
         "profilePicture": "./images/lilliput/92522582_104400524564183_4732800063200296960_o.jpg",
@@ -397,7 +397,7 @@
             "imageThree": "./images/lilliput/download2.jpg",
             "imageFour": "./images/lilliput/download3.jpg",
             "imageFive": "../images/lilliput/download4.jpg",
-            "imageSix": "../images/lilliput/",
+            "imageSix": "../images/lilliput/"
         },
         "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY227003",
         "ofsteadRating":"Good",
@@ -411,7 +411,7 @@
         "fees": {
             "fullTime": "£245", 
             "fullDay": "£60",
-            "halfDay": "£40",
+            "halfDay": "£40"
         },
         "firstAidTrained": true ,
        " ageRange": "3 months-5 years",
@@ -426,11 +426,11 @@
                 "level 2-6": "13"
                 }
         }],
-    "cctv": true
+        "cctv": true
     },
 
-{
-       " name": "Little Scallywags day nursery",
+    {
+        "name": "Little Scallywags day nursery",
         "address": "179 Alvechurch Road West Heath Birmingham",
         "postcode": "B31 3PN",
         "profilePicture": "./images/littleScallyWags/IMG_8285.jpg",
@@ -443,7 +443,7 @@
         },
         "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY478240",
         "ofsteadRating":"Good",
-        "website": www.littlescallywagsdaynursery.com,
+        "website": "www.littlescallywagsdaynursery.com",
         "openingHours": "7.30am-6.00pm",
         "openingTimes": "51 weeks",
         "openBankHoildays": false,
@@ -469,10 +469,10 @@
                 }
             }],
         "cctv": true
-        },
+    },
 
     {
-       " name": "Bright kids Northfield Nursery",
+        "name": "Bright kids Northfield Nursery",
         "address": "18 - 20 Norman Road, Northfield Birmingham",
         "postcode": "B31 2EW",
         "profilePicture": "./images/brightKids/124352947_2137141139755799_183865364325961538_o.jpg",
@@ -483,9 +483,9 @@
             "imageFive": "./images/brightKids/121676776_2106015202868393_6206827994125527666_o.jpg",
             "imageSix": "./images/brightKids/117770484_2032662713536976_3978213910853706392_o.jpg",
         },
-        "ofstead": https://reports.ofsted.gov.uk/provider/16/EY294363,
+        "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY294363",
         "ofsteadRating":"Outstanding",
-        "website": https://www.bright-kids.co.uk/nursery ,
+        "website": "https://www.bright-kids.co.uk/nursery",
         "openingHours": "7.30am - 6pm",
         "openingTimes": "51 weeks",
         "openBankHoildays": false,
@@ -511,10 +511,10 @@
                 }
             }],
         "cctv": false
-        },
+    },
         
-{
-       " name": "The Playhouse Day Nursery",
+    {
+        "name": "The Playhouse Day Nursery",
         "address": "5 St Mary's Road, Bearwood, Birmingham",
         "postcode": "B67 5DG",
         "profilePicture": "./images/thePlayHouse/75231693_527834168011763_423752971050811392_o.jpg",
@@ -555,140 +555,92 @@
         "cctv": false
     },
 
-{
-   " name": "Happy Days",
-    "address": "407 Hagley Road West, Quinton, Birmingham",
-    "postcode": "B32 2AD",
-    "profilePicture": "./images/happyDays/50002501HAPA-1.jpg",
-    "pictures":{
-        "imageTwo": "./images/happyDays/1484643548.png",
-        "imageThree": "./images/happyDays/",
-        "imageFour": "./images/happyDays/",
-        "imageFive": "./images/happyDays/",
-        "imageSix": "./images/happyDays/",
-    },
-    "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY364373",
-    "ofsteadRating":"Outstanding",
-    "website": https://www.cottontailsdaynursery.co.uk/nursery/happy-days,
-    "openingHours": "7.30am to 6pm",
-    "openingTimes": "52 weeks",
-    "openBankHoildays": false ,
-    "phone": "0121 422 4240",
-    "email": "happydays@cottontailsdaynursery.co.uk",
-    "writeUp":"Our very well established nursery provides a safe, happy and sociable environment, which allows your child to grow and develop as an individual. We believe in strong parent partnerships and have an open door policy.",
-    "fees": {
-        "fullTime": "£245", 
-        "fullDay": "£58.50",
-        "halfDay": "£32.50"
-     },
-"firstAidTrained": false,
-"ageRange": "6 weeks to 5 years",
-"fifteenhoursFee": true ,
-"thirtyHoursFree": true ,
-"dietaryRequirmtsCatered": true ,
-"numberOfPlaces": "54",
-"staffQualification": [
     {
-        "Number of staff": "13",
-        "Qualification levels": {
-           "level 2-6": "11"
-        }
-    }],
-"cctv":true 
-},
-
-{
-   " name": "St Pauls Nursery",
-    "address": "405a Belchers Lane, Bordesley Green, Birmingham",
-    "postcode": "B9 5SY",
-    "profilePicture": "./images/stPauls/nursery1.jpg",
-    "pictures":{
-        "imageTwo": "./images/stPauls/24991500_1921347908129336_2052155877312411450_n.jpg",
-        "imageThree": "../images/stPauls/58633295_2216102211987236_5670952660178567168_o.jpg",
-        "imageFour": "../images/stPauls/87472061_2457576927839762_5118914011043201024_n.jpg",
-        "imageFive": "../images/stPauls/88991353_2463605053903616_4592949773354401792_n.jpg",
-        "imageSix": "../images/stPauls/58381563_2216102241987233_6802735525460443136_o.jpg",
-    },
-    "ofstead": "https://reports.ofsted.gov.uk/provider/16/257281",
-    "ofsteadRating":"Good",
-    "website": "http://stpaulsnursery.co.uk/",
-    "openingHours": "7am to 6pm",
-    "openingTimes": "51 weeks",
-    "openBankHoildays": false,
-    "phone": "0121 773 1748",
-    "email": " nursery@stpaulscrossover.org.uk",
-    "writeUp":"",
-    "fees": {
-        "fullTime": "£200", 
-        "fullDay": "£50",
-        "halfDay": "£33"
-     },
-"firstAidTrained": false,
-"ageRange": "3 months - 5 years",
-"fifteenhoursFee": true,
-"thirtyHoursFree": true ,
-"dietaryRequirmtsCatered": true,
-"numberOfPlaces": '54',
-"staffQualification": [
-    {
-        "Number of staff": "15",
-        "Qualification levels": {
-           "level 2-6": "14"
+        "name": "Happy Days",
+        "address": "407 Hagley Road West, Quinton, Birmingham",
+        "postcode": "B32 2AD",
+        "profilePicture": "./images/happyDays/50002501HAPA-1.jpg",
+        "pictures":{
+            "imageTwo": "./images/happyDays/1484643548.png",
+            "imageThree": "./images/happyDays/",
+            "imageFour": "./images/happyDays/",
+            "imageFive": "./images/happyDays/",
+            "imageSix": "./images/happyDays/"
         },
-    }],
-"cctv": true
-}
+        "ofstead": "https://reports.ofsted.gov.uk/provider/16/EY364373",
+        "ofsteadRating":"Outstanding",
+        "website": "https://www.cottontailsdaynursery.co.uk/nursery/happy-days",
+        "openingHours": "7.30am to 6pm",
+        "openingTimes": "52 weeks",
+        "openBankHoildays": false ,
+        "phone": "0121 422 4240",
+        "email": "happydays@cottontailsdaynursery.co.uk",
+        "writeUp":"Our very well established nursery provides a safe, happy and sociable environment, which allows your child to grow and develop as an individual. We believe in strong parent partnerships and have an open door policy.",
+        "fees": {
+            "fullTime": "£245", 
+            "fullDay": "£58.50",
+            "halfDay": "£32.50"
+        },
+        "firstAidTrained": false,
+        "ageRange": "6 weeks to 5 years",
+        "fifteenhoursFee": true ,
+        "thirtyHoursFree": true ,
+        "dietaryRequirmtsCatered": true ,
+        "numberOfPlaces": "54",
+        "staffQualification": [
+            {
+                "Number of staff": "13",
+                "Qualification levels": {
+                "level 2-6": "11"
+                }
+            }],
+        "cctv":true 
+    },
+
+    {
+        "name": "St Pauls Nursery",
+        "address": "405a Belchers Lane, Bordesley Green, Birmingham",
+        "postcode": "B9 5SY",
+        "profilePicture": "./images/stPauls/nursery1.jpg",
+        "pictures":{
+            "imageTwo": "./images/stPauls/24991500_1921347908129336_2052155877312411450_n.jpg",
+            "imageThree": "../images/stPauls/58633295_2216102211987236_5670952660178567168_o.jpg",
+            "imageFour": "../images/stPauls/87472061_2457576927839762_5118914011043201024_n.jpg",
+            "imageFive": "../images/stPauls/88991353_2463605053903616_4592949773354401792_n.jpg",
+            "imageSix": "../images/stPauls/58381563_2216102241987233_6802735525460443136_o.jpg",
+        },
+        "ofstead": "https://reports.ofsted.gov.uk/provider/16/257281",
+        "ofsteadRating":"Good",
+        "website": "http://stpaulsnursery.co.uk/",
+        "openingHours": "7am to 6pm",
+        "openingTimes": "51 weeks",
+        "openBankHoildays": false,
+        "phone": "0121 773 1748",
+        "email": " nursery@stpaulscrossover.org.uk",
+        "writeUp":"",
+        "fees": {
+            "fullTime": "£200", 
+            "fullDay": "£50",
+            "halfDay": "£33"
+        },
+        "firstAidTrained": false,
+        "ageRange": "3 months - 5 years",
+        "fifteenhoursFee": true,
+        "thirtyHoursFree": true ,
+        "dietaryRequirmtsCatered": true,
+        "numberOfPlaces": "54",
+        "staffQualification": [
+            {
+                "Number of staff": "15",
+                "Qualification levels": {
+                "level 2-6": "14"
+                }
+        }],
+        "cctv": true
+    }
 ]
 
-// featuredList: [
-//     {
-//    " name": "Bright kids Northfield Nursery",
-//     "profilePicture": "./images/brightKids/124352947_2137141139755799_183865364325961538_o.jpg",
-//     },
-//     {
-//         "name": "Smarty Pants @ Lightwoods House",
-//         "profilePicture": "./images/5Star/118791386_946300545780851_4026259334390032169_o.jpg",
-//     },
-//     { 
-//         "name": "Montessori Explorers Nursery",
-//         "profilePicture": "/images/montessori explores/MOntessoriroom.jpg.jpg",
-//     }
-// ]
 
 
 
 
-//blank template
-// {
-//     "name": "",
-//     "address": "",
-//     "pictures": "add link to "pictures"",
-//     ofstead: ,
-// "ofsteadRating":""
-//     "website": ,
-//     "openingHours": "",
-//     openingTimes: "",
-// "openBankHoildays": ,
-//     "phone": "",
-//     "email": "",
-//     "writeUp":"",
-//     "fees": {
-//         fullTime: "£", 
-//         "fullDay": "£",
-//         "halfDay": "£",
-//      },
-// "firstAidTrained": ,
-//" ageRange": ,
-// "fifteenhoursFee": ,
-// thirtyHoursFre ,
-// "dietaryRequirmtsCatered": ,
-// "numberOfPlaces": ,
-// "staffQualification": [
-//     {
-//         "Number of staff": "",
-//         "Qualification levels": {
-//            "level 2-6": ""
-//         },
-//     }],
-// "cctv": 
-// }
