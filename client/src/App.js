@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import ReviewForm from './ReviewForm';
 
 // SERVICES
 import userService from './services/userService';
 
 function App() {
   const [info, setinfo] = useState(null);
+
   
 
            
@@ -23,6 +25,7 @@ function App() {
 
   const renderInfo = (info) => {
     return (
+      <>
       <li key={info._id}>
         <h2>
           {info.name} 
@@ -35,14 +38,15 @@ function App() {
         <p>Opening Hours:{`${info.openingHours}`} </p>
         <p>Opening Times: {info.openingTimes}</p>
         <p>{info.writeUp}</p>
-        {/* <p>Fees: ${info.fees}</p> */}
         <p>{`$info.firstAidTrained`}</p>
       </li>
+      </>
     );
   };
 
   return (
     <div>
+           <ReviewForm />
       <ul>
         {info && info.length > 0 ? (
           info.map((info) => renderInfo(info))
@@ -51,6 +55,7 @@ function App() {
         )}
       </ul>
     </div>
+
   );
 }
 

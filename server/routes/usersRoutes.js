@@ -1,10 +1,21 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 
+//Schema
+const Schema = mongoose.Schema;
+const ReviewSchema = new Schema({
+    name: String,
+    email: String,
+    number: Number,
+    reviewComment: String
+});
+
+//model
+const Review = mongoose.model('Review', ReviewSchema)
+
 module.exports = (app) => {
   app.get(`/api/info`, async (req, res) => {
     const nursery = await Info.find();
-    console.log(nursery)
     return res.status(200).send(nursery);
   });
 
@@ -13,6 +24,18 @@ module.exports = (app) => {
     return res.status(201).send({
       error: false,
       info,
+    });
+  });
+
+  app.post("/api/review", (req, res) => {
+    console.log(req.body)
+    let myData = new Review(req.body);
+    myData.save()
+    .then(item => {
+      res.send("Review has been submitted");
+    })
+    .catch(err => {
+      res.status(400).send("Unable to submit review");
     });
   });
 
@@ -38,3 +61,4 @@ module.exports = (app) => {
     });
   });
 };
+
