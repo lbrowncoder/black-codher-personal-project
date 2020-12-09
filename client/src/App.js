@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReviewForm from './ReviewForm';
+import StarRating from './StarRating';
 
 // SERVICES
 import userService from './services/userService';
@@ -38,7 +39,7 @@ function App() {
         <p>Opening Hours:{`${info.openingHours}`} </p>
         <p>Opening Times: {info.openingTimes}</p>
         <p>{info.writeUp}</p>
-        <p>{`$info.firstAidTrained`}</p>
+        <StarRating  />
       </li>
       </>
     );

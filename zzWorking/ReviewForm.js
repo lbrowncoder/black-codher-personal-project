@@ -19,7 +19,7 @@ const ReviewSchema = new Schema({
     name: String,
     email: String,
     number: Number,
-    ReviewComment: String
+    ReviewComment: String,
 });
 
 //model

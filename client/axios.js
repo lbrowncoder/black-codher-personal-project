@@ -12,4 +12,24 @@ const sendData = () => {
     });
     };
 
+
+    let data = response.data;
+    //         this.useState({post: data});
+    //         console.log('Review has been recieved');
+    //     }) 
+    //     .catch(() => {
+    //         console.log('Review has not been recieved');
+    //     });
+    // }
+    
+    //     reviewComment = (post) => {
+    //     if (!post.length) return null;
+    //    return post.map((posts, index) => (
+    //         <div key={index}>
+    //             <h2>{post.name}</h2>
+    //             <p>{post.body}</p>
+    //         </div>
+    //     ));
+    // };
+
     

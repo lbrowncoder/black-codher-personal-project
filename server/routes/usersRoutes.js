@@ -7,7 +7,7 @@ const ReviewSchema = new Schema({
     name: String,
     email: String,
     number: Number,
-    reviewComment: String
+    reviewComment: String,
 });
 
 //model
