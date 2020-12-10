@@ -4,12 +4,12 @@ import './StarRating.css';
 
 const StarRating = () => {
     let [rating, setRating] = useState();
-    let [hoover, setHoover] = useState(null);
+    let [hover, setHover] = useState(null);
 
     return (
         <div>
              <p>Your Rating {rating}</p>
-            {[ ...Array(5)].map((rating, i) => {
+            {[ ...Array(5)].map((star, i) => {
                 const ratingValue = i + 1;
                 
                 return (
@@ -21,9 +21,9 @@ const StarRating = () => {
                     onClick={() => setRating(ratingValue)} 
                     />
                     <FaStar className="star" 
-                    color={ratingValue <= (hoover || rating) ? "yellow" : "lightgrey"} 
-                    onMouseEnter={() => setHoover(ratingValue)}
-                    onMouseLeave={() => setHoover(null)}
+                    color={ratingValue <= (hover || rating) ? "yellow" : "lightgrey"} 
+                    onMouseEnter={() => setHover(ratingValue)}
+                    onMouseLeave={() => setHover(null)}
                     size={40}
                     />
                     </label> 
