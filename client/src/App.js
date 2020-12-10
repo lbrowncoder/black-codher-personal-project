@@ -2,15 +2,14 @@ import React, { useState, useEffect } from 'react';
 import ReviewForm from './ReviewForm';
 import StarRating from './StarRating';
 
+
 // SERVICES
 import userService from './services/userService';
 
 function App() {
   const [info, setinfo] = useState(null);
 
-  
-
-           
+        
   useEffect(() => {
     if (!info) {
       getinfo();
@@ -21,7 +20,6 @@ function App() {
     let res = await userService.getAll();
     setinfo(res);
   };
-
 
 
   const renderInfo = (info) => {
@@ -38,7 +36,6 @@ function App() {
         <p> Ofstead Rating: {info.ofsteadRating}</p>
         <p>Opening Hours:{`${info.openingHours}`} </p>
         <p>Opening Times: {info.openingTimes}</p>
-        <p>{info.writeUp}</p>
         <StarRating  />
       </li>
       </>

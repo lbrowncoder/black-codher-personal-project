@@ -28,7 +28,7 @@ module.exports = (app) => {
   });
 
   app.post("/api/review", (req, res) => {
-    console.log(req.body)
+    // console.log(req.body)
     let myData = new Review(req.body);
     myData.save()
     .then(item => {
@@ -38,6 +38,15 @@ module.exports = (app) => {
       res.status(400).send("Unable to submit review");
     });
   });
+
+  app.get("/api/review", async (req, res) => {
+      const submittedReview = await Review.find({},
+        {reviewComment:1, _id:0},
+        {name:1, _id:0});
+     
+      return res.status(200).send(submittedReview);
+    });
+
 
   app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
