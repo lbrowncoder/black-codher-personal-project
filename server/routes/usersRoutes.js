@@ -43,16 +43,13 @@ module.exports = (app) => {
       const submittedReview = await Review.find({},
         {reviewComment:1, _id:0},
         {name:1, _id:0});
-     
       return res.status(200).send(submittedReview);
     });
 
 
   app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
-
     const info = await Info.findByIdAndUpdate(id, req.body);
-
     return res.status(202).send({
       error: false,
       info,
