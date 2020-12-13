@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ReviewForm from './ReviewForm';
 import StarRating from './StarRating';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import NurserySearch from './Search';
 
 
 // SERVICES
@@ -9,7 +11,6 @@ import userService from './services/userService';
 function App() {
   const [info, setinfo] = useState(null);
 
-        
   useEffect(() => {
     if (!info) {
       getinfo();
@@ -25,7 +26,14 @@ function App() {
   const renderInfo = (info) => {
     return (
       <>
-      <li key={info._id}>
+           <Router>
+           <Route exact path="/search" render={() => (
+            <React.Fragment>
+            <NurserySearch />
+            </React.Fragment> 
+        )}/>
+        </Router>
+      {/* <li key={info._id}>
         <h2>
           {info.name} 
         </h2>
@@ -37,7 +45,7 @@ function App() {
         <p>Opening Hours:{`${info.openingHours}`} </p>
         <p>Opening Times: {info.openingTimes}</p>
         <StarRating  />
-      </li>
+      </li> */}
       </>
     );
   };
@@ -53,6 +61,7 @@ function App() {
         )}
       </ul>
     </div>
+    
 
   );
 }

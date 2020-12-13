@@ -14,11 +14,19 @@ const ReviewSchema = new Schema({
 const Review = mongoose.model('Review', ReviewSchema)
 
 module.exports = (app) => {
-  app.get(`/api/info`, async (req, res) => {
-    const nursery = await Info.find();
+    app.get(`/api/info`, async (req, res) => {
+      const nursery = await Info.find();
     return res.status(200).send(nursery);
   });
 
+  //search by name
+  app.get(`/api/info/:name`, async (req, res) => {
+    const nameResult = await Info.find({},
+      {name:1, _id:0}
+    );
+    return res.status(200).send(nameResult);
+  });
+//update nursery json
   app.post(`/api/info`, async (req, res) => {
     const info = await Info.create(req.body);
     return res.status(201).send({
@@ -27,8 +35,8 @@ module.exports = (app) => {
     });
   });
 
+  //post to review
   app.post("/api/review", (req, res) => {
-    // console.log(req.body)
     let myData = new Review(req.body);
     myData.save()
     .then(item => {
@@ -38,15 +46,16 @@ module.exports = (app) => {
       res.status(400).send("Unable to submit review");
     });
   });
-
+//get review posted
   app.get("/api/review", async (req, res) => {
-      const submittedReview = await Review.find({},
-        {reviewComment:1, _id:0},
-        {name:1, _id:0});
-      return res.status(200).send(submittedReview);
-    });
-
-
+    const submittedReview = await Review.find({},
+      {reviewComment:1, _id:0},
+      {name:1, _id:0});
+    return res.status(200).send(submittedReview);
+  });
+   // $and: [{reviewComment:1, _id:0}, {name:1, _id:0}]
+     
+//update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
     const info = await Info.findByIdAndUpdate(id, req.body);
@@ -56,6 +65,7 @@ module.exports = (app) => {
     });
   });
 
+  //delete nursery from json using ID
   app.delete(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
 
