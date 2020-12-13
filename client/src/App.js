@@ -3,7 +3,7 @@ import ReviewForm from './ReviewForm';
 import StarRating from './StarRating';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NurserySearch from './Search';
-
+import Footer from './Footer';
 
 // SERVICES
 import userService from './services/userService';
@@ -30,6 +30,7 @@ function App() {
            <Route exact path="/search" render={() => (
             <React.Fragment>
             <NurserySearch />
+            <Footer />
             </React.Fragment> 
         )}/>
         </Router>
@@ -53,13 +54,14 @@ function App() {
   return (
     <div>
            <ReviewForm />
-      <ul>
+           <Footer />
+      {/* <ul>
         {info && info.length > 0 ? (
           info.map((info) => renderInfo(info))
         ) : (
           <p>No info found</p>
-        )}
-      </ul>
+        )} */}
+      {/* </ul> */}
     </div>
     
 
