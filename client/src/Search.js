@@ -41,6 +41,7 @@ function NurserySearch() {
     return <p>Loading Results...</p>;
   }
 
+
   return (
     <div >
       <h1>Nursery List</h1>
@@ -51,11 +52,10 @@ function NurserySearch() {
         onChange={e => setKeyword(e.target.value)}
       />
       <button onClick={onKeyword} >Search</button>
-      {filteredNurseries.map((nursery, idx) => (
-        //       {setKeyword ? {filteredNurseries} : <p>No results found</p>}
-        <NurseryDetail key={idx} {...nursery} />
-      ))}
-   
+     
+      {filteredNurseries ? filteredNurseries.map((nursery, idx) => (     
+        <NurseryDetail key={idx} {...nursery} /> ))
+          : <p>No results found</p>}
     </div>
   );
 }
@@ -69,7 +69,7 @@ const NurseryDetail = (props) => {
 
   return (
     <>
-
+        
       <p>{name}</p>
       <p>{address}</p>
       <p>{postcode}</p>

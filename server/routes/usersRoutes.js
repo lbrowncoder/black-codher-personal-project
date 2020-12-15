@@ -56,8 +56,6 @@ module.exports = (app) => {
 
     return res.status(200).send(submittedReview);
   });
-  //  $and: [{reviewComment:1, _id:0}, {name:1, _id:0}]
-
  
 //update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
@@ -80,5 +78,12 @@ module.exports = (app) => {
       info,
     });
   });
+
+  //get featured nurseries
+  app.get(`/api/feature`, async (req, res) => {
+    const featuredNursery = await Feature.find();
+  return res.status(200).send(featuredNursery);
+});
+
 };
 

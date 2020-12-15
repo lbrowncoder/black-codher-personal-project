@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NurserySearch from './Search';
 import Footer from './Footer';
 import ReactDOM from 'react-dom';
-import ChildCareCost  from './Childcarecost'
-import SignUpForm from './SignUp'
+import ChildCareCost  from './Childcarecost';
+import SignUpForm from './SignUp';
+
 
 // SERVICES
 import userService from './services/userService';
@@ -64,10 +65,11 @@ function App() {
            <ReviewForm />
            <SignUpForm />
            <StarRating />
+          
            {/* <ChildCareCost /> */}
         
            <NurserySearch />
-           <Footer />
+           {/* <Footer /> */}
       {/* <ul>
         {info && info.length > 0 ? (
           info.map((info) => renderInfo(info))
