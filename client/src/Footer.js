@@ -40,7 +40,7 @@ const footer =() => {
                             Guide to childcare cost (add link)
                         </li>
                         <li>
-                            Pickiung the right nursery for you (add link)
+                            Picking the right nursery for you (add link)
                         </li>
                     </ul>
                 </div>

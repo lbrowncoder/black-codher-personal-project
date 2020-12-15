@@ -20,12 +20,13 @@ module.exports = (app) => {
   });
 
   //search by name
-  app.get(`/api/info/:name`, async (req, res) => {
+  app.get(`/api/info/:nurseryName`, async (req, res) => {
     const nameResult = await Info.find({},
       {name:1, _id:0}
     );
     return res.status(200).send(nameResult);
   });
+
 //update nursery json
   app.post(`/api/info`, async (req, res) => {
     const info = await Info.create(req.body);

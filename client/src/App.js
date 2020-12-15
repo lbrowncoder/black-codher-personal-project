@@ -4,6 +4,8 @@ import StarRating from './StarRating';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NurserySearch from './Search';
 import Footer from './Footer';
+import ReactDOM from 'react-dom';
+import ChildCareCost  from './Childcarecost'
 
 // SERVICES
 import userService from './services/userService';
@@ -27,16 +29,20 @@ function App() {
     return (
       <>
            <Router>
-           <Route exact path="/search" render={() => (
+           <Route exact path="/" render={() => (
             <React.Fragment>
-            <NurserySearch />
+            <Footer />
+            </React.Fragment> 
+        )}/>
+            <Route exact path="/cost" render={() => (
+            <React.Fragment>
             <Footer />
             </React.Fragment> 
         )}/>
         </Router>
       {/* <li key={info._id}>
         <h2>
-          {info.name} 
+          {info.nurseryName} 
         </h2>
           <h3>
           {info.address}
@@ -53,7 +59,11 @@ function App() {
 
   return (
     <div>
+            {/* <Header /> */}
            <ReviewForm />
+           {/* <ChildCareCost /> */}
+        
+           <NurserySearch />
            <Footer />
       {/* <ul>
         {info && info.length > 0 ? (
@@ -67,5 +77,7 @@ function App() {
 
   );
 }
+
+ReactDOM.render(<App />,document.getElementById('root'));
 
 export default App;
