@@ -5,7 +5,7 @@ import axios from "axios";
 function NurserySearch() {
   const [nurseries, setNurseries] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [search, setSearch] = useState("");
+  const [keyword, setKeyword] = useState("");
   const [filteredNurseries, setFilteredNurseries] = useState([]);
 
   useEffect(() => {
@@ -21,10 +21,10 @@ function NurserySearch() {
       });
   }, []);
 
-  const onSearch = () => {
+  const onKeyword = () => {
         setFilteredNurseries(
           nurseries.filter(nursery =>
-            nursery.name.toLowerCase().includes(search.toLowerCase())
+            nursery.name.toLowerCase().includes(keyword.toLowerCase())
           )
         );
       };
@@ -48,10 +48,11 @@ function NurserySearch() {
       <input
         type="text"
         placeholder="Search Nurseries"
-        onChange={e => setSearch(e.target.value)}
+        onChange={e => setKeyword(e.target.value)}
       />
-      <button onClick={onSearch}>Search</button>
+      <button onClick={onKeyword} >Search</button>
       {filteredNurseries.map((nursery, idx) => (
+        //       {setKeyword ? {filteredNurseries} : <p>No results found</p>}
         <NurseryDetail key={idx} {...nursery} />
       ))}
    
@@ -68,6 +69,7 @@ const NurseryDetail = (props) => {
 
   return (
     <>
+
       <p>{name}</p>
       <p>{address}</p>
       <p>{postcode}</p>

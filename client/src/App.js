@@ -6,6 +6,7 @@ import NurserySearch from './Search';
 import Footer from './Footer';
 import ReactDOM from 'react-dom';
 import ChildCareCost  from './Childcarecost'
+import SignUpForm from './SignUp'
 
 // SERVICES
 import userService from './services/userService';
@@ -61,6 +62,8 @@ function App() {
     <div>
             {/* <Header /> */}
            <ReviewForm />
+           <SignUpForm />
+           <StarRating />
            {/* <ChildCareCost /> */}
         
            <NurserySearch />

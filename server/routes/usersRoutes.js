@@ -13,6 +13,7 @@ const ReviewSchema = new Schema({
 //model
 const Review = mongoose.model('Review', ReviewSchema)
 
+
 module.exports = (app) => {
     app.get(`/api/info`, async (req, res) => {
       const nursery = await Info.find();
@@ -47,15 +48,17 @@ module.exports = (app) => {
       res.status(400).send("Unable to submit review");
     });
   });
+  
 //get review posted
   app.get("/api/review", async (req, res) => {
     const submittedReview = await Review.find({},
-      {reviewComment:1, _id:0},
-      {name:1, _id:0});
+      {reviewComment:1, _id:0, name:1})
+
     return res.status(200).send(submittedReview);
   });
-   // $and: [{reviewComment:1, _id:0}, {name:1, _id:0}]
-     
+  //  $and: [{reviewComment:1, _id:0}, {name:1, _id:0}]
+
+ 
 //update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;

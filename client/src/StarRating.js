@@ -6,6 +6,7 @@ const StarRating = () => {
     let [rating, setRating] = useState();
     let [hover, setHover] = useState(null);
 
+    
     return (
         <div>
              <p>Your Rating {rating}</p>
