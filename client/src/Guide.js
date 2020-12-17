@@ -1,11 +1,13 @@
 import React from 'react';
-
+import Guide from './images/guide.jpg';
+import './App.css';
 
 
 const guide = () => {
   return (
       <div>
         <h1>Guide to choosing the right nursery</h1>
+        <img className="guide" src={Guide} alt="Guide" /> 
         <p>Finding good quality childcare can be a difficult task for parents. There are lots of things to look out for and to remember to ask when you visit a childcare setting. How do you know if your child will be happy? Will they cater for your child's needs? Do they provide feedback about how your child is doing? What if my child doesn't like it?</p>
         <p>There are many other factors to also consider such as location, type of care, ethos, activities and nutrition. Try and visit a number of nurseries to give yourself an idea of different kinds of nurseries and take your child along so you can see what they think and how the staff interact with your child.</p>            
         <p>Don’t leave it till the last minute to find childcare before you go back to work as some nurseries have waiting lists.</p>

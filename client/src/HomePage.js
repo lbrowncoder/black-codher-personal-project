@@ -1,28 +1,62 @@
-// import Axios from 'axios';
-// import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-// function HomePage() {
-//     const [feature, setFeature] = useState(null);
+// SERVICES
+import userService from './services/userService';
 
-//     useEffect(() => {
-//     if (!feature) {
-//         setFeature();
-//       }
-//     });
+function HomePage() {
+  const [info, setinfo] = useState(null);
 
-//     Axios.get
+  // useEffect(() => {
+  //   if (!info) {
+  //     getinfo();
+  //   }
+  // });
 
-//     const renderFeature = (feature) => {
-//         return (
-//             <>
-//         <li key={feature._id}>
-//         <h2>
-//           {feature.nurseryName} 
-//         </h2>
-//       </li>
-//             </>
-//         )}
-// }
+  const getinfo = async () => {
+    let res = await userService.getAll();
+    setinfo(res);
+  };
+
+  // axios.get(/api/feature`)
+
+    return (
+      <>
+      <div>
+      <h1>Welcome to Eggshells</h1>
+      </div>
+     
+      </>
+      
+  );
+}
+
+export default HomePage
 
 
-//     export default HomePage
+
+{/* <li key={info._id}>
+        <h2>
+          {info.nurseryName} 
+        </h2>
+          <h3>
+          {info.address}
+        </h3>
+        <p>{info.postcode}</p>
+        <p> Ofstead Rating: {info.ofsteadRating}</p>
+        <p>Opening Hours:{`${info.openingHours}`} </p>
+        <p>Opening Times: {info.openingTimes}</p>
+      </li>
+      </>
+    );
+  };
+
+  return (
+    <div>
+        {info && info.length > 0 ? (
+          info.map((info) => renderInfo(info))
+        ) : (
+          <p>No info found</p>
+        )}
+    </div>
+     */}

@@ -1,88 +1,74 @@
 import React, { useState, useEffect } from 'react';
+import HomePage from './HomePage';
+import ChildCareCost  from './Childcarecost';
+import SignUpForm from './SignUp';
+import NurserySearch from './Search';
+import Footer from './Footer';
 import ReviewForm from './ReviewForm';
 import StarRating from './StarRating';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import NurserySearch from './Search';
-import Footer from './Footer';
 import ReactDOM from 'react-dom';
-import ChildCareCost  from './Childcarecost';
-import SignUpForm from './SignUp';
+import Guide from './Guide';
 
+// let StarRating = NurserySearch.length ===0
+// ? (null) 
+// : StarRating
 
-// SERVICES
-import userService from './services/userService';
+// let ReviewForm = NurserySearch.length ===0
+// ? (null) 
+// ? ReviewForm
 
 function App() {
-  const [info, setinfo] = useState(null);
-
-  useEffect(() => {
-    if (!info) {
-      getinfo();
-    }
-  });
-
-  const getinfo = async () => {
-    let res = await userService.getAll();
-    setinfo(res);
-  };
-
-
-  const renderInfo = (info) => {
-    return (
-      <>
-           <Router>
-           <Route exact path="/" render={() => (
-            <React.Fragment>
-            <Footer />
-            </React.Fragment> 
-        )}/>
-            <Route exact path="/cost" render={() => (
-            <React.Fragment>
-            <Footer />
-            </React.Fragment> 
-        )}/>
-        </Router>
-      {/* <li key={info._id}>
-        <h2>
-          {info.nurseryName} 
-        </h2>
-          <h3>
-          {info.address}
-        </h3>
-        <p>{info.postcode}</p>
-        <p> Ofstead Rating: {info.ofsteadRating}</p>
-        <p>Opening Hours:{`${info.openingHours}`} </p>
-        <p>Opening Times: {info.openingTimes}</p>
-        <StarRating  />
-      </li> */}
-      </>
-    );
-  };
-
   return (
-    <div>
-            {/* <Header /> */}
-           <ReviewForm />
-           <SignUpForm />
-           <StarRating />
-          
-           {/* <ChildCareCost /> */}
-        
-           <NurserySearch />
-           {/* <Footer /> */}
-      {/* <ul>
-        {info && info.length > 0 ? (
-          info.map((info) => renderInfo(info))
-        ) : (
-          <p>No info found</p>
-        )} */}
-      {/* </ul> */}
-    </div>
-    
+      <main>
+          <Router>
+          <Route exact path="/" render={() => (
+            <React.Fragment>
+            <HomePage />
+            <NurserySearch />
+            {/* <StarRating />
+            <ReviewForm /> */}
+            <Footer />
+            </React.Fragment> 
+        )}/>
+           <Route exact path="/search" render={() => (
+            <React.Fragment>
+            <HomePage />
+            <NurserySearch />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+             <Route exact path="/signup" render={() => (
+            <React.Fragment>
+            <SignUpForm />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+             <Route exact path="/childcarecost" render={() => (
+            <React.Fragment>
+           <ChildCareCost />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+             <Route exact path="/signup" render={() => (
+            <React.Fragment>
+            <SignUpForm />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/guide" render={() => (
+            <React.Fragment>
+            <Guide />
+            <Footer />
+            </React.Fragment> 
+             )}/>
 
-  );
+          </Router>
+      </main>
+  )
 }
+ 
 
-ReactDOM.render(<App />,document.getElementById('root'));
+   ReactDOM.render(<App />,document.getElementById('root'));
 
 export default App;

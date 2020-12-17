@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 
 function NurserySearch() {
@@ -7,6 +6,7 @@ function NurserySearch() {
   const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [filteredNurseries, setFilteredNurseries] = useState([]);
+  const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -22,9 +22,11 @@ function NurserySearch() {
   }, []);
 
   const onKeyword = () => {
+    setHasSearched(true)
         setFilteredNurseries(
           nurseries.filter(nursery =>
             nursery.name.toLowerCase().includes(keyword.toLowerCase())
+            
           )
         );
       };
@@ -38,12 +40,13 @@ function NurserySearch() {
 //   }, [search, nurseries]);
 
   if (loading) {
-    return <p>Loading Results...</p>;
+    return <p>Were finding the perfect match for you...</p>;
   }
 
 
   return (
-    <div >
+    <>
+      <div>
       <h1>Nursery List</h1>
       <p>Search by name</p>
       <input
@@ -52,13 +55,18 @@ function NurserySearch() {
         onChange={e => setKeyword(e.target.value)}
       />
       <button onClick={onKeyword} >Search</button>
-     
-      {filteredNurseries ? filteredNurseries.map((nursery, idx) => (     
-        <NurseryDetail key={idx} {...nursery} /> ))
-          : <p>No results found</p>}
-    </div>
+
+      {filteredNurseries.length && hasSearched(false) ? filteredNurseries.map((nursery, index) => (   
+        <NurseryDetail key={index} {...nursery} /> ))
+          :  <p>No results found</p>}
+          {/* : null ? } */}
+
+        
+            </div>
+            </>
   );
 }
+       
 
 const NurseryDetail = (props) => {
   const { name } = props;

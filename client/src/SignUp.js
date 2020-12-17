@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios';
-import { render } from 'react-dom';
 
 
 const SignUpForm = () => {
@@ -8,6 +7,7 @@ const SignUpForm = () => {
     let [ContactNumber,setContactNumber] = useState('');
     let [email,setEmail] = useState('');
     let [writeUp, setWriteUp] = useState("");
+    let [firstAid, setFirstAid]= useState(true); 
 
 
     function handleSignUpSubmit(event) {
@@ -23,7 +23,7 @@ const SignUpForm = () => {
         .then(function (response) {
             console.log(response);
           })
-          .catch(function (error) {
+          .catch(function (error) { 
             console.log(error);
           });
     }

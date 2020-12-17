@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
 import { BrowserRouter, Route } from "react-router-dom";
-
-
-
-
+import money from './images/money.jpg';
+import './App.css';
 
  const ChildCareCost = () => {
   return (
@@ -12,7 +10,7 @@ import { BrowserRouter, Route } from "react-router-dom";
       <BrowserRouter>
       <div>
         <h1>Help with childcare cost</h1>
-        {/* <img src={cost} alt="cost" />  */}
+        <img className="money" src={money} alt="money" /> 
             <h2>Early Years Free Entitlement for All 3- and 4-Year Olds</h2>
                 <p>All 3 and 4-year-old children (and many 2-year olds) are entitled to free 
                     childcare here at our nursery, up to a maximum of 30 hours per week (term time only).</p>
