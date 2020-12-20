@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function NurserySearch() {
+const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
@@ -26,7 +26,6 @@ function NurserySearch() {
         setFilteredNurseries(
           nurseries.filter(nursery =>
             nursery.name.toLowerCase().includes(keyword.toLowerCase())
-            
           )
         );
       };
@@ -40,7 +39,7 @@ function NurserySearch() {
 //   }, [search, nurseries]);
 
   if (loading) {
-    return <p>Were finding the perfect match for you...</p>;
+    return <p>Were finding the perfect match for you...</p>
   }
 
 
@@ -56,18 +55,13 @@ function NurserySearch() {
       />
       <button onClick={onKeyword} >Search</button>
 
-      {filteredNurseries.length && hasSearched(false) ? filteredNurseries.map((nursery, index) => (   
+      {filteredNurseries.length && setHasSearched ? filteredNurseries.map((nursery, index) => (     
         <NurseryDetail key={index} {...nursery} /> ))
-          :  <p>No results found</p>}
-          {/* : null ? } */}
-
-        
+          : <p>No results found</p>}
             </div>
             </>
   );
-}
-       
-
+  }
 const NurseryDetail = (props) => {
   const { name } = props;
   const {address} = props;
@@ -86,6 +80,7 @@ const NurseryDetail = (props) => {
     </>
   );
 };
+
 
 
 export default NurserySearch

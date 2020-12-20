@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 // IMPORT YOUR MODELS
 require('./models/nurseryInfo');
 
+
 const app = express();
 
 mongoose.Promise = global.Promise;
@@ -22,8 +23,8 @@ app.use(bodyParser.json());
 // IMPORT YOUR ROUTES
 require('./routes/usersRoutes')(app);
 
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`app running on port ${PORT}`);
 });
-

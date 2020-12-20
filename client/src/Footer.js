@@ -3,11 +3,9 @@ import {FaInstagram} from 'react-icons/fa';
 import {FaTwitterSquare} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
 import './Footer.css';
+import { NavLink} from 'react-router-dom';
 
-
-
-
-const footer =() => { 
+const footer =({footer}) => { 
     
     return (
     <>
@@ -37,23 +35,23 @@ const footer =() => {
                     <p>Quick links</p>
                     <ul className= "links">
                         <li>
-                            Guide to childcare cost (add link)
+                        <NavLink to="./cost">Guide to childcare cost </NavLink>
                         </li>
                         <li>
-                            Picking the right nursery for you (add link)
+                        <NavLink to="./guide"> Picking the right nursery for you  </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <ul className="contact">
                         <li>
-                            Contact Us
+                        <NavLink to="./contact">Contact</NavLink>
                         </li>
                         <li>
-                            About Us
+                        <NavLink to="/about">About</NavLink>
                         </li>
                         <li>
-                            Add your nusery to the Eggshells Website
+                        <NavLink to="/signup">Register Your Nursery</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -63,4 +61,5 @@ const footer =() => {
         </footer>
                 </>
     )}
+
 export default footer

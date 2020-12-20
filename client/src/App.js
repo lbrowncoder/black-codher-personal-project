@@ -6,9 +6,13 @@ import NurserySearch from './Search';
 import Footer from './Footer';
 import ReviewForm from './ReviewForm';
 import StarRating from './StarRating';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Guide from './Guide';
+import Navbar from './Navbar';
+import NotFound from './NotFound';
+import About from './About';
+import Contact from './Contact';
 
 // let StarRating = NurserySearch.length ===0
 // ? (null) 
@@ -18,16 +22,16 @@ import Guide from './Guide';
 // ? (null) 
 // ? ReviewForm
 
-function App() {
+
+
+const App = () => {
   return (
-      <main>
           <Router>
           <Route exact path="/" render={() => (
             <React.Fragment>
+            <Navbar />
             <HomePage />
             <NurserySearch />
-            {/* <StarRating />
-            <ReviewForm /> */}
             <Footer />
             </React.Fragment> 
         )}/>
@@ -35,6 +39,8 @@ function App() {
             <React.Fragment>
             <HomePage />
             <NurserySearch />
+            <Route path="/search/:id"/>
+            <Route component={NotFound} />
             <Footer />
             </React.Fragment> 
              )}/>
@@ -62,9 +68,37 @@ function App() {
             <Footer />
             </React.Fragment> 
              )}/>
+            <Route exact path="/about" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <About />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/contact" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <Contact />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/cost" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <ChildCareCost />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+               <Route exact path="/guide" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <Guide />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+
 
           </Router>
-      </main>
   )
 }
  

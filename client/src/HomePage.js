@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// SERVICES
-import userService from './services/userService';
+const HomePage = ({HomePage}) => {
+  const [info, setinfo] = useState('');
+const [feature, setFeature] = useState(null);
 
-function HomePage() {
-  const [info, setinfo] = useState(null);
 
   // useEffect(() => {
   //   if (!info) {
@@ -13,20 +12,37 @@ function HomePage() {
   //   }
   // });
 
-  const getinfo = async () => {
-    let res = await userService.getAll();
-    setinfo(res);
-  };
+  // const getinfo = async () => {
+  //   let res = await userService.getAll();
+  //   setinfo(res);
+  // };
 
-  // axios.get(/api/feature`)
+useEffect(async() => {
+   await axios.get(`/api/info`, {
+    params: {
+      id:("5fd893dddac81c0ee471fe92"), 
+      _id: ("5fd893dddac`81c0ee471fe91")
+    }
+  })
+  .then (res => setFeature(res.data))
+
+  .catch((err) => {
+        console.log(err)
+        })
+})
+console.log(info)
 
     return (
       <>
       <div>
       <h1>Welcome to Eggshells</h1>
-      </div>
+
+        {/* <h2>
+          {info.map}{info.id} 
+          </h2> */}
+       </div>
      
-      </>
+       </>
       
   );
 }
