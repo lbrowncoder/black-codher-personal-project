@@ -21,36 +21,36 @@ module.exports = (app) => {
   });
 
 
-  app.get(`/api/feature`, async (req, res) => {
-    console.log(featuredNursery)
-  const featuredNursery = await Feature.find({},
-    {_id:0, name:1})
-return res.status(200).send(featuredNursery);
-});
+//   app.get(`/api/feature`, async (req, res) => {
+//     console.log(featuredNursery)
+//   const featuredNursery = await Feature.find({},
+//     {_id:0, name:1})
+// return res.status(200).send(featuredNursery);
+// });
 
   //search by name attempt one
-  app.get(`/api/info/:name`, async (req, res) => {
-    const nameResult = await Info.find({},
-      {name:1}
-    );
-    return res.status(200).send(nameResult);
-  });
+  // app.get(`/api/info/:name`, async (req, res) => {
+  //   const nameResult = await Info.find({},
+  //     {name:1}
+  //   );
+  //   return res.status(200).send(nameResult);
+  // });
 
 //get by Id
-  app.get(`/api/info/:id`, async (req, res) => {
-    const idResult = await Info.find({},
-      {name:1}
-    );
-    return res.status(200).send(idResult);
-  });
+  // app.get(`/api/info/:id`, async (req, res) => {
+  //   const idResult = await Info.find({},
+  //     {name:1}
+  //   );
+  //   return res.status(200).send(idResult);
+  // });
 
   //search by name attempt two
-  app.get(`/api/info/:name`, async(req, res) => {
-    console.log(featureName)
-    const {name} = req.params;
-    const featureName = Info.find(name);
-    return res.status(200).send(featureName);
-  })
+  // app.get(`/api/info/:name`, async(req, res) => {
+  //   console.log(featureName)
+  //   const {name} = req.params;
+  //   const featureName = Info.find(name);
+  //   return res.status(200).send(featureName);
+  // })
 
 //update nursery json
   app.post(`/api/info`, async (req, res) => {
@@ -114,13 +114,20 @@ app.post(`api/post`, (req, res) => {
   });
 
   // get featured nurseries by id
-app.get(`/api/info/:id`, async (req, res) => {
-  console.log(req.params)
-    const { id } = req.params;
-    const featuredId = await Info.find(id);
-  return res.status(200).send( featuredId );
-});
+// app.get(`/api/info/:id`, async (req, res) => {
+//   console.log(req.params)
+//     const { id } = req.params;
+//     const featuredId = await Info.find(id);
+//   return res.status(200).send( featuredId );
+// });
 
+app.get(`/api/info/:id`, async (req, res) => {
+      let id = req.params.id;
+      console.log('Id: ' + id);
+      const info = await Info.findById(id, function(err, todo) {
+        res.json(todo);
+});
+});
 
 };
 

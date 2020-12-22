@@ -24,8 +24,6 @@ import SearchDetails from './SearchDetail';
 // ? (null) 
 // ? ReviewForm
 
-
-
 const App = () => {
   return (
           <Router>
@@ -46,7 +44,7 @@ const App = () => {
             <Footer />
             </React.Fragment> 
         )}/>
-            <Route path="/search/:name" render={() => (
+            <Route exact path="/search/:name" render={() => (
             <React.Fragment>
             <Navbar />
             <SearchDetails />

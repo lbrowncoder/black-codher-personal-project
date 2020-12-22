@@ -1,36 +1,29 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
+import {useParams} from "react-router-dom";
+import NurserySearch from "./Search";
 
+const SearchDetails = () => {
+  const location = useLocation();
+  const {nurseries} = location.state
 
-const SearchDetails = ({match}) => {
- 
-  useEffect(() => {
-    fetchResult();
-  }, []);
+  // useEffect(() => {
+  //   const {nurseries} = location.state
+  // },[location])
 
-  const [result, setResult] = useState({});
-  
-
-  const fetchResult =  async () => {
-    const fetchResult = await fetch(`/api/info`)
-    const result = await fetchResult.json();
-    setResult(result)
-
-  }
- 
   return (
   <>
   <div>
     <h1>Results</h1>
-        {/* <p>{address}</p>
-      <p>{result.postcode}</p>
-      <p>{result.writeUp}</p>
-      <p>Ofstead Rating: {result.ofsteadRating}</p> */}
+    <p>{nurseries.name}</p>
+    <p>{nurseries.address}</p>
+    <p>{nurseries.postcode}</p>
+    <p>{nurseries.writeUp}</p>
+
   </div>
     </>
-
-  )};
+  )}
 
 export default SearchDetails
 

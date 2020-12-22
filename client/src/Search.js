@@ -61,30 +61,30 @@ const NurserySearch = ({NurserySearch}) => {
       <button onClick={onKeyword} >Search</button>
 
       {filteredNurseries.length && setHasSearched ? filteredNurseries.map((nursery, index) => (     
-        <NurseryDetail key={index} {...nursery} /> ))
+        <NurseryDetail key={index} nursery={nursery} /> ))
           : <p>No results found</p>}
             </div>
             </>
 
   )};
 
-  
-const NurseryDetail = (props) => {
-  const { name } = props;
-
-  return (
-    <>
-    <ul>
-        <li key={props.propsid}>
-      <Link to={`/search/${props.name}`}>{name}</Link>
-      {/* <p>{address}</p>
-      <p>{postcode}</p>
-      <p>{writeUp}</p>
-      <p>Ofstead Rating: {ofsteadRating}</p> */}
-      </li>
-      </ul>
-      </>
-  );
-};
-
+  const NurseryDetail = (props) => {
+      const { name } = props.nursery;
+    
+      return (
+        <>
+        <ul>
+            <li key={props.key}>
+          <Link to={{pathname:`/search/${name}`,
+          state:{nurseries:props.nursery},}}>{name}</Link>
+          {/* <p>{address}</p>
+          <p>{postcode}</p>
+          <p>{writeUp}</p>
+          <p>Ofstead Rating: {ofsteadRating}</p> */}
+          </li>
+          </ul>
+          </>
+      )
+        }
+    
 export default NurserySearch

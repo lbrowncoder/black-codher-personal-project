@@ -18,13 +18,10 @@ const [loading, setLoading] = useState(false);
   
 
 useEffect(async() => {
-   await axios.get(`/api/info`, {
-    params: {
-      id:("5fd893dddac81c0ee471fe92"), 
-      _id: ("5fd893dddac`81c0ee471fe91")
-    }
-  })
-  .then (res => setFeature(res.data))
+  let url = `/api/info/5fd893dddac81c0ee471fe92` 
+   await axios.get( url, {})
+  // .then (res => setFeature(res.data))
+  .then (res => console.log(res.data))
 
   .catch((err) => {
         console.log(err)
@@ -36,12 +33,8 @@ console.log(info)
       <>
       <div>
       <h1>Welcome to Eggshells</h1>
-
-        {/* <h2>
-          {info.map}{info.id} 
-          </h2> */}
+  
        </div>
-     
        </>
       
   );
