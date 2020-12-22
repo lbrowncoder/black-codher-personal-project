@@ -14,6 +14,8 @@ import NotFound from './NotFound';
 import About from './About';
 import Contact from './Contact';
 
+
+
 // let StarRating = NurserySearch.length ===0
 // ? (null) 
 // : StarRating
@@ -37,6 +39,7 @@ const App = () => {
         )}/>
            <Route exact path="/search" render={() => (
             <React.Fragment>
+            <Navbar />
             <HomePage />
             <NurserySearch />
             <Route path="/search/:id"/>
@@ -46,24 +49,21 @@ const App = () => {
              )}/>
              <Route exact path="/signup" render={() => (
             <React.Fragment>
+            <Navbar />
             <SignUpForm />
             <Footer />
             </React.Fragment> 
              )}/>
              <Route exact path="/childcarecost" render={() => (
             <React.Fragment>
+            <Navbar />
            <ChildCareCost />
-            <Footer />
-            </React.Fragment> 
-             )}/>
-             <Route exact path="/signup" render={() => (
-            <React.Fragment>
-            <SignUpForm />
             <Footer />
             </React.Fragment> 
              )}/>
             <Route exact path="/guide" render={() => (
             <React.Fragment>
+            <Navbar />
             <Guide />
             <Footer />
             </React.Fragment> 
@@ -79,7 +79,7 @@ const App = () => {
             <React.Fragment>
             <Navbar />
             <Contact />
-            <Footer />
+            {/* <Footer /> */}
             </React.Fragment> 
              )}/>
             <Route exact path="/cost" render={() => (

@@ -7,16 +7,17 @@ const Contact = () => {
     let [ContactNumber,setContactNumber] = useState('');
     let [email,setEmail] = useState('');
     let [message, setmessage] = useState("");
-    
+    let [contact, setContact] = useState('');
+
     function handleContactSubmit(event) {
         event.preventDefault()
       console.log(name, ContactNumber, email)
 
     axios.post('/api/contact',{
-        name: name,
-        number: ContactNumber,
+        name:name,
+        ContactNumber: ContactNumber,
         email: email,
-        message: message,
+        message: message
         })
         .then(function (response) {
             console.log(response);

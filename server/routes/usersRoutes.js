@@ -81,7 +81,7 @@ return res.status(200).send(featuredNursery);
   });
 
 //post contact
-app.post("/api/post", (req, res) => {
+app.post(`api/post`, (req, res) => {
   let contactData = new Contact(req.body);
   contactData.save()
   .then(item => {
@@ -91,7 +91,6 @@ app.post("/api/post", (req, res) => {
     res.status(400).send("Unable to submit review");
   });
 });
-
 
  
 //update id of nursery json file

@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+// import userService from './services/userService';
 
 const HomePage = ({HomePage}) => {
   const [info, setinfo] = useState('');
 const [feature, setFeature] = useState(null);
+const [loading, setLoading] = useState(false);
 
+// useEffect(() => {
+//   setLoading(true);
 
   // useEffect(() => {
-  //   if (!info) {
-  //     getinfo();
+  //   if (!feature) {
+  //     getfeature();
   //   }
   // });
-
-  // const getinfo = async () => {
-  //   let res = await userService.getAll();
-  //   setinfo(res);
-  // };
+  
 
 useEffect(async() => {
    await axios.get(`/api/info`, {
