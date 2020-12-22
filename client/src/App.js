@@ -13,7 +13,7 @@ import Navbar from './Navbar';
 import NotFound from './NotFound';
 import About from './About';
 import Contact from './Contact';
-
+import SearchDetails from './SearchDetail';
 
 
 // let StarRating = NurserySearch.length ===0
@@ -29,6 +29,7 @@ import Contact from './Contact';
 const App = () => {
   return (
           <Router>
+             <Switch>
           <Route exact path="/" render={() => (
             <React.Fragment>
             <Navbar />
@@ -42,11 +43,16 @@ const App = () => {
             <Navbar />
             <HomePage />
             <NurserySearch />
-            <Route path="/search/:id"/>
-            <Route component={NotFound} />
             <Footer />
             </React.Fragment> 
-             )}/>
+        )}/>
+            <Route path="/search/:name" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <SearchDetails />
+            <Footer />
+            </React.Fragment> 
+        )}/>
              <Route exact path="/signup" render={() => (
             <React.Fragment>
             <Navbar />
@@ -96,7 +102,7 @@ const App = () => {
             <Footer />
             </React.Fragment> 
              )}/>
-
+</Switch>
 
           </Router>
   )

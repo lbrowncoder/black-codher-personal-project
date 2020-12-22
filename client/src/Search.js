@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {Link} from 'react-router-dom'
+
 
 const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
@@ -7,11 +9,13 @@ const NurserySearch = ({NurserySearch}) => {
   const [keyword, setKeyword] = useState("");
   const [filteredNurseries, setFilteredNurseries] = useState([]);
   const [hasSearched, setHasSearched] = useState(false);
-
+  const [result, setResult] = useState([]);
+  
   useEffect(() => {
     setLoading(true);
     axios
       .get(`/api/info`)
+      
       .then((res) => {
         setNurseries(res.data);
         setLoading(false);
@@ -19,6 +23,7 @@ const NurserySearch = ({NurserySearch}) => {
       .catch((err) => {
         console.log(err);
       });
+      
   }, []);
 
   const onKeyword = () => {
@@ -60,27 +65,26 @@ const NurserySearch = ({NurserySearch}) => {
           : <p>No results found</p>}
             </div>
             </>
-  );
-  }
+
+  )};
+
+  
 const NurseryDetail = (props) => {
   const { name } = props;
-  const {address} = props;
-  const {postcode} = props;
-  const {writeUp} = props;
-  const {ofsteadRating}= props;
 
   return (
     <>
-        
-      <p>{name}</p>
-      <p>{address}</p>
+    <ul>
+        <li key={props.propsid}>
+      <Link to={`/search/${props.name}`}>{name}</Link>
+      {/* <p>{address}</p>
       <p>{postcode}</p>
       <p>{writeUp}</p>
-      <p>Ofstead Rating: {ofsteadRating}</p>
-    </>
+      <p>Ofstead Rating: {ofsteadRating}</p> */}
+      </li>
+      </ul>
+      </>
   );
 };
-
-
 
 export default NurserySearch
