@@ -81,14 +81,14 @@ module.exports = (app) => {
   });
 
 //post contact
-app.post(`api/post`, (req, res) => {
+app.post(`/api/contact`, (req, res) => {
   let contactData = new Contact(req.body);
   contactData.save()
   .then(item => {
     res.send("Review has been submitted");
   })
   .catch(err => {
-    res.status(400).send("Unable to submit review");
+    res.status(400).send("Unable to submit contact");
   });
 });
 
