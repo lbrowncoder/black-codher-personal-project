@@ -1,9 +1,5 @@
 import React, { useState} from 'react';
 import axios from 'axios';
-import Form from 'react-bootstrap/Form';
-import { FlareSharp } from '@material-ui/icons';
-import {useForm} from "react-hook-form";
-
 
 const SignUpForm = () => {
     let [name,setName] = useState('');
@@ -31,7 +27,7 @@ const SignUpForm = () => {
         event.preventDefault()
       console.log(name, ContactNumber, email)
 
-    axios.post('/api/info',{
+    axios.post('/api/review',{
         name: name,
         number: ContactNumber,
         email: email,
@@ -42,7 +38,7 @@ const SignUpForm = () => {
           })
           .catch(function (error) { 
             console.log(error);
-          });
+          })
     }
       
     return (
@@ -137,7 +133,7 @@ const SignUpForm = () => {
                 <input type="file" name="picture" /> 
                 </label>
             </form>   
-            <button type="submit">Submit</button>
+            <button onClick={handleSignUpSubmit}>Submit</button>
         </div>
         </>
     )}

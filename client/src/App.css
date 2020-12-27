@@ -41,9 +41,25 @@
   height: 300px;
   width: 300px;
 }
+.homeMoney {
+  height: 300px;
+  width: 300px;
+}
 
 .guide {
   height: 300px;
   width: 300px;
-
 }
+
+.homeGuide {
+  height: 300px;
+  width: 300px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+
+

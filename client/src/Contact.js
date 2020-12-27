@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 
-
 const Contact = () => {
     let [name,setName] = useState('');
     let [ContactNumber,setContactNumber] = useState('');
@@ -13,7 +12,7 @@ const Contact = () => {
         event.preventDefault()
       console.log(name, ContactNumber, email)
 
-    axios.post('/api/contact',{
+      axios.post(`/api/contact`,{
         name:name,
         ContactNumber: ContactNumber,
         email: email,
@@ -53,6 +52,7 @@ const Contact = () => {
         </div>
         </>
     )}
+    
   
   
     export default Contact

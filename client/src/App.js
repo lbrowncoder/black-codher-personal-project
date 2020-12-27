@@ -39,7 +39,6 @@ const App = () => {
            <Route exact path="/search" render={() => (
             <React.Fragment>
             <Navbar />
-            <HomePage />
             <NurserySearch />
             <Footer />
             </React.Fragment> 
@@ -83,7 +82,7 @@ const App = () => {
             <React.Fragment>
             <Navbar />
             <Contact />
-            {/* <Footer /> */}
+            <Footer />
             </React.Fragment> 
              )}/>
             <Route exact path="/cost" render={() => (
@@ -97,6 +96,14 @@ const App = () => {
             <React.Fragment>
             <Navbar />
             <Guide />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/reviewform" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <ReviewForm />
+            <StarRating />
             <Footer />
             </React.Fragment> 
              )}/>

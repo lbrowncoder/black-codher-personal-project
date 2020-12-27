@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 
+
 //Main Schema
 const Schema = mongoose.Schema;
 const ReviewSchema = new Schema({
@@ -36,21 +37,6 @@ module.exports = (app) => {
   //   return res.status(200).send(nameResult);
   // });
 
-//get by Id
-  // app.get(`/api/info/:id`, async (req, res) => {
-  //   const idResult = await Info.find({},
-  //     {name:1}
-  //   );
-  //   return res.status(200).send(idResult);
-  // });
-
-  //search by name attempt two
-  // app.get(`/api/info/:name`, async(req, res) => {
-  //   console.log(featureName)
-  //   const {name} = req.params;
-  //   const featureName = Info.find(name);
-  //   return res.status(200).send(featureName);
-  // })
 
 //update nursery json
   app.post(`/api/info`, async (req, res) => {
@@ -82,16 +68,12 @@ module.exports = (app) => {
 
 //post contact
 app.post(`/api/contact`, (req, res) => {
-  let contactData = new Contact(req.body);
-  contactData.save()
-  .then(item => {
-    res.send("Review has been submitted");
-  })
-  .catch(err => {
-    res.status(400).send("Unable to submit contact");
+  let contact = new Contact(req.body);
+  contact.save()
+  .then (item => {
+    res.send("Recieved")
   });
 });
-
  
 //update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
