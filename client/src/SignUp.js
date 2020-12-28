@@ -1,5 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
+import './SignUp.css';
+import {Button} from "react-bootstrap";
 
 const SignUpForm = () => {
     let [name,setName] = useState('');
@@ -43,41 +45,37 @@ const SignUpForm = () => {
       
     return (
         <>
-        <div>
-            <p>Please submit the details for your Nursery</p>
-
+            <h2>Please Submit The Details For Your Nursery</h2>
+            <container className="container">
           <form onSubmit={(event) => handleSignUpSubmit(event)} className="form">
-          <p>Please Answer the below questions</p>
+          <div className="box">
                 <label className='form-input'>
                     Name:
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input className="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                </label>
+                <label className="contactText">
+                    Contact Number:
+                    <input  className="contact" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                </label>
+                <label className="emailText">
+                    Email:
+                  <input className="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <label>
-                    Contact Number
-                    <input  type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                    Nursery information:
+                  <input  className="writeUp" type="text" value={writeUp} onChange={(e) => setWriteUp(e.target.value)} />
                 </label>
-                <label>
-                    Email
-                  <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <label className="addressText">
+                   Address:
+                  <input className="address" type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
                 </label>
-                <label>
-                    Nursery information
-                  <input type="text" value={writeUp} onChange={(e) => setWriteUp(e.target.value)} />
+                <label className="websiteText">
+                   Website:
+                  <input className="website" type="text" value={website} onChange={(e) => setWebsite(e.target.value)} />
                 </label>
-                <label>
-                   Address
-                  <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} />
-                </label>
-                <label>
-                   Website
-                  <input type="text" value={website} onChange={(e) => setWebsite(e.target.value)} />
-                </label>
-                <label>
-                   Opening Hours
-                  <input type="text" value={website} onChange={(e) => setWebsite(e.target.value)} />
-                </label>
-                <p>Ofstead Rating {ofstead}</p>
-            <select value={ofstead} onChange={(e) => {setOfsted(e.target.value)}}>
+                </div>
+                <p>Ofstead Rating: {ofstead}</p>
+            <select className="inputBox" value={ofstead} onChange={(e) => {setOfsted(e.target.value)}}>
             <option value="Excellent">Excellent</option>
             <option value="Good">Good</option>
             <option value="Requires Improvement">Requires Improvement</option>
@@ -85,37 +83,37 @@ const SignUpForm = () => {
             <option value="N/A">N/A</option>
             </select>
             <p>All Staff First Aid: {aid}</p>
-            <select value={aid} onChange={(e) => {setAid(e.target.value)}}>
+            <select className="inputBox" value={aid} onChange={(e) => {setAid(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <p>CCTV: {cctv}</p>
-            <select value={cctv} onChange={(e) => {setCCTV(e.target.value)}}>
+            <select className="inputBox" value={cctv} onChange={(e) => {setCCTV(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <p>Open Bank Holidays: {bank}</p>
-            <select value={bank} onChange={(e) => {setBank(e.target.value)}}>
+            <select className="inputBox" value={bank} onChange={(e) => {setBank(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <p>Offer 15 hours free to quailifying two year olds: {two}</p>
-            <select value={two} onChange={(e) => {setTwo(e.target.value)}}>
+            <select className="inputBox" value={two} onChange={(e) => {setTwo(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <p>Offer 15 hours free to quailifying three and four year olds: {three}</p>
-            <select value={three} onChange={(e) => {setThree(e.target.value)}}>
+            <select className="inputBox" value={three} onChange={(e) => {setThree(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <p>Offer extra 15 hours free to quailifying three and four year olds: {thirty}</p>
-            <select value={thirty} onChange={(e) => {setThirty(e.target.value)}}>
+            <select className="inputBox" value={thirty} onChange={(e) => {setThirty(e.target.value)}}>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
             </select>
             <br />
-            <label>
+            <label className="label">
                    Full Time fee (5days)
                   <input type="text" value={full} onChange={(e) => setFull(e.target.value)} />
                 </label>
@@ -127,14 +125,13 @@ const SignUpForm = () => {
                    Half Day fee 
                   <input type="text" value={half} onChange={(e) => setHalf(e.target.value)} />
                 </label>
-                <br />
-                <label>
+                <label className="uploadText">
                   Upload images
-                <input type="file" name="picture" /> 
+                <input className="upload" type="file" name="picture" /> 
                 </label>
-            </form>   
-            <button onClick={handleSignUpSubmit}>Submit</button>
-        </div>
+            </form>  
+            </container> 
+            <Button className="button" onClick={handleSignUpSubmit} variant="outline-primary"> Submit </Button>{' '}
         </>
     )}
   

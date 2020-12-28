@@ -103,7 +103,6 @@ const App = () => {
             <React.Fragment>
             <Navbar />
             <ReviewForm />
-            <StarRating />
             <Footer />
             </React.Fragment> 
              )}/>

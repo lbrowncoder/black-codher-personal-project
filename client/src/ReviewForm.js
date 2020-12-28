@@ -4,6 +4,8 @@ import {Form} from "react-bootstrap";
 import {ToggleButtonGroup} from "react-bootstrap";
 import {ToggleButton} from "react-bootstrap";
 import StarRating from './StarRating';
+import './ReviewForm.css';
+import {Button} from "react-bootstrap";
 
 const ReviewForm = () => {
     let [name,setName] = useState('');
@@ -13,8 +15,8 @@ const ReviewForm = () => {
     let [reviewName, setReviewName] = useState("");
     let [comment, setComment] = useState('');
     let [value, setValue] = useState([1, 3,]);
-    let [standard, setStandard] = useState('');
-    let [outdoor, setOutdoor] = useState('');
+    let [standard, setStandard] = useState([]);
+    let [outdoor, setOutdoor] = useState([]);
     let [learning, setLearning] = useState([])
     let [ict, setICT] = useState([]);
     let [care, setCare] = useState([]);
@@ -27,7 +29,6 @@ const ReviewForm = () => {
     let [money, setMoney] = useState([]);
     let [recommend, setRecommend] = useState([]);
     let [overall, setOverall] = useState([]);
-
    
     function handleSubmit(event) {
         event.preventDefault()
@@ -54,140 +55,171 @@ const ReviewForm = () => {
     return (
         <>
         <div>
+          <h2 className="review">Review A Nursery</h2>
+          <container className="container">
           <form onSubmit={(event) => handleSubmit(event)} className="form">
-                <label>
-                    Name:
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                <label className="text">
+                    Your Name:
+                    <input className="box" type="text" value={name} onChange={(e) => setName(e.target.value)} />
                 </label>
-                <label>
-                    Contact Number
-                    <input  type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                <label className="text">
+                    Contact Number:
+                    <input className="box" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
                 </label>
-                <label>
-                    Email
-                  <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <label className="text">
+                    Email:
+                  <input className="box" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
-                <label>
-                    Review Comment
-                  <input type="text" value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
+                <label className="text">
+                    Review Comment:
+                  <input className="boxComment" type="text" value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
                 </label>
-                <p>How likely are you to recommend this nursery?</p>
-                <ToggleButtonGroup type="checkbox" value={recommend} size="sm" onChange={onclick}>
+                <div className="boxItems">
+                <p className="overallOne">How likely are you to recommend this nursery?</p>
+                <ToggleButtonGroup className="checkbox" type="checkbox" value={recommend} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Likely</ToggleButton>
                   <ToggleButton value={2}>Likely</ToggleButton>
                   <ToggleButton value={3}>Neutral</ToggleButton>
                   <ToggleButton value={4}>Unlikely</ToggleButton>
                   <ToggleButton value={5}>Very Unlikely</ToggleButton>
               </ToggleButtonGroup>
-                <p>How would you rate the nursery overall?</p>
-                <ToggleButtonGroup type="checkbox" value={overall} size="sm" onChange={onclick}>
+              </div>
+              <div className="boxItems">
+                <p className="overall">How would you rate the nursery overall?</p>
+                <ToggleButtonGroup className="checkbox" type="checkbox" value={overall} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>How would you rate the nurseries</p>
-                <p>Overall Standard</p>
-                <ToggleButtonGroup type="checkbox" value={standard} size="sm" onChange={onclick}>
+              </div>
+                <p className="rate">How would you rate the nurseries:</p>
+                <div className="boxItemMain">
+                <p className="points">Overall Standard</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={standard} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Facilities/Outdoor Space</p>
-                <ToggleButtonGroup type="checkbox" value={outdoor} size="sm" onChange={onclick}>
+              </div>
+               <div className="boxItemMain">
+                <p className="pointsTwo"Two>Facilities/Outdoor Space</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={outdoor} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Learning</p>
-                <ToggleButtonGroup type="checkbox" value={learning} size="sm" onChange={onclick}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsThree">Learning</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={learning} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Recources/ICT</p>
-                <ToggleButtonGroup type="checkbox" value={ict} size="sm" onChange={onclick}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsFour">Recources/ICT</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={ict} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Care</p>
-                <ToggleButtonGroup type="checkbox" value={care} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsFive">Care</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={care} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Activites</p>
-                <ToggleButtonGroup type="checkbox" value={activities} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsSix">Activites</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={activities} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Staff</p>
-                <ToggleButtonGroup type="checkbox" value={staff} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsSeven">Staff</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={staff} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Food/Nutrition</p>
-                <ToggleButtonGroup type="checkbox" value={food} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsEight">Food/Nutrition</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={food} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Management</p>
-                <ToggleButtonGroup type="checkbox" value={managment} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsNine">Management</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={managment} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Cleanliness</p>
-                <ToggleButtonGroup type="checkbox" value={clean} size="sm" onChange={handleChange}>
+              </div> 
+              <div className="boxItemMain">
+                <p className="pointsTen">Cleanliness</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={clean} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Safeguarding</p>
-                <ToggleButtonGroup type="checkbox" value={safe} size="sm" onChange={handleChange}>
+              </div>
+              <div className="boxItemMain">
+                <p className="pointsEleven">Safeguarding</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={safe} size="sm" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
-                <p>Value for money</p>
-                <ToggleButtonGroup type="checkbox" value={money} size="sm" class="btn btn-default" onChange={handleChange}>
+              </div>
+               <div className="boxItemMain">
+                <p className="pointsTwelve">Value for money</p>
+                <ToggleButtonGroup className="rating" type="checkbox" value={money} size="sm" class="btn btn-default" onChange={onclick}>
                   <ToggleButton value={1}>Very Poor</ToggleButton>
                   <ToggleButton value={2}>Poor</ToggleButton>
                   <ToggleButton value={3}>Satisfactory</ToggleButton>
                   <ToggleButton value={4}>Good</ToggleButton>
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
+              </div>
               {StarRating}
-
-        <button type="submit">submit!</button>
+              <br/>
+              <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
+                   </container>
             <p>{reviewName}</p>
             <p>{comment}</p>
         </div>

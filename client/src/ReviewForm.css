@@ -1,0 +1,123 @@
+.review {
+    text-align: center;
+    margin-bottom: 2rem;;
+}
+
+.text {
+    margin-left:2rem;
+}
+
+.box {
+    margin-top: 2rem;
+    margin-left:1rem;
+    width: 230px;
+}
+
+.boxComment {
+    margin-left:1rem;
+    padding-bottom: 5rem;
+    width: 600px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.container {
+    border: 3px solid gray;
+}
+
+.reviewButton {
+    margin-left: 50%;
+    margin-top: 2rem;
+    margin-bottom:1rem;
+} 
+
+.rate {
+    font-size: 1.3rem;
+    margin-top:2.5rem;
+}
+
+.points {
+    margin-top: 0.7rem;
+    margin-right: 31%;
+}
+
+.pointsTwo {
+    margin-top: 0.7rem;
+    margin-right: 26%;
+}
+
+.pointsThree {
+    margin-top: 0.7rem;
+    margin-right: 36%;
+}
+
+.pointsFour {
+    margin-top: 0.7rem;
+    margin-right: 32.5%;
+}
+
+.pointsFive {
+    margin-top: 0.7rem;
+    margin-right: 38.5%;
+}
+
+.pointsSix {
+    margin-top: 0.7rem;
+    margin-right: 36%;
+}
+
+.pointsSeven {
+    margin-top: 0.7rem;
+    margin-right: 38.5%;
+}
+
+.pointsEight {
+    margin-top: 0.7rem;
+    margin-right: 31.7%;
+}
+
+.pointsNine {
+    margin-top: 0.7rem;
+    margin-right: 32.6%;
+}
+
+.pointsTen {
+    margin-top: 0.7rem;
+    margin-right: 34%;
+}
+
+.pointsEleven {
+    margin-top: 0.7rem;
+    margin-right: 32.5%;
+}
+
+.pointsTwelve {
+    margin-top: 0.7rem;
+    margin-right: 30.5%;
+}
+
+
+.overall {
+    font-size: 1.2rem;
+    margin-right: 10%;
+}
+
+.overallOne {
+    font-size: 1.2rem;
+    margin-right: 5%;
+}
+
+.boxItems {
+    display: flex;
+
+}
+
+.checkbox {
+    margin-bottom: 1.6em;
+    margin-right: 10%;
+}
+
+.boxItemMain {
+    display: flex;
+    margin-bottom: 1.5rem;
+}

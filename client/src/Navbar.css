@@ -71,3 +71,7 @@
   span {
     margin-left: 16px;
   }
+
+  .homeButton {
+    justify-content: right;
+  }

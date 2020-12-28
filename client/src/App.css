@@ -40,6 +40,10 @@
 .money {
   height: 300px;
   width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 .homeMoney {
   height: 300px;
@@ -60,6 +64,93 @@
   width: 300px;
   height: 300px;
   overflow: auto;
+}
+
+/* guide page */
+
+.guideTitle {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.quality {
+   margin-top: 4rem;
+   margin-right: 5rem;
+   margin-left: 5rem;
+   font-size: 1.1rem;
+  
+}
+
+.guide {
+  float: left;
+  margin-top: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+
+.leave {
+  margin-top: 5rem;
+  margin-left:1.5rem;
+  font-size: 1.2rem;
+}
+
+.points{
+  margin-top: 2rem;
+}
+
+p {
+  margin-left:1.5rem;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h3 {
+  margin-left: 1.5rem;
+}
+
+/* cost page */
+
+.helpCost{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.click { 
+  text-align: center;
+}
+
+.costText {
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: justify;
+}
+
+
+/* about page */
+
+.eggshells   {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about{
+  text-align: justify;
+  margin-left:10%;
+  margin-right:10%
+}
+
+.moreInfo{
+  text-align: center;
+  margin-top: 4rem;
+
 }
 
 

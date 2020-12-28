@@ -1,5 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
+import './SignUp.css';
+import {Button} from "react-bootstrap";
 
 const Contact = () => {
     let [name,setName] = useState('');
@@ -29,25 +31,25 @@ const Contact = () => {
     return (
         <>
         <div>
-            <p>Contact Us</p>
+            <h1 className="contactUs">Contact Us</h1>
           <form onSubmit={(event) => handleContactSubmit(event)} className="form">
-                <label>
+                <label className="nameContact">
                     Name:
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input className="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
                 </label>
-                <label>
-                    Contact Number
-                    <input  type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                <label className="contactText">
+                    Contact Number:
+                    <input className="contact" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
                 </label>
-                <label>
-                    Email
-                  <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <label className="emailText">
+                    Email:
+                  <input  className="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
-                <label>
-                    message
-                  <input type="text" value={message} onChange={(e) => setmessage(e.target.value)} />
+                <label className="messageText">
+                    Message:
+                  <input className="message" type="text" value={message} onChange={(e) => setmessage(e.target.value)} />
                 </label>
-                <button type="submit">submit</button>
+                <Button className="contactButton" onClick={handleContactSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
         </div>
         </>
