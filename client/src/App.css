@@ -153,4 +153,15 @@ h3 {
 
 }
 
+/* search page */
+.nurseryList {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border: 1.5px solid lightgray;
+  padding-left: auto;
+}
+
+
+
 

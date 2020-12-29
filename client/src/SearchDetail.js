@@ -6,7 +6,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as HiIcons from 'react-icons/hi';
 import * as BiIcons from 'react-icons/bi';
 
-const SearchDetails = () => {
+const SearchDetails = ({SearchDetails}) => {
   const location = useLocation();
   const {nurseries} = location.state
 

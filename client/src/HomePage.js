@@ -8,30 +8,35 @@ import {Container} from "react-bootstrap";
 import homeMoney from "./images/homeMoney.jpg";
 import homeGuide from "./images/homeGuide.jpg";
 import './HomePage.css';
+import SearchDetail from './SearchDetail';
 import NurserySearch from './Search';
 
 
 
 const HomePage = () => {
-const [feature, setFeature] = useState([]);
+const [feature1, setFeature1] = useState([]);
 const [feature2, setFeature2] = useState([]);
-
+const [feature3, setFeature3] = useState([]);
 
 
 const fetchData = () => {
   const feature1 = `/api/info/5fd893dddac81c0ee471fe92`;
-  const feature2= `/api/info/5fd893dddac81c0ee471fe91`
+  const feature2= `/api/info/5fd893dddac81c0ee471fe91`;
+  const feature3= `/api/info/5fd893dddac81c0ee471fe96`
 
   const getFeature1 = axios.get(feature1)
   const getFeature2 = axios.get(feature2)
+  const getFeature3 = axios.get(feature3)
 
-  axios.all([getFeature1, getFeature2]).then (
+  axios.all([getFeature1, getFeature2, getFeature3]).then (
     axios.spread((...allData) => {
-      const allDataFeature = allData[0].data
-      const getAllFeature1 = allData[1].data
+      const getAllFeature1 = allData[0].data
+      const getAllFeature2 = allData[1].data
+      const getAllFeature3 = allData[2].data
 
-     setFeature(allDataFeature)
-     setFeature2(getAllFeature1)
+     setFeature1(getAllFeature1)
+     setFeature2(getAllFeature2)
+     setFeature3(getAllFeature3)
     })
   )
 }
@@ -51,32 +56,34 @@ useEffect(() =>{
       <>
       <div>
       <h1 className="mainTitle">Welcome to Eggshells</h1>
-      <h2>A Cracking Start To A Life Full Of Adventure</h2>
-      <h3>The Newest UK Nursery review website</h3>
-      <p>Nurseries Of The Week</p>
+      <h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
+      <h3 className="thirdTitle">The Newest UK Nursery review website</h3>
+      <div><NurserySearch /></div>
+      <p className="topRated">Our Top Rated Nurseries This Week</p>
+      <container className="row">
       <div className="cardOne">
       <Card border="dark" style={{ width: '18rem' }}>
-      <Card.Header>Featured</Card.Header>
-  <Card.Img variant="top" src={feature.profilePicture} alt="profilePicture" />
+      <Card.Header className="featured">Featured</Card.Header>
+  <Card.Img variant="top" src={feature1.profilePicture} alt="profilePicture" />
   <Card.Body clasName="card">
-    <Card.Title>{feature.name}</Card.Title>
-    <Card.Text>
-    {feature.address}
+    <Card.Title  className="titleCard">{feature1.name}</Card.Title>
+    <Card.Text  className="titleCard">
+    {feature1.address}
     </Card.Text>
     <Card.Text className="writeup">
-    Ofstead Rating: {feature.ofsteadRating}
+    Ofstead Rating: {feature1.ofsteadRating}
     </Card.Text>
     <Button className="moreInfoBtn" variant="primary">More Info</Button>
   </Card.Body>
 </Card>
 </div>
-<div>
+<div className="cardTwo">
 <Card border="dark" style={{ width: '18rem' }}>
-<Card.Header>Featured</Card.Header>
+<Card.Header className="featured">Featured</Card.Header>
   <Card.Img variant="top" src={feature2.profilePicture} alt="profilePicture" />
   <Card.Body >
-    <Card.Title>{feature2.name}</Card.Title>
-    <Card.Text>
+    <Card.Title className="titleCard">{feature2.name}</Card.Title>
+    <Card.Text className="titleCard">
     {feature2.address}
     </Card.Text>
     <Card.Text className="writeup">
@@ -86,21 +93,36 @@ useEffect(() =>{
   </Card.Body>
 </Card>
 </div>
-<div>{NurserySearch}</div>
+<div  className="cardThree">
+<Card border="dark" style={{ width: '18rem' }}>
+<Card.Header className="featured">Featured</Card.Header>
+  <Card.Img variant="top" src={feature3.profilePicture} alt="profilePicture" />
+  <Card.Body >
+    <Card.Title className="titleCard">{feature3.name}</Card.Title>
+    <Card.Text  className="titleCard">
+    {feature3.address}
+    </Card.Text>
+    <Card.Text className="writeup">
+    Ofstead Rating: {feature3.ofsteadRating}
+    </Card.Text>
+    <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
+  </Card.Body>
+</Card>
+</div>
+</container>
        </div>
        <div>
-         <p className="checkOut">Check out the latest guides to make picking the perfect childcare provider a little bit easier.</p>
          <img className="homeGuide" src={homeGuide} alt="homeGuide" /> 
          <a href ="/guide" className="pick">Our Guide to picking the right Childcare Provider</a>
          <img className="homeGuide" src={homeMoney} alt="homeMoney" /> 
          <a href ="/money" className="helpCost">Help with Childcare Cost</a>
         </div>
-        <div>
+        <div className="counties">
         <Container>
-        <p>Search by Counties </p>
+        <p className="searchBy">Search by Counties </p>
         <Row>
     <Col>
-    <p>East Midlands</p>
+    <p className="regions">East Midlands</p>
             <ul>
               <li><a href ="/Search"> Derbyshire</a></li>
               <li><a href ="/Search"> Leicestershire</a></li>
@@ -109,7 +131,7 @@ useEffect(() =>{
         </ul>
         </Col>
     <Col>
-    <p>West Midlands</p>
+    <p className="regions">West Midlands</p>
             <ul>
               <li><a href ="/Search"> Herefordshire</a></li>
               <li><a href ="/Search"> Shropshire</a></li>
@@ -120,7 +142,7 @@ useEffect(() =>{
         </ul>
         </Col>
     <Col>
-    <p>London</p>
+    <p className="regions">London</p>
             <ul>
               <li><a href ="/Search"> Barking & Dagenham Borough</a></li>
               <li><a href ="/Search"> Barnet Borough</a></li>

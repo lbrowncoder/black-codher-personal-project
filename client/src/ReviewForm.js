@@ -215,7 +215,7 @@ const ReviewForm = () => {
                   <ToggleButton value={5}>Excellent</ToggleButton>
               </ToggleButtonGroup>
               </div>
-              {StarRating}
+              <StarRating/>
               <br/>
               <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>

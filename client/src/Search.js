@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Link} from 'react-router-dom'
-
+import './App.css';
+import {Button} from "react-bootstrap";
 
 const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
@@ -50,20 +51,22 @@ const NurserySearch = ({NurserySearch}) => {
 
   return (
     <>
-      <div>
+    <container className="searchBox">
+      <div className="nurseryList"> 
       <h1>Nursery List</h1>
-      <p>Search by name</p>
+      <p>Find the perfect Childcare Provider</p>
       <input
         type="text"
-        placeholder="Search Nurseries"
+        placeholder="Search by Name"
         onChange={e => setKeyword(e.target.value)}
       />
-      <button onClick={onKeyword} >Search</button>
+      <Button onClick={onKeyword} variant="outline-primary"> Submit </Button>
 
       {filteredNurseries.length && setHasSearched ? filteredNurseries.map((nursery, index) => (     
         <NurseryDetail key={index} nursery={nursery} /> ))
           : <p>No results found</p>}
             </div>
+            </container>
             </>
 
   )};
