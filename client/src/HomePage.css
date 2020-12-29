@@ -1,0 +1,41 @@
+.mainTitle {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.cardOne {
+    float: left;
+    margin-left: 5rem;
+    margin-right: 5rem;  
+}
+
+.cardTwo {
+    float:right
+}
+
+.moreInfoBtn {
+ margin-left:30%;
+}
+
+.moreInfoBtnTwo {
+    margin-left:30%;
+    margin-bottom: 1%;
+   
+}
+
+.checkOut {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.homeGuide {
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.pick {
+    margin-left: 1rem;
+}
+
+.helpCost {
+    margin-left: 1rem;
+}

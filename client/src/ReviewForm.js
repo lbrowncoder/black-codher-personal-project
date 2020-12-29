@@ -220,6 +220,10 @@ const ReviewForm = () => {
               <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
                    </container>
+                   {handleSubmit 
+                   ? <h2>Please Check your review</h2>
+                    : null }
+                 
             <p>{reviewName}</p>
             <p>{comment}</p>
         </div>
