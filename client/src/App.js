@@ -5,7 +5,6 @@ import SignUpForm from './SignUp';
 import NurserySearch from './Search';
 import Footer from './Footer';
 import ReviewForm from './ReviewForm';
-import StarRating from './StarRating';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Guide from './Guide';
@@ -14,6 +13,7 @@ import NotFound from './NotFound';
 import About from './About';
 import Contact from './Contact';
 import SearchDetail from './SearchDetail';
+
 
 
 // let StarRating = NurserySearch.length ===0

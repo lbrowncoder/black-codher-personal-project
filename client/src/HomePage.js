@@ -62,9 +62,9 @@ useEffect(() =>{
       <p className="topRated">Our Top Rated Nurseries This Week</p>
       <container className="row">
       <div className="cardOne">
-      <Card border="dark" style={{ width: '18rem' }}>
+      <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
       <Card.Header className="featured">Featured</Card.Header>
-  <Card.Img variant="top" src={feature1.profilePicture} alt="profilePicture" />
+  <Card.Img className="imagePic" variant="top" src={feature1.profilePicture} alt="profilePicture" />
   <Card.Body clasName="card">
     <Card.Title  className="titleCard">{feature1.name}</Card.Title>
     <Card.Text  className="titleCard">
@@ -78,9 +78,9 @@ useEffect(() =>{
 </Card>
 </div>
 <div className="cardTwo">
-<Card border="dark" style={{ width: '18rem' }}>
+<Card border="dark" style={{ width: '18rem', height:"29rem" }}>
 <Card.Header className="featured">Featured</Card.Header>
-  <Card.Img variant="top" src={feature2.profilePicture} alt="profilePicture" />
+  <Card.Img className="imagePic" variant="top" src={feature2.profilePicture} alt="profilePicture" />
   <Card.Body >
     <Card.Title className="titleCard">{feature2.name}</Card.Title>
     <Card.Text className="titleCard">
@@ -94,9 +94,9 @@ useEffect(() =>{
 </Card>
 </div>
 <div  className="cardThree">
-<Card border="dark" style={{ width: '18rem' }}>
+<Card border="dark" style={{ width: '18rem', height:"29rem" }}>
 <Card.Header className="featured">Featured</Card.Header>
-  <Card.Img variant="top" src={feature3.profilePicture} alt="profilePicture" />
+  <Card.Img className="imagePic" variant="top" src={feature3.profilePicture} alt="profilePicture" />
   <Card.Body >
     <Card.Title className="titleCard">{feature3.name}</Card.Title>
     <Card.Text  className="titleCard">
@@ -163,31 +163,3 @@ useEffect(() =>{
 }
 
 export default HomePage
-
-
-
-{/* <li key={info._id}>
-        <h2>
-          {info.nurseryName} 
-        </h2>
-          <h3>
-          {info.address}
-        </h3>
-        <p>{info.postcode}</p>
-        <p> Ofstead Rating: {info.ofsteadRating}</p>
-        <p>Opening Hours:{`${info.openingHours}`} </p>
-        <p>Opening Times: {info.openingTimes}</p>
-      </li>
-      </>
-    );
-  };
-
-  return (
-    <div>
-        {info && info.length > 0 ? (
-          info.map((info) => renderInfo(info))
-        ) : (
-          <p>No info found</p>
-        )}
-    </div>
-     */}
