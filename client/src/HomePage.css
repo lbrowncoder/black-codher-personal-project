@@ -44,6 +44,7 @@
 .homeGuide {
     margin-left: 2rem;
     margin-top: 3rem;
+    border: solid black;
 }
 
 .pick {

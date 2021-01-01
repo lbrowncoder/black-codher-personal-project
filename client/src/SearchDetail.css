@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.faq {
+    text-align: left;
+    font-size: 1.7rem;
+    margin-left:2rem;
+   padding-bottom: 2rem;
+   clear: both;
+}
+
+.details {
+    font-size:1rem;
+    clear: both;
+}
+
+.card {
+
+    margin-left:6rem;
+    border-style:solid black;
+    border-width:medium;
+    float: left;
+}
+
+.searchPhone{
+    margin-left: 4rem;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+}
+
+.searchEmail{
+    margin-left: 4rem;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+}
+
+.searchWebsite{
+    margin-left: 4rem;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+}
+
+.infoText {
+    font-size: 1.6rem;
+}
+
+
+

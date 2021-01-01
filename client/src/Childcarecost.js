@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
 import { BrowserRouter, Route } from "react-router-dom";
-import money from './images/money.jpg';
+import money from './imagesMain/money.jpg';
 import './App.css';
 
  const ChildCareCost = () => {
