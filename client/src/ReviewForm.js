@@ -29,6 +29,7 @@ const ReviewForm = () => {
     let [money, setMoney] = useState([]);
     let [recommend, setRecommend] = useState([]);
     let [overall, setOverall] = useState([]);
+    const [submit, setSubmit] = useState(false);
    
     function handleSubmit(event) {
         event.preventDefault()
@@ -46,10 +47,12 @@ const ReviewForm = () => {
          const result =review[review.length -1]
          setComment (result.reviewComment);  
          setReviewName (result.name)
+         setSubmit(true)
          console.log(result)
       })
     }
 
+ 
     const handleChange = (val) => setValue(val);
       
     return (
@@ -220,10 +223,10 @@ const ReviewForm = () => {
               <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
                    </container>
-                   {handleSubmit 
-                   ? <h2>Please Check your review</h2>
-                    : null }
-                 
+                   {setSubmit
+       ? <h2>Please Check your review</h2>
+      : null}
+  
             <p>{reviewName}</p>
             <p>{comment}</p>
         </div>

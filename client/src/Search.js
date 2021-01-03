@@ -73,6 +73,7 @@ const NurserySearch = ({NurserySearch}) => {
 
   const NurseryDetail = (props) => {
       const { name } = props.nursery;
+     
     
       return (
         <>

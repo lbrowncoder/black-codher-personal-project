@@ -5,21 +5,28 @@
 }
 
 .cardOne {
+    
     float: left;
-    margin-left: 9rem;
-    margin-right: 5rem;  
+    margin-left: 1.7rem;
+    margin-right: 2rem;  
     margin-bottom: 3.5rem;
+  
 }
 
-.cardTwo {
+/* .cardTwo {
     float:left;
-}
+    display: inline;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+} */
 
-.cardThree {
+/* .cardThree {
+    display: inline;
     float:left;
     margin-right: 5rem;  
-    margin-left: 5rem;
-}
+    margin-left: 1rem;
+
+} */
 
 .row:after {
     content: "";

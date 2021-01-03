@@ -20,9 +20,9 @@ const [feature3, setFeature3] = useState([]);
 
 
 const fetchData = () => {
-  const feature1 = `/api/info/5fd893dddac81c0ee471fe92`;
-  const feature2= `/api/info/5fd893dddac81c0ee471fe91`;
-  const feature3= `/api/info/5fd893dddac81c0ee471fe96`
+  const feature1 = `/api/info/5ff0ee6cf6e8df33c481ca96`;
+  const feature2= `/api/info/5ff0ee6cf6e8df33c481ca97`;
+  const feature3= `/api/info/5ff0ee6cf6e8df33c481ca99`
 
   const getFeature1 = axios.get(feature1)
   const getFeature2 = axios.get(feature2)
