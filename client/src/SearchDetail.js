@@ -16,6 +16,7 @@ const SearchDetails = ({SearchDetails}) => {
   let location = useLocation();
   let {nurseries} = location.state;
   const images = [nurseries.pictures];
+  // let fees = [nurseries.fees]
 
   useEffect(() => {
     const {nurseries} = location.state
@@ -38,6 +39,7 @@ const SearchDetails = ({SearchDetails}) => {
   };
 
   const [imageIndex, setImageIndex] = useState(0);
+  
 
   const settings = {
     infinite: true,
@@ -59,7 +61,7 @@ const SearchDetails = ({SearchDetails}) => {
   {/* <Card.Img variant="top" src={nurseries.profilePicture} alt="profilePicture" /> */}
     <AliceCarousel autoPlay 
     autoPlayInterval="2500"
-    infinateLoop={true} 
+    infinate={false} 
     disableAutoPlayOnAction={true}
     mouseTrackingEnable={true}
     fadeOutAnimation={true}>
@@ -99,26 +101,24 @@ const SearchDetails = ({SearchDetails}) => {
 </AliceCarousel> */}
   <h2 className="faq">
     FAQ
-    <p className="details">Fees:</p>
-    <p>{nurseries.fees.fullTime}</p>
+    </h2>
+    <p className="details">Fees:{nurseries.fees.forEach(fee => <div>{nurseries.fees}</div>)}</p>
     <p className="details">Opening Hours: {nurseries.openingHours}</p>
     <p className="details">Opening times: {nurseries.openingTimes}</p>
     <p className="details">Ofstead Rating: {nurseries.ofsteadRating}</p>
     <p className="details"> Ofstead Report: <a className="details" href = {nurseries.ofsteadLink}> {nurseries.ofsteadLink}</a></p>
-    <p className="details">Open Bank Hoildays: {nurseries.openBankHoildays.toString()}</p>
+    <p className="details">Open Bank Hoildays: {nurseries.isOpenBankHolidays ? 'Yes' : 'No'}</p>
     <p className="details">Number of spaces: {nurseries.numberOfPlaces}</p>
-    <p className="details">Dietary Requirments Caterted for:  {nurseries.dietaryRequiremtsCatered}</p>
+    <p className="details">Dietary Requirments Caterted for:  {nurseries.isDietaryRequirementsCateredFor ? 'Yes' : 'No'}</p>
     <p className="details">Age Range:  {nurseries.ageRange}</p>
-    <p className="details">Fifthteen Hours Free: {nurseries.fifteenoursFree}</p>
-    <p className="details">Thirty Hours Free: {nurseries.thirtyHoursFree}</p>
-    <p className="details">First Aid Trained: {nurseries.firstAidTrained}</p>
-    
-    
+    <p className="details">Fifthteen Hours Free: {nurseries.isFifteenHoursFree ? 'Yes' : 'No'}</p>
+    <p className="details">Thirty Hours Free: {nurseries.isThirtyHoursFree ? 'Yes' : 'No'}</p>
+    <p className="details">All staff First  Aid Trained: {nurseries.isFirstAidTrained ? 'Yes' : 'No'}</p>
 
-  </h2>
     </>
   )}
 
 
 export default SearchDetails
+
 

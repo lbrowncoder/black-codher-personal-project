@@ -1,0 +1,49 @@
+
+.website {
+    width:800px; 
+}
+.name {
+    margin-left:0.5rem;
+}
+
+.contact {
+    margin-left:0.5rem;
+}
+
+.contactText {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.email{
+    width: 310px;
+    margin-left:0.3rem;
+}
+
+.message {
+    margin-top:6rem;
+    padding-bottom: 10rem;
+    width:600px;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+
+.messageText {
+    margin-left: 2rem;
+}
+
+.nameContact{
+    margin-left: 2rem;
+}
+
+.contactUs{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contactButton {
+    margin-left: 45%;
+    margin-top: 4rem;   
+    cursor: pointer;    
+
+}

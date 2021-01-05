@@ -15,7 +15,6 @@ h2 {
 }
 
 
-
 .inputBox{
    margin-bottom: 2rem;
    margin-left: 9rem;
@@ -26,8 +25,8 @@ h2 {
 }
 
 .button {
-margin-left: 45%;
-margin-top: 4rem;
+    margin-left: 45%;
+    margin-top: 4rem;
 }
 
 .uploadText {
@@ -38,69 +37,37 @@ margin-top: 4rem;
 
 .upload {
     margin-top: 2rem;
- 
 }
 
-.addressText {
-    display: flex;
-    margin-top:1.2rem;
-    margin-bottom: 1.5rem;
+.box {
+    display: grid;
 }
 
-.address {
-    width:900px;
-    margin-left:0.5rem;
-}
-
-.websiteText{
-    margin-top:1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.website {
-    width:800px; 
-}
 .name {
-    margin-left:0.5rem;
+    width: 700px;
 }
 
 .contact {
-    margin-left:0.5rem;
+    width: 600px;
 }
 
 .contactText {
-    margin-left: 3rem;
-    margin-right: 3rem;
+   text-align: center;
+   margin-right: 0;
 }
 
-.email{
-    width: 310px;
-    margin-left:0.3rem;
-}
-
-.message {
-    margin-top:6rem;
-    padding-bottom: 10rem;
+.emailTwo {
     width:600px;
-    margin-left: 0.5rem;
-    overflow: hidden;
+    margin-left: 0.6rem;
 }
 
-.messageText {
-    margin-left: 2rem;
+.address {
+    width:800px;
+    margin-left: 0.6rem;
 }
 
-.nameContact{
-    margin-left: 2rem;
+.website {
+    width:600px;
+    margin-left: 0.6rem;
 }
 
-.contactUs{
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.contactButton {
-    margin-left: 45%;
-    margin-top: 4rem;       
-
-}

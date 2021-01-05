@@ -49,7 +49,7 @@ const SignUpForm = () => {
             <container className="container">
           <form onSubmit={(event) => handleSignUpSubmit(event)} className="form">
           <div className="box">
-                <label className='form-input'>
+                <label className='nameText'>
                     Name:
                     <input className="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
                 </label>
@@ -59,7 +59,7 @@ const SignUpForm = () => {
                 </label>
                 <label className="emailText">
                     Email:
-                  <input className="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input className="emailTwo" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <label>
                     Nursery information:

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from 'react-router-dom'
+import {Link, useParams, useMatch} from 'react-router-dom'
 import './App.css';
 import {Button} from "react-bootstrap";
 
@@ -53,7 +53,7 @@ const NurserySearch = ({NurserySearch}) => {
     <>
     <container className="searchBox">
       <div className="nurseryList"> 
-      <h1>Nursery List</h1>
+      <h1>Search</h1>
       <p>Find the perfect Childcare Provider</p>
       <input
         type="text"
@@ -73,18 +73,13 @@ const NurserySearch = ({NurserySearch}) => {
 
   const NurseryDetail = (props) => {
       const { name } = props.nursery;
-     
     
       return (
         <>
         <ul>
-            <li key={props.key}>
+          <li key={props.key}>
           <Link to={{pathname:`/search/${name}`,
           state:{nurseries:props.nursery},}}>{name}</Link>
-          {/* <p>{address}</p>
-          <p>{postcode}</p>
-          <p>{writeUp}</p>
-          <p>Ofstead Rating: {ofsteadRating}</p> */}
           </li>
           </ul>
           </>

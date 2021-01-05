@@ -13,6 +13,7 @@ import NotFound from './NotFound';
 import About from './About';
 import Contact from './Contact';
 import SearchDetail from './SearchDetail';
+import SubmittedForm from './SubmittedForm'
 
 
 
@@ -82,6 +83,13 @@ const App = () => {
             <React.Fragment>
             <Navbar />
             <Contact />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/submittedForm" render={() => (
+            <React.Fragment>
+            <Navbar />
+            <SubmittedForm />
             <Footer />
             </React.Fragment> 
              )}/>

@@ -1,7 +1,8 @@
 import React, { useState} from 'react';
 import axios from 'axios';
-import './SignUp.css';
+import './Contact.css';
 import {Button} from "react-bootstrap";
+import { useHistory } from "react-router";
 
 const Contact = () => {
     let [name,setName] = useState('');
@@ -9,9 +10,11 @@ const Contact = () => {
     let [email,setEmail] = useState('');
     let [message, setmessage] = useState("");
     let [contact, setContact] = useState('');
+    const history = useHistory();
 
     function handleContactSubmit(event) {
-        event.preventDefault()
+        event.preventDefault();
+        history.push('/SubmittedForm');
       console.log(name, ContactNumber, email)
 
       axios.post(`/api/contact`,{

@@ -162,7 +162,19 @@ h3 {
   padding-left: auto;
 }
 
-/* slider */
+/* submitted Form*/
+.thankYou {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.respond {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 3.5rem;
+
+}
 
 
 
