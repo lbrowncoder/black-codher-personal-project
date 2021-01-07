@@ -12,7 +12,7 @@ const footer =({footer}) => {
                <footer class="footer">
                    <div className='socialBox'>
                     <div>
-                    <p > Join the Eggshells Family</p>
+                    <p> Join the Eggshells Family</p>
                     <ul>
                         <li >
                             <a href='/'  className='instagram social'>
@@ -35,17 +35,17 @@ const footer =({footer}) => {
                     <p>Quick links</p>
                     <ul className= "links">
                         <li>
-                        <NavLink to="./cost">Guide to childcare cost </NavLink>
+                        <NavLink to="/cost">Guide to childcare cost </NavLink>
                         </li>
                         <li>
-                        <NavLink to="./guide"> Picking the right nursery for you  </NavLink>
+                        <NavLink to="/guide"> Picking the right nursery for you  </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <ul className="contact">
                         <li>
-                        <NavLink to="./contact">Contact</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                         </li>
                         <li>
                         <NavLink to="/about">About</NavLink>

@@ -8,21 +8,21 @@ import {Container} from "react-bootstrap";
 import homeMoney from "./imagesMain/homeMoney.jpg";
 import homeGuide from "./imagesMain/homeGuide.jpg";
 import './HomePage.css';
-import SearchDetail from './SearchDetail';
 import NurserySearch from './Search';
 
 
 
-const HomePage = () => {
+const HomePage = (props) => {
 const [feature1, setFeature1] = useState([]);
 const [feature2, setFeature2] = useState([]);
 const [feature3, setFeature3] = useState([]);
 
 
 const fetchData = () => {
-  const feature1 = `/api/info/5ff43675d72a5c222448f6e7`;
-  const feature2= `/api/info/5ff43675d72a5c222448f6e8`;
-  const feature3= `/api/info/5ff43675d72a5c222448f6e9`
+  const feature1 = `/api/info/5ff59f32d72a5c222448f7ad`;
+  const feature2= `/api/info/5ff59f32d72a5c222448f7ae`;
+  const feature3= `/api/info/5ff59f32d72a5c222448f7af`
+
 
   const getFeature1 = axios.get(feature1)
   const getFeature2 = axios.get(feature2)
@@ -58,7 +58,7 @@ useEffect(() =>{
       <h1 className="mainTitle">Welcome to Eggshells</h1>
       <h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
       <h3 className="thirdTitle">The Newest UK Nursery review website</h3>
-      <div><NurserySearch /></div>
+      <div><NurserySearch nurseryDetail={props.nurseryDetail} setNurseryDetail={props.setNurseryDetail}/></div>
       <p className="topRated">Our Top Rated Nurseries This Week</p>
       <container className="row">
       <div className="cardOne">

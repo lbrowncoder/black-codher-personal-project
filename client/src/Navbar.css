@@ -5,11 +5,18 @@
     justify-content: start;
     align-items: center;
   }
+
+  .bars {
+    display: flex;
+    justify-content: left;
+  }
   
   .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    display: flex;
+    justify-content: left;
   }
   
   .nav-menu {

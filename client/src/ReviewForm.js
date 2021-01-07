@@ -1,11 +1,11 @@
 import React, { useState} from 'react';
 import axios from 'axios';
-import {Form} from "react-bootstrap";
 import {ToggleButtonGroup} from "react-bootstrap";
 import {ToggleButton} from "react-bootstrap";
 import StarRating from './StarRating';
 import './ReviewForm.css';
 import {Button} from "react-bootstrap";
+import {reviewValidateSchema} from './validateInfo'
 
 const ReviewForm = () => {
     let [name,setName] = useState('');
@@ -15,21 +15,21 @@ const ReviewForm = () => {
     let [reviewName, setReviewName] = useState("");
     let [comment, setComment] = useState('');
     let [value, setValue] = useState([1, 3,]);
-    let [standard, setStandard] = useState([]);
-    let [outdoor, setOutdoor] = useState([]);
-    let [learning, setLearning] = useState([])
-    let [ict, setICT] = useState([]);
-    let [care, setCare] = useState([]);
-    let [activities, setActivities] = useState([]);
-    let [staff, setStaff] = useState([]);
-    let [food, setFood] = useState([]);
-    let [managment, setManagemnet] = useState([]);
-    let [clean, setClean] = useState([]);
-    let [safe, setSafe] = useState([]);
-    let [money, setMoney] = useState([]);
-    let [recommend, setRecommend] = useState([]);
-    let [overall, setOverall] = useState([]);
-    const [submit, setSubmit] = useState(false);
+    let [standard] = useState([]);
+    let [outdoor] = useState([]);
+    let [learning] = useState([])
+    let [ict] = useState([]);
+    let [care] = useState([]);
+    let [activities] = useState([]);
+    let [staff] = useState([]);
+    let [food] = useState([]);
+    let [managment] = useState([]);
+    let [clean] = useState([]);
+    let [safe] = useState([]);
+    let [money] = useState([]);
+    let [recommend] = useState([]);
+    let [overall] = useState([]);
+    const [submit, setSubmit] = useState(true);
    
     function handleSubmit(event) {
         event.preventDefault()
@@ -38,7 +38,7 @@ const ReviewForm = () => {
 
     axios.post('/api/review',{
         name: name,
-        number: ContactNumber,
+        ContactNumber: ContactNumber,
         email: email,
         reviewComment: reviewComment,
         })
@@ -47,13 +47,23 @@ const ReviewForm = () => {
          const result =review[review.length -1]
          setComment (result.reviewComment);  
          setReviewName (result.name)
-         setSubmit(true)
+         setSubmit(false)
          console.log(result)
       })
-    }
-
+  }
  
     const handleChange = (val) => setValue(val);
+    
+    // const submitReview = async (event) => {
+    //   event.preventDefault();
+    //   let formReview = {
+    //   name: event.target[0].value,
+    //   email: event.target[1].value,
+    //   ContactNumber: event[2].target.value,
+    //   };
+    //   const isValid = await reviewValidateSchema.isValid(formReview);
+    // console.log(isValid)
+    // }
       
     return (
         <>
@@ -220,18 +230,21 @@ const ReviewForm = () => {
               </div>
               <StarRating/>
               <br/>
-              <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
+              <Button className="reviewButton" onClick={() => {
+                handleSubmit()
+                // submitReview() 
+                }}
+                variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
                    </container>
-                   {setSubmit
-       ? <h2>Please Check your review</h2>
-      : null}
-  
+
+                  <h2>Please Check your review</h2>
+    
             <p>{reviewName}</p>
             <p>{comment}</p>
         </div>
         </>
     )}
-  
+    
   
     export default ReviewForm

@@ -4,6 +4,7 @@ import {Link, useParams, useMatch} from 'react-router-dom'
 import './App.css';
 import {Button} from "react-bootstrap";
 
+
 const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -73,7 +74,7 @@ const NurserySearch = ({NurserySearch}) => {
 
   const NurseryDetail = (props) => {
       const { name } = props.nursery;
-    
+     
       return (
         <>
         <ul>
@@ -85,5 +86,9 @@ const NurserySearch = ({NurserySearch}) => {
           </>
       )
         }
+
+   
+        
     
 export default NurserySearch
+

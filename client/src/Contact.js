@@ -9,7 +9,6 @@ const Contact = () => {
     let [ContactNumber,setContactNumber] = useState('');
     let [email,setEmail] = useState('');
     let [message, setmessage] = useState("");
-    let [contact, setContact] = useState('');
     const history = useHistory();
 
     function handleContactSubmit(event) {

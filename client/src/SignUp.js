@@ -8,8 +8,8 @@ const SignUpForm = () => {
     let [ContactNumber,setContactNumber] = useState('');
     let [email,setEmail] = useState('');
     let [writeUp, setWriteUp] = useState('');
-    let [firstAid, setFirstAid]= useState(''); 
-    const [dropdown, setDropdown] = useState('');
+    // let [firstAid, setFirstAid]= useState(''); 
+    // const [dropdown, setDropdown] = useState('');
     const [ofstead, setOfsted]= useState('');
     const [aid, setAid]= useState('');
     const [cctv, setCCTV]= useState('');
@@ -22,7 +22,7 @@ const SignUpForm = () => {
     const [half, setHalf] = useState('');
     const [day, setDay] = useState('');
     const [website, setWebsite] = useState('');
-    const [hours, setHours] = useState('');
+    // const [hours, setHours] = useState('');
 
 
     function handleSignUpSubmit(event) {

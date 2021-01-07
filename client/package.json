@@ -18,7 +18,8 @@
         "react-scripts": "4.0.1",
         "react-slick": "^0.27.13",
         "react-svg-star-rating": "^1.1.5",
-        "web-vitals": "^1.0.1"
+        "web-vitals": "^1.0.1",
+        "yup": "^0.32.8"
     },
     "scripts": {
         "start": "react-scripts start",
