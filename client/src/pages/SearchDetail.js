@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 const SearchDetails = (props) => {
   

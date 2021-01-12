@@ -6,4 +6,5 @@ export default {
     const res = await axios.get(`/api/info`);
     return res.data || [];
   },
+
 };

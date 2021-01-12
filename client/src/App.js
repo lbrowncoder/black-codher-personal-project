@@ -1,21 +1,22 @@
 import React, { useState} from 'react';
-import HomePage from './HomePage';
-import ChildCareCost  from './Childcarecost';
-import SignUpForm from './SignUp';
-import NurserySearch from './Search';
-import Footer from './Footer';
-import ReviewForm from './ReviewForm';
+import HomePage from './pages/HomePage';
+import ChildCareCost  from './pages/Childcarecost';
+import SignUpForm from './pages/SignUp';
+import NurserySearch from './pages/Search';
+import Footer from './pages/Footer';
+import ReviewForm from './pages/ReviewForm';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import Guide from './Guide';
-import Navbar from './Navbar';
-import About from './About';
-import Contact from './Contact';
-import SearchDetail from './SearchDetail';
-import SubmittedForm from './SubmittedForm';
-import SearchDetails from './SearchDetail';
-
-
+import Guide from './pages/Guide';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import SearchDetail from './pages/SearchDetail';
+import SubmittedForm from './pages/SubmittedForm';
+import SearchDetails from './pages/SearchDetail';
+import ScrollToTop from './ScrollToTop';
+import Login from './pages/Login';
+import CustomerSignUp from './pages/CustomerSignUp';
 
 const App = () => {
    const [nurseryDetail, setNurseryDetail] = useState();
@@ -26,6 +27,7 @@ const App = () => {
              <Switch>
           <Route exact path="/" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <HomePage SearchDetail={SearchDetail} nurseryDetail={nurseryDetail} setNurseryDetail={setNurseryDetail} />
             {/* <NurserySearch /> */}
@@ -34,6 +36,7 @@ const App = () => {
         )}/>
            <Route exact path="/search" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar nurseryDetail={nurseryDetail} setNurseryDetail={setNurseryDetail} />
             <NurserySearch />
             <Footer />
@@ -42,6 +45,7 @@ const App = () => {
             <Route 
             path="/search/:id" render={(props) => (
                <React.Fragment>
+               <ScrollToTop />
                <Navbar />
                <SearchDetail />
                <Footer />
@@ -49,6 +53,7 @@ const App = () => {
             )} />
              <Route exact path="/signup" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <SignUpForm />
             <Footer />
@@ -56,6 +61,7 @@ const App = () => {
              )}/>
              <Route exact path="/childcarecost" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
            <ChildCareCost />
             <Footer />
@@ -63,6 +69,7 @@ const App = () => {
              )}/>
             <Route exact path="/guide" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <Guide />
             <Footer />
@@ -70,6 +77,7 @@ const App = () => {
              )}/>
             <Route exact path="/about" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <About />
             <Footer />
@@ -77,6 +85,7 @@ const App = () => {
              )}/>
             <Route exact path="/contact" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <Contact />
             <Footer />
@@ -84,6 +93,7 @@ const App = () => {
              )}/>
             <Route exact path="/submittedForm" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <SubmittedForm />
             <Footer />
@@ -91,6 +101,7 @@ const App = () => {
              )}/>
             <Route exact path="/cost" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <ChildCareCost />
             <Footer />
@@ -98,6 +109,7 @@ const App = () => {
              )}/>
                <Route exact path="/guide" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <Guide />
             <Footer />
@@ -105,11 +117,29 @@ const App = () => {
              )}/>
             <Route exact path="/reviewform" render={() => (
             <React.Fragment>
+            <ScrollToTop />
             <Navbar />
             <ReviewForm />
             <Footer />
             </React.Fragment> 
              )}/>
+            <Route exact path="/login" render={() => (
+            <React.Fragment>
+            <ScrollToTop />
+            <Navbar />
+            <Login />
+            <Footer />
+            </React.Fragment> 
+             )}/>
+              <Route exact path="/signin" render={() => (
+            <React.Fragment>
+            <ScrollToTop />
+            <Navbar />
+            <CustomerSignUp/>
+            <Footer />
+            </React.Fragment> 
+             )}/>
+           
 </Switch>
 
           </Router>

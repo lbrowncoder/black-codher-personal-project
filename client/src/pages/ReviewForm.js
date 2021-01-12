@@ -2,10 +2,11 @@ import React, { useState} from 'react';
 import axios from 'axios';
 import {ToggleButtonGroup} from "react-bootstrap";
 import {ToggleButton} from "react-bootstrap";
-import StarRating from './StarRating';
+import StarRating from '../components/StarRating';
 import './ReviewForm.css';
 import {Button} from "react-bootstrap";
-import {reviewValidateSchema} from './validateInfo'
+import * as Yup from 'yup';
+import { formik, Field, Form, ErrorMessage } from "formik"
 
 const ReviewForm = () => {
     let [name,setName] = useState('');
@@ -31,11 +32,10 @@ const ReviewForm = () => {
     let [overall] = useState([]);
     const [submit, setSubmit] = useState(true);
    
-    function handleSubmit(event) {
-        event.preventDefault()
-      console.log(name, ContactNumber, email)
-    //   history.push('/pages/ThankYou')
 
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+     
     axios.post('/api/review',{
         name: name,
         ContactNumber: ContactNumber,
@@ -53,18 +53,6 @@ const ReviewForm = () => {
   }
  
     const handleChange = (val) => setValue(val);
-    
-    // const submitReview = async (event) => {
-    //   event.preventDefault();
-    //   let formReview = {
-    //   name: event.target[0].value,
-    //   email: event.target[1].value,
-    //   ContactNumber: event[2].target.value,
-    //   };
-    //   const isValid = await reviewValidateSchema.isValid(formReview);
-    // console.log(isValid)
-    // }
-      
     return (
         <>
         <div>
@@ -230,11 +218,7 @@ const ReviewForm = () => {
               </div>
               <StarRating/>
               <br/>
-              <Button className="reviewButton" onClick={() => {
-                handleSubmit()
-                // submitReview() 
-                }}
-                variant="btn btn-outline-dark"> Submit </Button>{' '}
+              <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
                    </container>
 

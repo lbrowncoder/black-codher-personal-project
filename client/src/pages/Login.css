@@ -1,0 +1,119 @@
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    appearance: none;
+    background:none;
+    border: none;
+    outline: none;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+}
+
+.submit {
+    display: block;
+    position: relative;
+}
+
+submit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-image: linear-gradient( to bottom right, #ffce00, #FE4880);
+} 
+
+.submit .form-inner {
+    position: relative;
+    display: block;
+    background-color: white;
+    padding:30px;
+    z-index: 2;
+}
+.submit .form-inner h2 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.submit .form-inner.form-group {
+    display: block;
+    width:300px;
+    margin-bottom: 15px;
+}
+
+.form-inner .form-group label {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+
+.form-inner .form-group:focus-within label {
+    color:black;
+}
+
+.submit .form-inner .form-group input {
+    display: block;
+    width:100%;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.submit .form-inner .form-group input:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0,0.2)
+}
+
+.submit .form-inner input[type="submit"],
+.welcome button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #ffce00 50%, orange 50%);
+    background-size: 200%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit .form-inner input[type="submit"]:hoover,
+.welcome button:hoover {
+    background-position: 100% 0%;
+}
+
+.welcome {
+    width:100%;
+    max-width: 480px;
+    /* background-color: grey; */
+    padding: 15px 30px;
+}
+
+.welcome h2 {
+    color:wheat;
+    font-size:28px;
+    font-weight: 500;
+    margin-bottom:30px;
+}
+
+.error {
+    color:red;
+}

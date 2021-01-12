@@ -5,10 +5,11 @@ import {Button} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {Container} from "react-bootstrap";
-import homeMoney from "./imagesMain/homeMoney.jpg";
-import homeGuide from "./imagesMain/homeGuide.jpg";
+import homeMoney from "../imagesMain/homeMoney.jpg";
+import homeGuide from "../imagesMain/homeGuide.jpg";
 import './HomePage.css';
 import NurserySearch from './Search';
+import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 
 
 
@@ -41,9 +42,9 @@ const fetchData = () => {
   )
 }
 
-useEffect(() =>{
-  fetchData()
-}, [])
+  useEffect(() =>{
+    fetchData()
+  }, [])
 
   // let url = `/api/info/5fd893dddac81c0ee471fe92` 
   //  await axios.get( url, {})
@@ -56,16 +57,17 @@ useEffect(() =>{
       <>
       <div>
       <h1 className="mainTitle">Welcome to Eggshells</h1>
+      <img src={EggshellsHomepage} alt="eggshells" /> 
       <h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
       <h3 className="thirdTitle">The Newest UK Nursery review website</h3>
       <div><NurserySearch nurseryDetail={props.nurseryDetail} setNurseryDetail={props.setNurseryDetail}/></div>
-      <p className="topRated">Our Top Rated Nurseries This Week</p>
+         <p className="topRated">Our Top Rated Nurseries This Week</p>
       <container className="row">
       <div className="cardOne">
       <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
       <Card.Header className="featured">Featured</Card.Header>
-  <Card.Img className="imagePic" variant="top" src={feature1.profilePicture} alt="profilePicture" />
-  <Card.Body clasName="card">
+     <Card.Img className="imagePic" variant="top" src={feature1.profilePicture} alt="profilePicture" />
+      <Card.Body clasName="card">
     <Card.Title  className="titleCard">{feature1.name}</Card.Title>
     <Card.Text  className="titleCard">
     {feature1.address}

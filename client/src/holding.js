@@ -6,7 +6,7 @@ import NurserySearch from './Search';
 import Footer from './Footer';
 import ReactDOM from 'react-dom';
 import HomePage from './HomePage';
-import ChildCareCost  from './Childcarecost';
+import ChildCareCost  from './pages/Childcarecost';
 import SignUpForm from './SignUp';
 
 

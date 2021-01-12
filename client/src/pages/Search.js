@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Link, useParams, useMatch} from 'react-router-dom'
-import './App.css';
+import '../App.css';
 import {Button} from "react-bootstrap";
 
 
@@ -29,7 +29,7 @@ const NurserySearch = ({NurserySearch}) => {
   }, []);
 
   const onKeyword = () => {
-    setHasSearched(true)
+    setHasSearched(false)
         setFilteredNurseries(
           nurseries.filter(nursery =>
             nursery.name.toLowerCase().includes(keyword.toLowerCase())
@@ -74,7 +74,6 @@ const NurserySearch = ({NurserySearch}) => {
 
   const NurseryDetail = (props) => {
       const { name } = props.nursery;
-     
       return (
         <>
         <ul>

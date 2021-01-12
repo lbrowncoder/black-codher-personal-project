@@ -4,6 +4,7 @@ import './Contact.css';
 import {Button} from "react-bootstrap";
 import { useHistory } from "react-router";
 
+
 const Contact = () => {
     let [name,setName] = useState('');
     let [ContactNumber,setContactNumber] = useState('');
@@ -14,7 +15,6 @@ const Contact = () => {
     function handleContactSubmit(event) {
         event.preventDefault();
         history.push('/SubmittedForm');
-      console.log(name, ContactNumber, email)
 
       axios.post(`/api/contact`,{
         name:name,
@@ -23,18 +23,18 @@ const Contact = () => {
         message: message
         })
         .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) { 
-            console.log(error);
-          });
+          console.log(response);
+        })
+        .catch(function (error) { 
+          console.log(error);
+        });
     }
       
     return (
         <>
         <div>
-            <h1 className="contactUs">Contact Us</h1>
-          <form onSubmit={(event) => handleContactSubmit(event)} className="form">
+          <h1 className="contactUs">Contact Us</h1>
+            <form onSubmit={(event) => handleContactSubmit(event)} className="form">
                 <label className="nameContact">
                     Name:
                     <input className="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />

@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
+const SignUp = require('../routes');
+// import SignUp from '../routes.js';
+
 
 
 //Main Schema
@@ -20,22 +23,6 @@ module.exports = (app) => {
       const nursery = await Info.find();
     return res.status(200).send(nursery);
   });
-
-
-//   app.get(`/api/feature`, async (req, res) => {
-//     console.log(featuredNursery)
-//   const featuredNursery = await Feature.find({},
-//     {_id:0, name:1})
-// return res.status(200).send(featuredNursery);
-// });
-
-  //search by name attempt one
-  // app.get(`/api/info/:name`, async (req, res) => {
-  //   const nameResult = await Info.find({},
-  //     {name:1}
-  //   );
-  //   return res.status(200).send(nameResult);
-  // });
 
 
 //update nursery json
@@ -95,14 +82,7 @@ app.post(`/api/contact`, (req, res) => {
     });
   });
 
-  // get featured nurseries by id
-// app.get(`/api/info/:id`, async (req, res) => {
-//   console.log(req.params)
-//     const { id } = req.params;
-//     const featuredId = await Info.find(id);
-//   return res.status(200).send( featuredId );
-// });
-
+//get nursery by id
 app.get(`/api/info/:id`, async (req, res) => {
       let id = req.params.id;
       console.log('Id: ' + id);
@@ -111,5 +91,14 @@ app.get(`/api/info/:id`, async (req, res) => {
 });
 });
 
-};
 
+
+// add new user
+app.post(`/api/users`, async (req, res) => {
+  const user = await SignUp.create(req.body);
+  return res.status(201).send({
+    error: false,
+    user,
+  });
+});
+}

@@ -17,11 +17,11 @@ function Navbar(props) {
     <>
       <IconContext.Provider value={{ color: '#8B008B' }}>
         <div className='navbar'>
-        <VscIcons.VscThreeBars className='bars'size="2rem" onClick={showSidebar} />
-          <Link to={{pathname: '#', state: {from: props.location}}} className='menu-bars' />   
-          <Link to='/'>
+          <VscIcons.VscThreeBars className='bars'size="2rem" onClick={showSidebar} />
+            <Link to={{pathname: '#', state: {from: props.location}}} className='menu-bars' />   
+            <Link to='/'>
           <AiIcons.AiFillHome size="2rem" />
-          </Link>
+            </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

@@ -7,6 +7,7 @@ ul {
   list-style-type: square;
   padding-top: 1.5rem;
 }
+
 li{
   margin-top: 10px;
 }
@@ -14,12 +15,13 @@ li{
 li:first-child {
   margin-top:0;
 }
-.socialBox {
-    background: #eee;
-    column-count: 3;
-    column-rule: 1px solid black;
 
+.socialBox {
+  background: #eee;
+  column-count: 3;
+  column-rule: 1px solid black;
   }
+
   a.social {
     margin: 0 1rem;
     transition: transform 250ms;
@@ -57,8 +59,7 @@ li:first-child {
   bottom: 0;
   width: 100%;
   height: 60px;
-  padding-top: 8rem;
- 
+  padding-top: 8rem; 
 }
 
 .links {
