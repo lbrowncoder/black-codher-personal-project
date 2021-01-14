@@ -6,7 +6,7 @@ import './CustomerSignUp.css';
 
 const Login = () => {
 
-    const handleSignUp = (values, {setSubmitting}) => {
+    const handleSignUp = (values, {setSubmitting, resetForm}) => {
         console.log("values", values)
       axios.post('/api/users', values)
         // axios({
@@ -18,7 +18,9 @@ const Login = () => {
           .then(response => {
             console.log("response", response.data);
             setSubmitting(false);
+            resetForm()
          })
+         window.location = '/profile'
         }
 
     return (

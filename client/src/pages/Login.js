@@ -27,11 +27,9 @@ if (details.email === adminUser.email && details.password === adminUser.password
 }
 }
 
-
 const logout = () => {
     setUser({name:"", email:""})
 }
-
     return (
         <div className="login">
             {(user.email !="") ? (

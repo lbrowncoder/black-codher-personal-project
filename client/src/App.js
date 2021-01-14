@@ -13,9 +13,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import SearchDetail from './pages/SearchDetail';
 import SubmittedForm from './pages/SubmittedForm';
-import SearchDetails from './pages/SearchDetail';
 import ScrollToTop from './ScrollToTop';
 import Login from './pages/Login';
+import Profile from './pages/Profile';
 import CustomerSignUp from './pages/CustomerSignUp';
 
 const App = () => {
@@ -131,11 +131,19 @@ const App = () => {
             <Footer />
             </React.Fragment> 
              )}/>
-              <Route exact path="/signin" render={() => (
+            <Route exact path="/signin" render={() => (
             <React.Fragment>
             <ScrollToTop />
             <Navbar />
             <CustomerSignUp/>
+            <Footer />
+            </React.Fragment> 
+             )}/>
+            <Route exact path="/profile" render={() => (
+            <React.Fragment>
+            <ScrollToTop />
+            <Navbar />
+            <Profile />
             <Footer />
             </React.Fragment> 
              )}/>

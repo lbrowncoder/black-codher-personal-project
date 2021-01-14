@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 const SignUp = require('../routes');
-// import SignUp from '../routes.js';
+
 
 
 
@@ -54,13 +54,28 @@ module.exports = (app) => {
   });
 
 //post contact
-app.post(`/api/contact`, (req, res) => {
-  let contact = new Contact(req.body);
+// app.post(`/api/contact`, (req, res) => {
+//   let contact = new Contact(req.body);
+//   contact.save()
+//   .then (item => {
+//     res.send("Recieved")
+//   });
+// });
+
+app.post(`/api/contact`, async (req, res) => {
+  const contact = await Contact.create(req.body);
   contact.save()
-  .then (item => {
-    res.send("Recieved")
-  });
+  .then(item => {
+    res.status(201).send({
+      error: false,
+      user,
+    });
+  })
+  .catch(err => {
+    res.status(400).send("please try again");
+  }); 
 });
+
  
 //update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
@@ -106,17 +121,25 @@ app.post(`/api/users`, async (req, res) => {
 });
 
 //get users
-app.get(`/api/users`, async (req, res) => {
-  const allUsers = await AllUsers.find();
-  console.log(allUsers)
-return res.status(200).send(allUsers);
-});
+
+
+// app.get("/api/users", async (req, res) => {
+//   const allUsers = await user.find({},
+//     {_id:0, name:1, email:1, password:0})
+//   return res.status(200).send(allUsers);
+// });
+
+// app.get(`/api/users`, async (req, res) => {
+//   const allUsers = await AllUsers.find();
+//   console.log(allUsers)
+// return res.status(200).send(allUsers);
+// });
 
 //find users by email
-app.get(`/api/users/:email`, async (req, res) => {
-  let email = req.params.email;
-  const getUser = await GetUser.findById(email, function(err, todo) {
-    res.json(todo);
-});
-});
+// app.get(`/api/users/:email`, async (req, res) => {
+//   let email = req.params.email;
+//   const getUser = await GetUser.findById(email, function(err, todo) {
+//     res.json(todo);
+// });
+// });
 }
