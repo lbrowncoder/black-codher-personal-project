@@ -134,6 +134,7 @@ const SignUpForm = () => {
             <Button className="button" onClick={handleSignUpSubmit} variant="outline-primary"> Submit </Button>{' '}
         </>
     )}
+    
   
   
     export default SignUpForm

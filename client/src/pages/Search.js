@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Link, useParams, useMatch} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../App.css';
 import {Button} from "react-bootstrap";
 

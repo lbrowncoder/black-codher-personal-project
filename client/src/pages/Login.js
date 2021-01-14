@@ -6,8 +6,7 @@ const Login = () => {
 
 const adminUser = {
     email: "admin@test.com",
-    password: "admin"
-    
+    password: "admin" 
 }
 
 const [user, setUser] = useState ({name: "", email: ""});
@@ -16,7 +15,7 @@ const [error, setError] = useState ("");
 const Login = (details) => {
     console.log(details);
 
-if (details.email == adminUser.email && details.password == adminUser.password) {
+if (details.email === adminUser.email && details.password === adminUser.password) {
     console.log("Logged In");
     setUser({
         name: details.name,

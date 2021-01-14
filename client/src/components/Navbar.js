@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link, Redirect } from 'react-router-dom';
 import { Sidebar } from './Sidebar';

@@ -85,20 +85,38 @@ app.post(`/api/contact`, (req, res) => {
 //get nursery by id
 app.get(`/api/info/:id`, async (req, res) => {
       let id = req.params.id;
-      console.log('Id: ' + id);
       const info = await Info.findById(id, function(err, todo) {
         res.json(todo);
 });
 });
 
-
-
 // add new user
 app.post(`/api/users`, async (req, res) => {
   const user = await SignUp.create(req.body);
-  return res.status(201).send({
-    error: false,
-    user,
-  });
+  user.save()
+  .then(item => {
+    res.status(201).send({
+      error: false,
+      user,
+    });
+  })
+  .catch(err => {
+    res.status(400).send("Unable to submit review");
+  }); 
+});
+
+//get users
+app.get(`/api/users`, async (req, res) => {
+  const allUsers = await AllUsers.find();
+  console.log(allUsers)
+return res.status(200).send(allUsers);
+});
+
+//find users by email
+app.get(`/api/users/:email`, async (req, res) => {
+  let email = req.params.email;
+  const getUser = await GetUser.findById(email, function(err, todo) {
+    res.json(todo);
+});
 });
 }

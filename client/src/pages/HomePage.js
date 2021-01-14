@@ -57,7 +57,7 @@ const fetchData = () => {
       <>
       <div>
       <h1 className="mainTitle">Welcome to Eggshells</h1>
-      <img src={EggshellsHomepage} alt="eggshells" /> 
+      {/* <img src={EggshellsHomepage} alt="eggshells" />  */}
       <h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
       <h3 className="thirdTitle">The Newest UK Nursery review website</h3>
       <div><NurserySearch nurseryDetail={props.nurseryDetail} setNurseryDetail={props.setNurseryDetail}/></div>

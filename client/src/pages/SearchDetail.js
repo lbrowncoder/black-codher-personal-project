@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from "react";
-import {Link, useLocation, matchPath, withRouter, BrowserRouter} from 'react-router-dom'
+import React, { useEffect } from "react";
+import {useLocation} from 'react-router-dom'
 import NurserySearch from "./Search";
 import {Card} from "react-bootstrap";
 import * as FaIcons from 'react-icons/fa';
 import * as HiIcons from 'react-icons/hi';
 import * as BiIcons from 'react-icons/bi';
 import './SearchDetail.css';
-import Slider from "react-slick";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import Navbar from '../components/Navbar';
 
 const SearchDetails = (props) => {
   
@@ -20,25 +17,25 @@ const SearchDetails = (props) => {
   // let fees = [nurseries.fees]
 
   useEffect(() => {
-    const { history, match } = props;
+    const { history } = props;
     // const {nurseries} = location.state
   },[location])
 
-  const NextArrow = ({ onClick }) => {
-    return (
-      <div className="arrow next" onClick={onClick}>
-        <FaArrowRight />
-      </div>
-    );
-  };
+  // const NextArrow = ({ onClick }) => {
+  //   return (
+  //     <div className="arrow next" onClick={onClick}>
+  //       <FaArrowRight />
+  //     </div>
+  //   );
+  // };
 
-  const PrevArrow = ({ onClick }) => {
-    return (
-      <div className="arrow prev" onClick={onClick}>
-        <FaArrowLeft />
-      </div>
-    );
-  };
+  // const PrevArrow = ({ onClick }) => {
+  //   return (
+  //     <div className="arrow prev" onClick={onClick}>
+  //       <FaArrowLeft />
+  //     </div>
+  //   );
+  // };
 
   return (
   <>

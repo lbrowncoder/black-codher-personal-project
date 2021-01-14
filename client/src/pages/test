@@ -1,0 +1,96 @@
+import React, {useState} from 'react';
+import {Formik, Form, Field} from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
+import './CustomerSignUp.css';
+
+const Login = () => {
+    let [name, setName] = useState('');
+    let [email, setEmail] = useState('');
+    let [password, setPassword] = useState('');
+    let [confirmPassword, setConfirmPassword] = useState('');
+
+    const initialValues = {
+        name: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    }
+
+    const validationSchema = Yup.object().shape({
+        name: Yup.string()
+        .min(2, 'must be two charaters or more')
+        .required('Required'),
+        email: Yup.string()
+        .email('Email is invalid')
+        .required('Email is Required'),
+        password: Yup.string()
+        .min(6, 'Password must be atleast 6 charaters or more')
+        .required('Pssword is Required'),
+        confirmPassword: Yup.string()
+        .oneOf([Yup.ref('password'), null], 'Password Must Match')
+        .required('Pssword is Required'),
+    })
+
+    const onSubmit = (values, setSubmitting, resetForm) => {
+        axios.post(`/api/users`, values)
+        .then(response => console.log(response))
+        .catch(error => console.log(error));
+        resetForm();
+        setSubmitting(false);
+            {props => {
+              const {
+                  values,
+                  touched,
+                  errors,
+                  isSubmitting,
+                  handleChange,
+                  handleSubmit,
+                  handleBlur
+              }  = props;
+    }
+        
+    // {(values, {setSubmitting, resetForm}) => {
+    //     axios.post(`/api/users`, values)
+    //     .then(response => console.log(response))
+    //     .catch(error => console.log(error));
+    //     resetForm();
+    //     setSubmitting(false);
+    // }}
+
+    return (
+        <Formik  
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={onSubmit}
+        >
+  
+            {formik => {
+                return <Form>
+             <label htmlFor="name">name</label>
+                         <input type="text" values={setName} name="name" onChange={handleChange} onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
+                             {errors.name && touched.name && (
+                                 <div className="input-feedback">{errors.name}</div>)}
+
+                     <label htmlFor="email">Email</label>
+                         <input type="text" values={setEmail} name="email" onChange={handleChange} onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
+                             {errors.email && touched.email && (
+                                 <div className="input-feedback">{errors.email}</div>)}
+
+                     <label htmlFor="password">Password</label>
+                          <input type="password" values={setPassword} name="password" onChange={handleChange} onBlur={handleBlur}  className={errors.password && touched.password && "error" } />
+                             {errors.password && touched.password && (
+                                 <div className="input-feedback">{errors.password}</div>)}
+
+                     <label htmlFor="confirmPassword">confirmPassword</label>
+                         <input type="password" values={setConfirmPassword} name="confirmPassword" onChange={handleChange} onBlur={handleBlur}  className={errors.confirmPassword && touched.confirmPassword && "error" } />
+                            {errors.confirmPassword && touched.confirmPassword && (
+                                 <div className="input-feedback">{errors.name}</div>)}
+                    <button type='submit' disabled={!formik.isValid}>Submit</button>
+                </Form>
+            }
+        }
+        </Formik>
+    )}
+    
+    export default Login
