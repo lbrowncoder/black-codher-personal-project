@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 const SignUp = require('../routes');
-
+const Contact = require('../routes/contactRoutes');
+// const bcrypt = require('bcrypt');
+// import SignUp from '../routes.js';
 
 
 
@@ -16,6 +18,7 @@ const ReviewSchema = new Schema({
 
 //model
 const Review = mongoose.model('Review', ReviewSchema)
+
 
 
 module.exports = (app) => {
@@ -62,19 +65,25 @@ module.exports = (app) => {
 //   });
 // });
 
-app.post(`/api/contact`, async (req, res) => {
+app.post(`/api/contacts`, async (req, res) => {
   const contact = await Contact.create(req.body);
   contact.save()
   .then(item => {
     res.status(201).send({
       error: false,
-      user,
+      contact,
     });
   })
   .catch(err => {
     res.status(400).send("please try again");
   }); 
 });
+
+app.get(`/api/contact`, async (req, res) => {
+  const allContacts = await Contact.find();
+return res.status(200).send(allContacts);
+});
+
 
  
 //update id of nursery json file
@@ -121,25 +130,25 @@ app.post(`/api/users`, async (req, res) => {
 });
 
 //get users
+        app.get(`/api/users`, async (req, res) => {
+            const allUsers = await SignUp.find();
+            console.log(allUsers)
+          return res.status(200).send(allUsers);
+          });
+          
+  // app.post('/users/login', async (req, res) => {
+  //   const user = SignUp.find(user=> SignUp.name = req.body.name)
+  //   if (user == null) {
+  //     return res.status(400).send('Cant not find user')
+  //   } 
+  //   try {
+  //     if (await bcrypt.compare(req.body.password, user.password)) {
+  //       res.send('success')
+  //     } else {
+  //       res.send('Details do not match')}
+  //      } catch {
+  //     res.status(500).send
+  //   }
+  // })  
 
-
-// app.get("/api/users", async (req, res) => {
-//   const allUsers = await user.find({},
-//     {_id:0, name:1, email:1, password:0})
-//   return res.status(200).send(allUsers);
-// });
-
-// app.get(`/api/users`, async (req, res) => {
-//   const allUsers = await AllUsers.find();
-//   console.log(allUsers)
-// return res.status(200).send(allUsers);
-// });
-
-//find users by email
-// app.get(`/api/users/:email`, async (req, res) => {
-//   let email = req.params.email;
-//   const getUser = await GetUser.findById(email, function(err, todo) {
-//     res.json(todo);
-// });
-// });
 }

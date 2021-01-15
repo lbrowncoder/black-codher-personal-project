@@ -23,6 +23,8 @@ const Login = () => {
          window.location = '/profile'
         }
 
+
+
     return (
         <Formik
             initialValues={{
@@ -95,55 +97,5 @@ const Login = () => {
     )}
 
 export default Login
-
-
-// const handleSubmit = (values, event) => {
-//     event.preventDefault();
-
-//   axios.post(`/api/users`, values)
-//   .then(response => console.log(response))
-//   .catch(error => console.log(error))
-// }
-
-//     setName = (event)=> {
-//         setName ({
-//             name:event.target.value
-//         })
-//     }
-//     setEmail = (event)=> {
-//         setEmail ({
-//             name:event.target.value
-//         })
-//     }
-
-//     setPassword = (event)=> {
-//         setPassword ({
-//             name:event.target.value
-//         })
-//     }
-//     setConfirmPassword = (event)=> {
-//         setConfirmPassword ({
-//             name:event.target.value
-//         })
-//     }
-
-            {/* {formik => (
-                <div>
-                    <h1>Sign Up</h1>
-                    {console.log(formik.values)}
-                    <Form className="submit"onSubmit={handleSignUp}>
-                        <Field label="Name" name="name" type="name"/>
-                        <Field label="email" name="email" type="email"/>
-                        <Field label="Password" name="password" type="password"/>
-                        <Field label="confirm Password" name="confirmPassword" type="password"/>
-                        <button  className="btn btn-dark mt-3" type="submit">Sign Up</button>
-                        <button className="btn btn-danger mt-3 ml-3" type="reset">Reset</button>
-                    </Form>
-                </div>
-            )}
-        </Formik>
-    )
-} */}
-
 
 
