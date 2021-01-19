@@ -3,23 +3,28 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const InfoSchema = new Schema({
-  name: {type:String, unique: true},
+  name: String,
+  email: String,
+  contact: String,
   address: String,
   postcode: String,
-  ofsteadRating: String,
+  ofstedRating: String,
   openingHours: String,
   openingTimes: String,
+  password: String,
   writeUp: String,
-  fees: [{
-    fullTime: Number,
-    fullDay: Number,
-    halfday: Number,
-  }],
-  firstAidTrained:{
-    type: Boolean,
-    default: false,
-  } 
-  
+  website: String,
+  fullTime: String,
+  fullDay: String,
+  halfDay: String,
+  firstAidTrained:false, 
+  ofsted: String,
+  firstAid: String,
+  CCTV: String,
+  bankHoilday: String,
+  fifteenHours: String,
+  thirtyHours: String,
+  terms: false,
  
 });
 

@@ -1,6 +1,6 @@
 import React, {useState } from 'react';
 import LoginForm from './LoginForm';
-import './Login.css'
+import '../App.css'
 
 const Login = () => {
 
@@ -16,7 +16,7 @@ const Login = (details) => {
 
 if (details.email === adminUser.email && details.password === adminUser.password) {
     console.log("Logged In");
-    setUser({
+        setUser({
         name: details.name,
         email: details.email
     });

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Login.css';
+import '../App.css';
 import { NavLink} from 'react-router-dom';
 
 const LoginForm = ({ Login, error}) => {
@@ -7,8 +7,7 @@ const LoginForm = ({ Login, error}) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        Login(details);
-        
+        Login(details);  
     }
 
     return (
@@ -28,8 +27,8 @@ const LoginForm = ({ Login, error}) => {
               <label htmlFor="password">password:</label>
               <input type="password" password="password" id="password" onChange={e => setDetails({...details, password:e.target.value})} value={details.password} />
               </div>
-              <input type="Submit" value="login" />
-              <p>Dont have an account?<NavLink to='/signin'> sign up </NavLink> here</p>
+              <input className='signSubmit' type="Submit" value="login" />
+              <p>Dont have an account?<NavLink to='/signup'> Sign up </NavLink> here</p>
           </div>
       </form>
     )

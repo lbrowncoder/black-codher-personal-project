@@ -1,0 +1,627 @@
+[{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7ad"
+  },
+  "nurseryId": "1001",
+  "name": "Bluebells Day Nursery",
+  "address": "25 Bleakhouse Road Oldbury West Midlands",
+  "postcode": "B68 9DR",
+  "profilePicture": "/images/bluebells/15059594_940x430.jpg",
+  "pictures": {
+    "imageOne": "/images/bluebells/27067693_1543567192397263_4715130127513328012_n.jpg",
+    "imageTwo": "/images/bluebells/15059609_220x148.jpg",
+    "imageThree": "/images/bluebells/15059980_220x159.jpg",
+    "imageFour": "/images/bluebells/27332580_1544600135627302_3677554322087464083_n.jpg",
+    "imageFive": "/images/bluebells/27459023_1544600162293966_4298759355821464066_n.jpg",
+    "imageSix": "/images/bluebells/27459257_1544600208960628_3031982553652933052_n.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "http://reports.ofsted.gov.uk/provider/16/403707",
+  "website": "http://www.bluebells-daynursery.co.uk",
+  "openingHours": "7.30am-6pm",
+  "openingTimes": "All year- except 2 weeks at Christmas",
+  "isOpenBankHolidays": false,
+  "phone": "0121 421 6497",
+  "email": "bluebellsdaynursery.co.uk",
+  "writeUp": "A very warm welcome to Bluebells, where we provide a quality caring and learning environment for all children in our care.We provide child care for children from the ages of 8 weeks to 5 years of age, on a variety of full or part-time placements.The nursery is open from 7.30am to 6.00 pm Monday to Friday all year round, apart from Bank Holidays and Christmas week. Bluebells Nursery's staff members are highly trained and experienced and are drawn from a wide cross-section of child-care backgrounds to provide a balanced curriculum for children in our care. To gain a better insight and a feel of what Bluebells has to offer you and your child, we would invite you to view the nursery at your convenience. We do offer an open door policy. A member of the management team will always be available to show you around  and answer any questions that you may have.",
+  "fullTime": "£205",
+  "fullDay": "£49",
+  "halfDay": "£35",
+  "isFirstAidTrained": true,
+  "ageRange": "8 weeks to 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": 46,
+  "staffQualification": {
+    "Number of staff": "12",
+    "Qualification levels": {
+      "level 2-6": "12"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7ae"
+  },
+  "nurseryId": "1002",
+  "name": "Wonderland Day Nursery",
+  "address": "57 Holyhead Road, Wednesbury,West Midlands",
+  "postcode": "WS10 7DF",
+  "profilePicture": "/images/wonderland/room07.jpg",
+  "pictures": {
+    "imageOne": "/images/wonderland/bedroom.jpg",
+    "imageTwo": "/images/wonderland/IMG_6657.jpg",
+    "imageThree": "/images/wonderland/room02.jpg",
+    "imageFour": "/images/wonderland/room04.jpg",
+    "imageFive": "/images/wonderland/surveilance.jpg",
+    "imageSix": "/images/wonderland/room06.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink" : "https://reports.ofsted.gov.uk/provider/16/EY359697",
+  "website": "https://www.wonderlanddaynursery.co.uk",
+  "openingHours": "7:30am to 6pm",
+  "openingTimes": "All year-except one week over Christmas",
+  "isOpenBankHolidays": false,
+  "phone": "0121 556 6222",
+  "email": "- info@wonderlanddaynursery.co.uk",
+  "writeUp": "At Wonderland Day Nursery we pride ourselves on the highest standard of childcare, education, development and safety for all children within a pleasant, stimulating environment that will promote effective learning and meet every child’s individual needs in respect of culture, religion and development.",
+  "fullTime": "£230",
+  "fullDay": "£51",
+  "halfDay": "£31",
+  "isFirstAidTrained": true,
+  "ageRange": "6 week to 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "100",
+  "staffQualification": {
+    "Number of staff": "24",
+    "Qualification levels": {
+      "level 2-6": "20"
+    }
+  },
+  "cctv": true,
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY359697"
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7af"
+  },
+  "nurseryId": "1003",
+  "name": "Montessori Explorers Nursery",
+  "address": "327 Birmingham Road, Sutton Coldfield",
+  "postcode": "B72 1DL ",
+  "profilePicture": "/images/montessoriExplores/MOntessoriroom.jpg",
+  "pictures": {
+    "imageOne": "/images/montessoriExplores/23s.jpg",
+    "imageTwo": "/images/montessoriExplores/grow.jpg",
+    "imageThree": "/images/montessoriExplores/learn.jpg",
+    "imageFour": "/images/montessoriExplores/IMG_4641.jpg",
+    "imageFive": "/images/montessoriExplores/MontessoriKidsOutsideplayarea.jpg",
+    "imageSix": "/images/montessoriExplores/play.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY501530",
+  "website": "www.montessoriexplorers.com",
+  "openingHours": "7:00- 1800",
+  "openingTimes": "51 weeks except 1 week at Christmas",
+  "isOpenBankHolidays": false,
+  "phone": "0121 350 5550 ",
+  "email": "manager@montessoriexplorers.com",
+  "writeUp": "Montessori Explorers Nursery looks after babies from 6 weeks old to children of up to 5 years old. Our approach is authentic and uses a blend of creative and practical learning experiences to develop healthy, independent and confident children, everything from what we do to what we eat! To grow our children using natural resources to build their creativity,independence and confidence. Our nursery is equipped with natural play, spending a lot of time being creative and multiple sessions in our lovely outdoor garden and nature trail.",
+  "fullTime": "£223.25",
+  "fullDay": "£47",
+  "halfDay": "£35",
+  "isFirstAidTrained": true,
+  "ageRange": "6 weeks to 5 years ",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "40",
+  "staffQualification": {
+    "Number of staff": "4",
+    "Qualification levels": {}
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b0"
+  },
+  "nurseryId": "1004",
+  "name": "Shooting Stars Nurseries",
+  "address": "Barbara Hart House, 132 Monyhull Hall Road,Birmingham",
+  "postcode": "B30 3QJ",
+  "profilePicture": "/images/shootingStars/download.jpg",
+  "pictures": {
+    "imageOne": "/images/shootingStars/images.jpg",
+    "imageTwo": "/images/shootingStars/class.jpg",
+    "imageThree": "/images/shootingStars/122365110_141403471006480_5208311182120120984_o.jpg",
+    "imageFour": "/images/shootingStars/121494221_139026477910846_7261658894649347896_o.jpg",
+    "imageFive": "/images/shootingStars/118860934_126017675878393_7392544842519083124_o.jpg",
+    "imageSix": "/images/shootingStars/121012501_137153071431520_3974818251612886765_o.jpg"
+  },
+  "ofstedLink": "N/A",
+  "ofstedReport":"https://reports.ofsted.gov.uk/provider/16/2509660",
+  "website": "https://www.myshootingstars.com/our-nurseries/hinckley-nursery/",
+  "openingHours": "7.30am - 6.00pm",
+  "openingTimes": "52 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 4598259",
+  "email": "kingsnorton@myshootingstars.com",
+  "writeUp": "Shooting Stars Nursery Hinckley has an established staff team caring for children aged from 3 months to 5 years. The nursery has bright spacious rooms in which the children can learn and develop. Each room has qualified and dedicated staff, who specialise in each age group to ensure that each child reaches their full potential. We encourage and support all staff to advance their professional qualifications to the fullest extent. All meals are produced by our cook onsite and our menus are reviewed regularly to provide a healthy and balanced diet that the children enjoy.",
+  "fullTime": "£59.25",
+  "fullDay": "£256",
+  "halfDay": "£34.50",
+  "isFirstAidTrained": true,
+  "ageRange": "3 months to 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "93",
+  "staffQualification": {
+    "Number of staff": "17",
+    "Qualification levels": {
+      "level 2-6": "14"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b1"
+  },
+  "nurseryId": "1005",
+  "name": "Smarty Pants @ Lightwoods House",
+  "address": " Adkins Lane, Bearwood, Smethwick",
+  "postcode": "B67 5DP",
+  "profilePicture": "/images/5Star/118791386_946300545780851_4026259334390032169_o.jpg",
+  "pictures": {
+    "imageOne": "/images/smartyPants/2-2019-04-15-100320.jpg",
+    "imageTwo": "/images/smartyPants/35-2019-04-15-100742.jpg",
+    "imageThree": "/images/smartyPants/46-2019-04-15-100938.jpg",
+    "imageFour": "/images/smartyPants/1-2019-04-15-100315.jpg",
+    "imageFive": "/images/smartyPants/61.jpg",
+    "imageSix": "/images/smartyPants/42-2019-04-15-100911.jpg"
+  },
+  "ofstedRating": "N/A",
+  "ofstedLink":"https://reports.ofsted.gov.uk/provider/16/EY550467",
+  "website": "http://www.smartypantsnurseries.co.uk/smarty-pants-lightwoods-house",
+  "openingHours": "7:30am-6:00pm",
+  "openingTimes": "51 weeks a year except 1 week at Christmas",
+  "isOpenBankHolidays": false,
+  "phone": "0121 439 5885",
+  "email": "smartypantsatlightwoodshouse@outlook.com",
+  "writeUp": "To provide the best possible stimulating care in a safe environment, to enable your child to express their own imaginations to become confident, young people.",
+  "fullTime": "£214",
+  "fullDay": "£53.50",
+  "halfDay": "£28",
+  "isFirstAidTrained": true,
+  "ageRange": "6 weeks - 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": 35,
+  "staffQualification": {
+    "Number of staff": "9",
+    "Qualification levels": {
+      "level 2-6": "8"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b2"
+  },
+  "nurseryId": "1006",
+  "name": "5 Star Day Nursery ",
+  "address": "69 Moat Road, Elder Lodge, Barnford Hill Park, Oldbury, Birmingham",
+  "postcode": "B68 8ED",
+  "profilePicture": "/images/5Star/Oldbury-nursery-gallery-10-400x284.jpg",
+  "pictures": {
+    "imageOne": "/images/5Star/Oldbury-nursery-gallery-17-400x284.jpg",
+    "imageTwo": "/images/5Star/118769189_946300479114191_4375364732844366332_o.jpg",
+    "imageThree": "/images/5Star/118771061_946300635780842_1157970335430404984_o.jpg",
+    "imageFour": "/images/5Star/94188052_851577508586489_6611809415811039232_n.jpg",
+    "imageFive": "/images/5Star/118785594_946300702447502_1637824356479618519_o.jpg",
+    "imageSix": "/images/5Star/Oldbury-nursery-gallery-8-400x284.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY482368",
+  "website": "www.5stardaynursery.co.uk",
+  "openingHours": "8:00am - 6:00pm ",
+  "openingTimes": "52 weeks",
+  "isOpenBankHolidays": false,
+  "phone": " 0121 448 0830",
+  "email": "oldbury@5stardaynursery.co.uk ",
+  "writeUp": "At 5 Star Day Nursery we provide a high quality integrated play and learning environment for your child. We understand that children need to feel a sense of security and belonging when they are away from their parents. We make certain that all children feel happy, secure and safe within their environment. Children are encouraged to develop selfconfidence, creativity, independence and individuality within a secure, healthy and stimulating environment. Fully trained staff have a real bond with the children in their care. They will support every child with a learning experience that is planned from the child’s starting point with activities that are challenging yet achievable. We acknowledge and value parents/carers as primary educators and we will work alongside you and your family for the benefit of your child",
+  "fullTime": "£210",
+  "fullDay": "£47",
+  "halfDay": "£29.50",
+  "isFirstAidTrained": true,
+  "ageRange": " 6 weeks to 5 years.",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": 55,
+  "staffQualification": {
+    "Number of staff": "14",
+    "Qualification levels": {
+      "level 2-6": "14"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b3"
+  },
+  "nurseryId": "1007",
+  "name": "Bloxcidge House",
+  "address": "53 Bloxcidge Street, OLDBURY, West Midlands",
+  "postcode": "B68 8QH",
+  "profilePicture": "/images/bloxcidgeHouse/1000723_649465328409621_2093377699_n.jpg",
+  "pictures": {
+    "imageOne": "/images/bloxcidgeHouse/8641_661615663861254_1034080696_n.jpg",
+    "imageTwo": "/images/bloxcidgeHouse/8315_661615903861230_1007659117_n.jpg",
+    "imageThree": "/images/bloxcidgeHouse/1424407_661615437194610_1632131283_n.jpg",
+    "imageFour": "/images/bloxcidgeHouse/1450845_661618700527617_287578613_n.jpg",
+    "imageFive": "/images/bloxcidgeHouse/1459982_661615457194608_422114616_n.jpg",
+    "imageSix": "/images/bloxcidgeHouse/1000723_649465328409621_2093377699_n.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/255133",
+  "website": "www.bloxcidgedaynursery.com",
+  "openingHours": "7.15am-6.15am",
+  "openingTimes": "52 weeks a year",
+  "isOpenBankHolidays": false,
+  "phone": "0121 544 7335",
+  "email": "bloxcidge@yahoo.com",
+  "writeUp": "The Nursery was established in 1990 as a small family business, set up originally to provide care for the owner's 3 children. We aim to provide the very best in quality childcare, in a professional but friendly and relaxing atmosphere. Our outdoor garden area was recently upgraded to include a climbing frame, mud kitchen, construction area and planting areas together with sand and water play.",
+  "fullTime": "£210",
+  "fullDay": "£49",
+  "halfDay": "£31",
+  "isFirstAidTrained": false,
+  "ageRange": "3 months-8 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "52",
+  "staffQualification": {
+    "Number of staff": "14",
+    "Qualification levels": {
+      "level 2-6": "13"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b4"
+  },
+  "nurseryId": "1008",
+  "name": "The Nest Nursery",
+  "address": "300 Gillott Rd",
+  "postcode": "B16 0RR",
+  "profilePicture": "/images/theNest/120222014_1010324546074435_4543609015849553689_n.jpg",
+  "pictures": {
+    "imageOne": "/images/theNest/119546162_1001219623651594_2442614807646159092_n.jpg",
+    "imageTwo": "/images/theNest/122104012_2413475705622374_8436562818738604756_n.jpg",
+    "imageThree": "/images/theNest/123095392_2422202761416335_3249051828315445579_o.jpg",
+    "imageFour": "/images/theNest/121614924_2409257222710889_7965865283890446635_n.jpg",
+    "imageFive": "/images/theNest/125133298_1049672712139618_9068877692535236694_o.jpg",
+    "imageSix": "/images/theNest/120218475_1010324509407772_31483968663668267_n.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY497308",
+  "website": "https://www.thenestnursery.co.uk/lime-tree",
+  "openingHours": "7.00am-6.15pm",
+  "openingTimes": "52 weeksa year",
+  "isOpenBankHolidays": false,
+  "phone": "0121 455 6026",
+  "email": " enquirylimetree@thenestnursery.co.uk",
+  "writeUp": "We work hard to create The Nest Nursery Lime Tree to be an extension of home for each child. Everything about our nursery portrays calm and tranquillity. From the neutral tones which ensure children are not overstimulated to the calming space to focus on the task or activity at hand. Children need to feel relaxed and at ease in their environment and not bombarded by over stimulation of bright colours, harsh lighting and plastic resources.  ",
+  "fullTime": "£265.08",
+  "fullDay": "£58.06",
+  "halfDay": "£36.85",
+  "isFirstAidTrained": true,
+  "ageRange": "6 weeks-5years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "53",
+  "staffQualification": {
+    "Number of staff": "19",
+    "Qualification levels": {
+      "level 2-6": "12"
+    }
+  },
+  "cctv": false
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b5"
+  },
+  "nurseryId": "1009",
+  "name": "The Organic Nursery",
+  "address": "2 Blossomfield Rd, Solihull",
+  "postcode": "B91 1LD",
+  "profilePicture": "/images/organicNursery/72571056_2363435993762537_7927827076508286976_o.jpg",
+  "pictures": {
+    "imageOne": "/images/organicNursery/3T0A9977.jpg",
+    "imageTwo": "/images/organicNursery/109338470_2944812355624895_6315372840763400536_n.jpg",
+    "imageThree": "/images/organicNursery/CP1C9007.jpg",
+    "imageFour": "/images/organicNursery/3T0A0253.jpg",
+    "imageFive": "/images/organicNursery/CP1C9008.jpg",
+    "imageSix": "/images/organicNursery/CP1C9009.jpg"
+  },
+  "ofstedRating": "N/A",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY563373",
+  "website": "https://theorganicnursery.co.uk",
+  "openingHours": "7.30 am – 6.00pm",
+  "openingTimes": "51 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 709 5802",
+  "email": "info@theorgancinursery.co.uk",
+  "writeUp": "To provide a vibrant, engaging, fun, safe, secure environment that encourages curiosity, exploration and investigation through play; supporting early learning and development. To nurture every child as an individual, reading and responding to their needs, putting them at the centre of curriculum planning, giving them the best possible start to life. Respect each child’s independence, their individuality, tune into their way of learning, providing rich experiences to suit their needs.",
+  "fullTime": "£260",
+  "fullDay": "£52",
+  "halfDay": "£38",
+  "isFirstAidTrained": true,
+  "ageRange": "3 months 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "47",
+  "staffQualification": {
+    "Number of staff": "10",
+    "Qualification levels": {
+      "level 2-6": "8"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b6"
+  },
+  "nurseryId": "1010",
+  "name": "Lilliput Lodge",
+  "address": "Thimblemill Road, Smethwick, West Midlands",
+  "postcode": "B67 6NR",
+  "profilePicture": "/images/lilliput/92522582_104400524564183_4732800063200296960_o.jpg",
+  "pictures": {
+    "imageOne": "/images/lilliput/download.jpg",
+    "imageTwo": "/images/lilliput/download1.jpg",
+    "imageThree": "/images/lilliput/download2.jpg",
+    "imageFour": "/images/lilliput/download3.jpg",
+    "imageFive": "/images/lilliput/download4.jpg",
+    "imageSix": "/images/lilliput/"
+  },
+  "ofstedRating":"Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY227003",
+  "website": "http://www.lilliputlodgenursery.co.uk",
+  "openingHours": "7.30a.m. – 6.00p.m",
+  "openingTimes": "50 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 420 4080",
+  "email": "info@lilliputlodgenursery.co.uk",
+  "writeUp": "It is our primary aim at Lilliput Lodge to nurture children in a happy, safe and stimulating environment, growing together and learning from each other. With our 'child centred' approach, we as parents ourselves, feel the importance of giving children the freedom of expression and choice to grow and develop at their own pace, discovering their individual interests and independence.",
+  "fullTime": "£245",
+  "fullDay": "£60",
+  "halfDay": "£40",
+  "isFirstAidTrained": true,
+  "ageRange": "3 months-5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": 50,
+  "staffQualification": {
+    "Number of staff": "19",
+    "Qualification levels": {
+      "level 2-6": "13"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b7"
+  },
+  "nurseryId": "1011",
+  "name": "Little Scallywags day nursery",
+  "address": "179 Alvechurch Road West Heath Birmingham",
+  "postcode": "B31 3PN",
+  "profilePicture": "/images/littleScallyWags/IMG_8285.jpg",
+  "pictures": {
+    "imageOne": "/images/littleScallyWags/IMG_8240.jpg",
+    "imageTwo": "/images/littleScallyWags/IMG_8234.jpg",
+    "imageThree": "/images/littleScallyWags/IMG_8275.jpg",
+    "imageFour": "/images/littleScallyWags/IMG_8249.jpg",
+    "imageFive": "/images/littleScallyWags/IMG_8209.jpg",
+    "imageSix": "/images/littleScallyWags/IMG_8220.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY457121",
+  "website": "www.littlescallywagsdaynursery.com",
+  "openingHours": "7.30am-6.00pm",
+  "openingTimes": "51 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 476 2541",
+  "email": "westheath@littlescallywagsdaynursery.co.uk",
+  "writeUp": "We understand that it is the hardest thing in the world to leave your child in the care of others. It is our aim to provide parents and carers with the confidence and knowledge that your child will receive the love, care and attention that they need and deserve at Little Scallywags Day Nursery.",
+  "fullTime": "£231.50",
+  "fullDay": "£48.30",
+  "halfDay": "£29.80",
+  "isFirstAidTrained": true,
+  "ageRange": "6 weeks- 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "54",
+  "staffQualification": {
+    "Number of staff": "11",
+    "Qualification levels": {
+      "level 2-6": "9"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b8"
+  },
+  "nurseryId": "1012",
+  "name": "Bright kids Northfield Nursery",
+  "address": "18 - 20 Norman Road, Northfield Birmingham",
+  "postcode": "B31 2EW",
+  "profilePicture": "/images/brightKids/124352947_2137141139755799_183865364325961538_o.jpg",
+  "pictures": {
+    "imageOne": "/images/brightKids/107838516_1998012010335380_8628856472004081181_o.jpg",
+    "imageTwo": "/images/brightKids/124352947_2137141139755799_183865364325961538_o.jpg",
+    "imageThree": "/images/brightKids/105485455_1977224925747422_8478260946150610030_o.jpg",
+    "imageFour": "/images/brightKids/124277513_2137141173089129_3396312173242511387_o.jpg",
+    "imageFive": "/images/brightKids/121676776_2106015202868393_6206827994125527666_o.jpg",
+    "imageSix": "/images/brightKids/117770484_2032662713536976_3978213910853706392_o.jpg"
+  },
+  "ofstedRating": "Outstanding",
+  "ofstedLink":"https://reports.ofsted.gov.uk/provider/16/EY294363",
+  "website": "https://www.bright-kids.co.uk/nursery",
+  "openingHours": "7.30am - 6pm",
+  "openingTimes": "51 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 475 4788",
+  "email": "northfield@bright-kids.co.uk",
+  "writeUp": "Bright Kids embed a culture of quality and care in everything we do. Through Bright Kids rigorous policies and continuous training we ensure are profiletaining standards so that we can provide expert, quality childcare that is tailored specifically for your child.",
+  "fullTime": "£275",
+  "fullDay": "£60",
+  "halfDay": "£38",
+  "isFirstAidTrained": true,
+  "ageRange": "6weeks- 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "82",
+  "staffQualification": {
+    "Number of staff": "14",
+    "Qualification levels": {
+      "level 2-6": "13"
+    }
+  },
+  "cctv": false
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7b9"
+  },
+  "nurseryId": "1013",
+  "name": "The Playhouse Day Nursery",
+  "address": "5 St Mary's Road, Bearwood, Birmingham",
+  "postcode": "B67 5DG",
+  "profilePicture": "/images/thePlayHouse/75231693_527834168011763_423752971050811392_o.jpg",
+  "pictures": {
+    "imageOne": "/images/thePlayHouse/67831655_469880683807112_6916418134349971456_o.jpg",
+    "imageTwo": "/images/thePlayHouse/room1.jpg",
+    "imageThree": "/images/thePlayHouse/83075912_596758704452642_8319151060199407616_o.jpg",
+    "imageFour": "/images/thePlayHouse/87375745_617961088999070_1605989865130819584_o.jpg",
+    "imageFive": "/images/thePlayHouse/91046108_1423339577868941_693447393634418688_n.jpg",
+    "imageSix": "/images/thePlayHouse/"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/255146",
+  "website": "http://theplayhouse-day-nursery.co.uk",
+  "openingHours": "7.30 - 18:00",
+  "openingTimes": "52 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 429 4261",
+  "email": "yvonne@theplayhouse-day-nursery.co.uk",
+  "writeUp": " In 1987, I opened The Playhouse Day Nursery in Bearwood which was a 37 place setting at the time. The Playhouse met my own expectations of how I felt a nursery should operate and it was for that reason that I placed my first daughter at the setting. As she left the setting to attend school I thought about a career change from my secretarial background and felt passionate about pursuing my own business dreams and trying something different.",
+  "fullTime": "£200",
+  "fullDay": "£60",
+  "halfDay": "£40",
+  "ageRange": "6weeks to 5years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "50",
+  "staffQualification": {
+    "Number of staff": "12",
+    "Qualification levels": {
+      "level 2-6": "8"
+    }
+  },
+  "cctv": false
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7ba"
+  },
+  "nurseryId": "1014",
+  "name": "Happy Days",
+  "address": "407 Hagley Road West, Quinton, Birmingham",
+  "postcode": "B32 2AD",
+  "profilePicture": "/images/happyDays/50002501HAPA-1.jpg",
+  "pictures": {
+    "imageOne": "/images/happyDays/1484643548.png",
+    "imageTwo": "/images/happyDays/50001005OAKC-3.jpg",
+    "imageThree": "/images/happyDays/65432130971_2907200345225.jpg",
+    "imageFour": "/images/happyDays/65432130971_2907200345226.jpg",
+    "imageFive": "/images/happyDays/65432130971_2907200345227.jpg",
+    "imageSix": "/images/happyDays/65432130971_2907200345228.jpg"
+  },
+  "ofstedRating": "Outstanding",
+  "ofstedLink": "https://reports.ofsted.gov.uk/provider/16/EY364373",
+  "website": "https://www.cottontailsdaynursery.co.uk/nursery/happy-days",
+  "openingHours": "7.30am to 6pm",
+  "openingTimes": "52 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 422 4240",
+  "email": "happydays@cottontailsdaynursery.co.uk",
+  "writeUp": "Our very well established nursery provides a safe, happy and sociable environment, which allows your child to grow and develop as an individual. We believe in strong parent partnerships and have an open door policy.",
+  "fullTime": "£245",
+  "fullDay": "£58.50",
+  "halfDay": "£32.50",
+  "ageRange": "6 weeks to 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "54",
+  "staffQualification": {
+    "Number of staff": "13",
+    "Qualification levels": {
+      "level 2-6": "11"
+    }
+  },
+  "cctv": true
+},{
+  "_id": {
+    "$oid": "5ff59f32d72a5c222448f7bb"
+  },
+  "nurseryId": "1015",
+  "name": "St Pauls Nursery",
+  "address": "405a Belchers Lane, Bordesley Green, Birmingham",
+  "postcode": "B9 5SY",
+  "profilePicture": "/images/stPauls/nursery1.jpg",
+  "pictures": {
+    "imageOne": "/images/stPauls/24991500_1921347908129336_2052155877312411450_n.jpg",
+    "imageTwo": "/images/stPauls/58570524_2216102231987234_3549609291243585536_o.jpg",
+    "imageThree": "/images/stPauls/58633295_2216102211987236_5670952660178567168_o.jpg",
+    "imageFour": "/images/stPauls/87472061_2457576927839762_5118914011043201024_n.jpg",
+    "imageFive": "/images/stPauls/88991353_2463605053903616_4592949773354401792_n.jpg",
+    "imageSix": "/images/stPauls/58381563_2216102241987233_6802735525460443136_o.jpg"
+  },
+  "ofstedRating": "Good",
+  "ofstedLink": "St Pauls Nursery",
+  "website": "http://stpaulsnursery.co.uk/",
+  "openingHours": "7am to 6pm",
+  "openingTimes": "51 weeks",
+  "isOpenBankHolidays": false,
+  "phone": "0121 773 1748",
+  "email": " nursery@stpaulscrossover.org.uk",
+  "writeUp": "Our principal aim at St Paul’s Day Nursery is to create a safe, loving, and fun environment in which each child is able to develop and learn at their own pace. The Day Nursery has been awarded an OFSTED rating of GOOD.We provide high-quality care and education following the EYFS curriculum as found in Nursery Schools with an emphasis on individual learning through play. We believe that children are foremost their own educators – natural learners with ability, curiosity, and imagination.",
+  "fullTime": "£200",
+  "fullDay": "£50",
+  "halfDay": "£33",
+  "ageRange": "3 months - 5 years",
+  "isFifteenHoursFree": true,
+  "isThirtyHoursFree": true,
+  "isDietaryRequirementsCateredFor": true,
+  "numberOfPlaces": "54",
+  "cctv": true,
+  "staffQualification": {
+    "Number of staff": "15",
+    "Qualification levels": {
+      "level 2-6": "14"
+    }
+  }
+}]

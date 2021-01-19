@@ -1,110 +1,156 @@
-# Black Codher Personal Project
 
-Here's a boilerplate project directory with the initial setup for your Personal Project.
 
-The expectation with this project is that you're able to fork the repository, and get started.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-- [Black Codher Personal Project](#black-codher-personal-project)
-  - [Project Structure](#project-structure)
-    - [client](#client)
-    - [server](#server)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-      - [Mongo added to system path (Windows only)](#mongo-added-to-system-path-windows-only)
-      - [MongoDB Database Tools installed](#mongodb-database-tools-installed)
-    - [Fork Project](#fork-project)
-    - [Clone Repo](#clone-repo)
-    - [Populate The Database](#populate-the-database)
-    - [Start The Development Server](#start-the-development-server)
-    - [Example Application](#example-application)
-  - [What's Next?!](#whats-next)
+  <h3 align="center">EggsShells</h3>
 
-## Project Structure
+  <p align="center">
+    During the Black-Codher bootcamp we were tasked to make a full stack app. 
+    <br />
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
+  </p>
+</p>
 
-This is the structure of the repository is:
 
-- README.md
-- client
-- server
 
-### client
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-The client folder is where you will store your front-end code. Currently this contains a new project created with `create-react-app` and an example of how to call an API that's in active development.
 
-Put your React code here
 
-### server
+<!-- ABOUT THE PROJECT -->
+## About The Project
+ Eggshells is a App where users can serach for local childcare providers in their area. Users can read reviews for other parents/guardians as well as leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
 
-The server folder is where you will store your back-end code. There is currently a JSON file with some fake data, it is an example of how your data can be structured. This folder is where you'll add your Node.js code.
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Put your Node code here
+Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
+
+### Built With
+
+* []()
+* []()
+* []()
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
+
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-#### Mongo added to system path (Windows only)
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-1. Type `mongo --help` to check MongoDB is on the system path. If you see the help text displayed, skip to the next prerequisite.
-2. Navigate to your MongoDB installation folder and copy the full path to the bin folder (default should be `C:\Program Files\MongoDB\Server\4.4\bin`)
-3. Add the MongoDB bin folder to the system path
-   1. Type 'environment' in the Windows Search box and open "Edit the system environment variables" (or right-click "This PC" > Properties > Advanced System Properties)
-   2. Click "Environment Variables..."
-   3. Select "Path" under "System variables" and click "Edit"
-   4. Click "New"
-   5. Paste the path you copied above, or click "Browse..." to locate the folder on your system
-   6. Click "OK"
-   7. Click "OK"
-   8. Click "OK"
-4. Ensure MongoDB service is running
-   1. Type 'Services' in the Windows Search box and open "Services".
-   2. Scroll down the list and ensure "MongoDB" is running. Click to select the service and click the "play" icon to start if not.
-#### MongoDB Database Tools installed
+### Installation
 
-1. Check `mongoimport` is installed by running `mongoimport --help` in your command prompt. If you see the help text displayed, continue to the next prerequisite. If you see a `command not recognized` error message, continue to next step.
-2. Follow the installation instructions for [macOS](https://docs.mongodb.com/database-tools/installation/installation-macos/#installation) or [Windows](https://docs.mongodb.com/database-tools/installation/installation-windows/#installation)
+1. Clone the repo
+   ```sh
+   git clone https://github.com/lbrowncoder/black-codher-personal-project.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### Fork Project
 
-1. Click on `Fork`
-2. Select your Username
 
-You can also refer to the [GitHub Fork Tutorial](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
+<!-- USAGE EXAMPLES -->
+## Usage
 
-This will add the `black-codher-personal-project` to your GitHub account.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-### Clone Repo
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-1. Go to your forked repo
-2. Click Code
-3. Click HTTPS
-4. Copy the text starting with `https://github.com/<your-repo-name>/black-codher-personal-project` (replace <your-repo-name> with the name of your GitHub username)
-5. On your command line / terminal type `git clone https://github.com/<your-repo-name>/black-codher-personal-project` (replace <your-repo-name> with the name of your GitHub username)
 
-### Populate The Database
 
-You need to create and populate an initial collection in your local MongoDB server:
 
-1. Type `cd black-codher-personal-project` to navigate to your project root directory
-2. Type `mongo` to open a MongoDB shell
-3. Type `use black-codher-personal-project` to create your database
-4. Type `exit` to close the shell
-5. Type `mongoimport -h 127.0.0.1:27017 -d black-codher-personal-project -c users --file ./server/models/data.json --jsonArray` _Make sure this command is run from your project's root directory!_
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Start The Development Server
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-You can start the client side code (front-end), server side (back-end) and database separately using the commands in their respective folders. If you prefer to start all three together (this is the most convienient way), you can do so with the following commands:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-1. `npm install && cd client && npm install && cd ..`
-2. `npm run develop`
 
-Please note that you run `npm install && cd client && npm install && cd ..` during your first installation, subsequently you will only need to run `npm run develop` to get your development environment up and running
-### Example Application
 
-We have created an example application that will display a list of users that are stored in your local database.
+<!-- LICENSE -->
+## License
 
-If all's well with the above steps, you should see a list of names. If your browser shows a "No users found" message, re-check all the steps to ensure your database is populated and connected properly.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## What's Next?!
 
-Now it's time to start building your project.
+
+<!-- CONTACT -->
+## Contact
+
+Lamara Bown - [https://uk.linkedin.com/in/lamara-brown-10473167(https://twitter.com/twitter_handle) - lbrown22@hotmail.co.uk
+
+Project Link: [https://github.com/lbrowncoder/black-codher-personal-project.git](https://github.com/lbrowncoder/black-codher-personal-project.git)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* []()
+* []()
+* []()
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/github_username

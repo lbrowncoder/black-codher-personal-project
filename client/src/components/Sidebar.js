@@ -5,7 +5,6 @@ import * as IoIcons from 'react-icons/io';
 import * as IoIcons5 from "react-icons/io5";
 import * as HiIcons from 'react-icons/hi'
 
-
 export const Sidebar = [
   {
     title: 'Home',
@@ -32,8 +31,8 @@ export const Sidebar = [
     cName: 'nav-text'
   },
   {
-    title: 'Log In',
-    path: '/login',
+    title: 'Sign Up',
+    path: '/signup',
     icon: <IoIcons5.IoPersonCircleSharp />,
     cName: 'nav-text'
   },

@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
 import * as AiIcons from 'react-icons/ai';
-import { Link, Redirect } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { Sidebar } from './Sidebar';
-import './Navbar.css';
+import '../App.css';
 import { IconContext } from 'react-icons';
 import * as VscIcons from 'react-icons/vsc';
 
 function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
-
   const showSidebar = () => setSidebar(!sidebar);
- 
 
   return (
     <>
       <IconContext.Provider value={{ color: '#8B008B' }}>
         <div className='navbar'>
-          <VscIcons.VscThreeBars className='bars'size="2rem" onClick={showSidebar} />
+              <VscIcons.VscThreeBars className='bars'size="2rem" onClick={showSidebar} />
             <Link to={{pathname: '#', state: {from: props.location}}} className='menu-bars' />   
             <Link to='/'>
-          <AiIcons.AiFillHome size="2rem" />
+              <AiIcons.AiFillHome size="2rem" />
             </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -40,7 +38,7 @@ function Navbar(props) {
             })}
           </ul>
         </nav>
-      </IconContext.Provider>
+              </IconContext.Provider>
     </>
   );
 }

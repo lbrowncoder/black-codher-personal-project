@@ -1,54 +1,46 @@
-
-h1 {
+.header {
     text-align: center;
-    padding-bottom: 5rem;
 }
 
-.faq {
-    text-align: left;
-    font-size: 1.7rem;
-    margin-left:2rem;
-   padding-bottom: 2rem;
-   clear: both;
+.contact {
+    border: black solid 2px;
+    text-align: center;
+    border-style: double;
+    size: 30px;
 }
 
-.details {
-    font-size:1rem;
-    clear: both;
+.phone {
+    margin-right: 30px;
+    size: 300px;
 }
 
-.card {
-
-    margin-left:6rem;
-    border-style:solid black;
-    border-width:medium;
-    float: left;
+.email {
+    margin-right: 30px;
 }
 
-.searchPhone{
-    margin-left: 4rem;
-    margin-right:2rem;
-    margin-bottom: 2rem;
+.website {
+    margin-right: 30px;
+}
+.pic {
+    height:400px;
+    width: 400px;
+    border: solid grey 2.6px;
 }
 
-.searchEmail{
-    margin-left: 4rem;
-    margin-right:2rem;
-    margin-bottom: 2rem;
+.row {
+    border-style: none;
 }
 
-.searchWebsite{
-    margin-left: 4rem;
-    margin-right:2rem;
-    margin-bottom: 2rem;
+.writeUp {
+    overflow: hidden;
 }
 
-.infoText {
-    font-size: 1.6rem;
+.address {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-.sliderimg{
-    width: 450px;
-    height: 300px;
-  }
-
+.postcode {
+    text-align: center;
+    font-size: 1.2rem;
+}

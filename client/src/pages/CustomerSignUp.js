@@ -1,29 +1,21 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Formik, Form, Field} from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import './CustomerSignUp.css';
+import '../App.css';
+import { NavLink} from 'react-router-dom';
 
 const Login = () => {
 
     const handleSignUp = (values, {setSubmitting, resetForm}) => {
-        console.log("values", values)
-      axios.post('/api/users', values)
-        // axios({
-        //     method: 'POST',
-        //     url: `/api/users`,
-        //     data: values,
-        //     secure: false
-        //   })
-          .then(response => {
-            console.log("response", response.data);
+      
+    axios.post('/api/users', values)      
+    .then(response => {
             setSubmitting(false);
             resetForm()
          })
          window.location = '/profile'
         }
-
-
 
     return (
         <Formik
@@ -62,38 +54,38 @@ const Login = () => {
                   onSubmit
               }  = props;
 
-          
               return (
                 <div>
-                    <h1>Sign Up</h1>
-                <Form autoComplete="off">
-                    <label htmlFor="name">name</label>
-                        <Field type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
+                    <h1 className='signTitle'>Sign Up</h1>
+                <Form className='customerForm' autoComplete="off">
+                    <label className="signLabel" htmlFor="name">Name</label>
+                        <Field className='fieldInput' type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
                             {errors.name && touched.name && (
                                 <div className="input-feedback">{errors.name}</div>)}
 
-                    <label htmlFor="email">Email</label>
+                    <label className="signLabel" htmlFor="email">Email</label>
                         <Field type="text" name="email" onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
                             {errors.email && touched.email && (
                                 <div className="input-feedback">{errors.email}</div>)}
 
-                    <label htmlFor="password">Password</label>
+                    <label className="signLabel" htmlFor="password">Password</label>
                          <Field type="password" name="password" onBlur={handleBlur}  className={errors.password && touched.password && "error" } />
                             {errors.password && touched.password && (
                                 <div className="input-feedback">{errors.password}</div>)}
 
-                    <label htmlFor="confirmPassword">Confirm Password</label>
+                    <label className="signLabel" htmlFor="confirmPassword">Confirm Password</label>
                         <Field type="password" name="confirmPassword" onBlur={handleBlur}  className={errors.confirmPassword && touched.confirmPassword && "error" } />
                             {errors.confirmPassword && touched.confirmPassword && (
                                  <div className="input-feedback">{errors.name}</div>)}
 
-                    <button type="submit" disabled={isSubmitting} value='submit'>Sign Up</button>
-                    <button type="reset">Reset</button>
+                    <button className='signSubmit' type="submit" disabled={isSubmitting} value='submit'>Sign Up</button>
+                    <button className='signSubmit'type="reset">Reset</button>
+                    <p className='already'>Already have an account?<NavLink to='/login'> Login </NavLink> here</p>
                 </Form>
             </div>
               )
             }}
-                   </Formik>
+    </Formik>
     )}
 
 export default Login

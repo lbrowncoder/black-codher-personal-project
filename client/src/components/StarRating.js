@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { FaStar } from "react-icons/fa";
-import './StarRating.css';
+import '../App.css';
 
 const StarRating = ({starRating}) => {
     let [rating, setRating] = useState();
@@ -13,22 +13,23 @@ const StarRating = ({starRating}) => {
                 const ratingValue = i + 1;
                 
                 return (
-                <label>
-                    <input 
-                    type="radio"
-                    name= "rating"
-                    value={ratingValue} 
-                    onClick={() => setRating(ratingValue)} 
-                    />
-                    <FaStar className="star" 
-                    color={ratingValue <= (hover || rating) ? "yellow" : "lightgrey"} 
-                    onMouseEnter={() => setHover(ratingValue)}
-                    onMouseLeave={() => setHover(null)}
-                    size={40}
-                    />
+                    <label>
+                        <input 
+                        className="starInput"
+                        type="radio"
+                        name= "rating"
+                        value={ratingValue} 
+                        onClick={() => setRating(ratingValue)} 
+                        />
+                        <FaStar className="star" 
+                        color={ratingValue <= (hover || rating) ? "yellow" : "lightgrey"} 
+                        onMouseEnter={() => setHover(ratingValue)}
+                        onMouseLeave={() => setHover(null)}
+                        size={40}
+                        />
                     </label> 
-            );
-            })} 
+                    );
+                 })} 
         </div>
     );
 };

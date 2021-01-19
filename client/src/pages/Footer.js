@@ -51,11 +51,11 @@ const footer =({footer}) => {
                                 <NavLink to="/about">About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/signup">Register Your Nursery</NavLink>
+                                <NavLink to="/signupform">Register Your Nursery</NavLink>
                             </li>
                         </ul>
                     </div>
-                    <p className="copyRight">
+                            <p className="copyRight">
                         &copy;{new Date().getFullYear()} LB Desgins- All Rights Reservered</p>
                     </div>
             </footer>

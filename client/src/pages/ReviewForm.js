@@ -1,9 +1,10 @@
 import React, { useState} from 'react';
 import axios from 'axios';
-import {ToggleButtonGroup} from "react-bootstrap";
+import {ToggleButtonGroup, Container} from "react-bootstrap";
 import {ToggleButton} from "react-bootstrap";
 import StarRating from '../components/StarRating';
 import './ReviewForm.css';
+import { Checkbox, FormControlLabel, Radio,Select, TextField, MenuItem, Switch } from '@material-ui/core';
 import {Button} from "react-bootstrap";
 
 
@@ -28,10 +29,9 @@ const ReviewForm = () => {
     let [safe] = useState([]);
     let [money] = useState([]);
     let [recommend] = useState([]);
-    let [overall] = useState([]);
+    let [overall, setOverall] = useState([]);
     const [submit, setSubmit] = useState(true);
    
-
     const handleSubmit = async (event) => {
         event.preventDefault()
      
@@ -40,6 +40,7 @@ const ReviewForm = () => {
         ContactNumber: ContactNumber,
         email: email,
         reviewComment: reviewComment,
+        recommend: recommend,
         })
         .then(async () => {
          const review= await axios.get('/api/review').then (res => res.data)
@@ -47,7 +48,7 @@ const ReviewForm = () => {
          setComment (result.reviewComment);  
          setReviewName (result.name)
          setSubmit(false)
-         console.log(result)
+        //  setOverall (result.recommend)
       })
   }
  
@@ -56,24 +57,12 @@ const ReviewForm = () => {
         <>
         <div>
           <h2 className="review">Review A Nursery</h2>
-          <container className="container">
+          <Container className="container">
           <form onSubmit={(event) => handleSubmit(event)} className="form">
-                <label className="text">
-                    Your Name:
-                    <input className="box" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                </label>
-                <label className="text">
-                    Contact Number:
-                    <input className="box" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
-                </label>
-                <label className="text">
-                    Email:
-                  <input className="box" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-                </label>
-                <label className="text">
-                    Review Comment:
-                  <input className="boxComment" type="text" value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
-                </label>
+                    <TextField placeholder="Name" id="filled-basic"  variant="filled" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                     <TextField placeholder="Contact Number" id="filled-basic"  variant="filled" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                     <TextField placeholder="Email" id="filled-basic"  variant="filled" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                     <TextField placeholder="Review" id="filled-basic"  variant="filled" type="text" fullWidth value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
                 <div className="boxItems">
                 <p className="overallOne">How likely are you to recommend this nursery?</p>
                 <ToggleButtonGroup className="checkbox" type="checkbox" value={recommend} size="sm" onChange={onclick}>
@@ -219,7 +208,7 @@ const ReviewForm = () => {
               <br/>
               <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
             </form>
-                   </container>
+                   </Container>
 
                   <h2>Please Check your review</h2>
     

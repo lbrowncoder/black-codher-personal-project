@@ -21,7 +21,6 @@ import CustomerSignUp from './pages/CustomerSignUp';
 const App = () => {
    const [nurseryDetail, setNurseryDetail] = useState();
 
-
   return (
           <Router>
              <Switch>
@@ -30,7 +29,6 @@ const App = () => {
             <ScrollToTop />
             <Navbar />
             <HomePage SearchDetail={SearchDetail} nurseryDetail={nurseryDetail} setNurseryDetail={setNurseryDetail} />
-            {/* <NurserySearch /> */}
             <Footer />
             </React.Fragment> 
         )}/>
@@ -43,7 +41,7 @@ const App = () => {
             </React.Fragment> 
         )}/>
             <Route 
-            path="/search/:id" render={(props) => (
+            path="/search/:name" render={(props) => (
                <React.Fragment>
                <ScrollToTop />
                <Navbar />
@@ -51,7 +49,7 @@ const App = () => {
                <Footer />
                </React.Fragment>
             )} />
-             <Route exact path="/signup" render={() => (
+             <Route exact path="/signupform" render={() => (
             <React.Fragment>
             <ScrollToTop />
             <Navbar />
@@ -107,7 +105,7 @@ const App = () => {
             <Footer />
             </React.Fragment> 
              )}/>
-               <Route exact path="/guide" render={() => (
+            <Route exact path="/guide" render={() => (
             <React.Fragment>
             <ScrollToTop />
             <Navbar />
@@ -131,7 +129,7 @@ const App = () => {
             <Footer />
             </React.Fragment> 
              )}/>
-            <Route exact path="/signin" render={() => (
+            <Route exact path="/signup" render={() => (
             <React.Fragment>
             <ScrollToTop />
             <Navbar />
@@ -154,7 +152,6 @@ const App = () => {
   )
 }
  
-
    ReactDOM.render(<App />,document.getElementById('root'));
 
 export default App;

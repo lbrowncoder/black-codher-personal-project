@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Link} from 'react-router-dom'
 import '../App.css';
-import {Button} from "react-bootstrap";
-
+import {Button,Container} from "react-bootstrap";
+import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 
 const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
@@ -14,49 +14,40 @@ const NurserySearch = ({NurserySearch}) => {
   const [result, setResult] = useState([]);
   
   useEffect(() => {
-    setLoading(true);
+
     axios
       .get(`/api/info`)
-      
       .then((res) => {
         setNurseries(res.data);
-        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
-      
   }, []);
 
+  console.log(nurseries)
+
   const onKeyword = () => {
-    setHasSearched(false)
-        setFilteredNurseries(
+            setFilteredNurseries(
           nurseries.filter(nursery =>
             nursery.name.toLowerCase().includes(keyword.toLowerCase())
           )
         );
-      };
 
-//   useEffect(() => {
-//     setFilteredNurseries(
-//       nurseries.filter((nursery) =>
-//         nursery.name.toLowerCase().includes(search.toLowerCase())
-//       )
-//     );
-//   }, [search, nurseries]);
-
-  if (loading) {
-    return <p>Were finding the perfect match for you...</p>
+if (loading) {
+    return 
+    <p>Were finding the perfect match for you...</p>
   }
-
+};
 
   return (
     <>
-    <container className="searchBox">
+    <Container className="searchBox">
       <div className="nurseryList"> 
-      <h1>Search</h1>
-      <p>Find the perfect Childcare Provider</p>
+      <h1 className='search'>Search</h1>
+      <p className='perfect'>Find the perfect Childcare Provider</p>
       <input
+      className='searchContainer'
         type="text"
         placeholder="Search by Name"
         onChange={e => setKeyword(e.target.value)}
@@ -65,9 +56,11 @@ const NurserySearch = ({NurserySearch}) => {
 
       {filteredNurseries.length && setHasSearched ? filteredNurseries.map((nursery, index) => (     
         <NurseryDetail key={index} nursery={nursery} /> ))
-          : <p>No results found</p>}
+          : 
+          <p>No results found</p>
+        }
             </div>
-            </container>
+            </Container>
             </>
 
   )};
@@ -86,8 +79,5 @@ const NurserySearch = ({NurserySearch}) => {
       )
         }
 
-   
-        
-    
 export default NurserySearch
 

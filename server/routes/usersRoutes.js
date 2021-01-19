@@ -5,8 +5,6 @@ const Contact = require('../routes/contactRoutes');
 // const bcrypt = require('bcrypt');
 // import SignUp from '../routes.js';
 
-
-
 //Main Schema
 const Schema = mongoose.Schema;
 const ReviewSchema = new Schema({
@@ -19,14 +17,11 @@ const ReviewSchema = new Schema({
 //model
 const Review = mongoose.model('Review', ReviewSchema)
 
-
-
 module.exports = (app) => {
     app.get(`/api/info`, async (req, res) => {
       const nursery = await Info.find();
     return res.status(200).send(nursery);
   });
-
 
 //update nursery json
   app.post(`/api/info`, async (req, res) => {
