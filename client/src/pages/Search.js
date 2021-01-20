@@ -70,7 +70,7 @@ if (loading) {
       return (
         <>
         <ul>
-          <li key={props.key}>
+          <li className='results' key={props.key}>
           <Link to={{pathname:`/search/${name}`,
           state:{nurseries:props.nursery},}}>{name}</Link>
           </li>

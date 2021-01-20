@@ -20,6 +20,7 @@
         "react-icons": "^4.1.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.1",
+        "react-show-more-text": "^1.4.6",
         "react-slick": "^0.27.13",
         "react-svg-star-rating": "^1.1.5",
         "web-vitals": "^1.0.1",

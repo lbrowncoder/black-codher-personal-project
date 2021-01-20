@@ -8,11 +8,11 @@ import NurserySearch from './Search';
 import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 
 const HomePage = (props) => {
-const [feature1, setFeature1] = useState([]);
-const [feature2, setFeature2] = useState([]);
-const [feature3, setFeature3] = useState([]);
+  const [feature1, setFeature1] = useState([]);
+  const [feature2, setFeature2] = useState([]);
+  const [feature3, setFeature3] = useState([]);
 
-const fetchData = () => {
+  const fetchData = () => {
     const feature1 = `/api/info/5ff59f32d72a5c222448f7ad`;
     const feature2= `/api/info/5ff59f32d72a5c222448f7ae`;
     const feature3= `/api/info/5ff59f32d72a5c222448f7af`
@@ -38,114 +38,118 @@ const fetchData = () => {
         fetchData()
       }, [])
 
-    return (
-      <>
-      <div>
-          <h1 className="mainTitle">Welcome to Eggshells</h1>
-           {/* <img className="shells" src={EggshellsHomepage} alt="eggshells" />  */}
-          <h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
-          <h3 className="thirdTitle">The Newest UK Nursery review website</h3>
-     <div> <NurserySearch/></div>
-          <p className="topRated">Our Top Rated Nurseries This Week</p>
-      <Container className="row">
-        <div className="cardOne">
+      return (
+        <>
+          <div>
+              <h1 className="mainTitle">Welcome to Eggshells</h1>
+              {/* <img className="shells" src={EggshellsHomepage} alt="eggshells" />  */}
+             < h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
+              < h3 className="thirdTitle">The Newest UK Nursery review website</h3>
+              <div> <NurserySearch/></div>
+             <p className="topRated">Our Top Rated Nurseries This Week</p>
+          <Container className="row">
+            <div className="cardOne">
+              <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
+                <Card.Header className="featured">Featured</Card.Header>
+                <Card.Img className="imagePic" variant="top" src={feature1.profilePicture} alt="profilePicture" />
+                <Card.Body clasName="card">
+                  <Card.Title  className="titleCard">{feature1.name}</Card.Title>
+                  <Card.Text  className="titleCard">
+                    {feature1.address}
+                  </Card.Text>
+                  <Card.Text className="writeup">
+                  Ofsted Rating: {feature1.ofstedRating}
+                  </Card.Text>
+              <Button className="moreInfoBtn" variant="primary">More Info</Button>
+              </Card.Body>
+             </Card>
+          </div>
+          <div className="cardTwo">
+            <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
+            <Card.Header className="featured">Featured</Card.Header>
+            <Card.Img className="imagePic" variant="top" src={feature2.profilePicture} alt="profilePicture" />
+            <Card.Body >
+                <Card.Title className="titleCard">{feature2.name}</Card.Title>
+                <Card.Text className="titleCard">
+                  {feature2.address}
+                </Card.Text>
+                <Card.Text className="writeup">
+                  Ofsted Rating: {feature2.ofstedRating}
+                </Card.Text>
+            <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="cardThree">
           <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
-          <Card.Header className="featured">Featured</Card.Header>
-          <Card.Img className="imagePic" variant="top" src={feature1.profilePicture} alt="profilePicture" />
-          <Card.Body clasName="card">
-          <Card.Title  className="titleCard">{feature1.name}</Card.Title>
-          <Card.Text  className="titleCard">
-          {feature1.address}
-          </Card.Text>
-          <Card.Text className="writeup">
-             Ofsted Rating: {feature1.ofstedRating}
-          </Card.Text>
-    <Button className="moreInfoBtn" variant="primary">More Info</Button>
-      </Card.Body>
-      </Card>
-  </div>
-  <div className="cardTwo">
-      <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
-      <Card.Header className="featured">Featured</Card.Header>
-      <Card.Img className="imagePic" variant="top" src={feature2.profilePicture} alt="profilePicture" />
-      <Card.Body >
-      <Card.Title className="titleCard">{feature2.name}</Card.Title>
-      <Card.Text className="titleCard">
-        {feature2.address}
-      </Card.Text>
-      <Card.Text className="writeup">
-        Ofsted Rating: {feature2.ofstedRating}
-      </Card.Text>
-      <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
-      </Card.Body>
-   </Card>
-  </div>
-  <div className="cardThree">
-      <Card border="dark" style={{ width: '18rem', height:"29rem" }}>
-      <Card.Header className="featured">Featured</Card.Header>
-      <Card.Img className="imagePic" variant="top" src={feature3.profilePicture} alt="profilePicture" />
-      <Card.Body >
-      <Card.Title className="titleCard">{feature3.name}</Card.Title>
-      <Card.Text  className="titleCard">
-        {feature3.address}
-      </Card.Text>
-      <Card.Text className="writeup">
-        Ofsted Rating: {feature3.ofstedRating}
-      </Card.Text>
-    <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
-      </Card.Body>
-    </Card>
-  </div>
-</Container>
-       </div>
+            <Card.Header className="featured">Featured</Card.Header>
+            <Card.Img className="imagePic" variant="top" src={feature3.profilePicture} alt="profilePicture" />
+            <Card.Body >
+              <Card.Title className="titleCard">{feature3.name}</Card.Title>
+              <Card.Text  className="titleCard">
+                {feature3.address}
+              </Card.Text>
+              <Card.Text className="writeup">
+                Ofsted Rating: {feature3.ofstedRating}
+              </Card.Text>
+          <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
+            </Card.Body>
+          </Card>
+        </div>
+      </Container>
+        </div>
           <div>
             <p className="advice">Nursery and Childcare Advice</p>
-            <img className="homeGuide" src={homeGuide} alt="homeGuide" /> 
-            <a href ="/guide" className="pick">Our Guide to picking the right Childcare Provider</a>
-            <img className="homeMoney" src={homeMoney} alt="homeMoney" /> 
-            <a href ="/money" className="HomeCost">Help with Childcare Cost</a>
+            <Col className='colGuide'>
+              <a href ="/guide"><img className="homeGuide" src={homeGuide} alt="homeGuide"/> </a>
+              <a href ="/guide" className="pick">Our Guide to picking the right Childcare Provider</a>
+            </Col>
+            <Col className='colMoney'>
+              <a href ="/cost"><img className="homeMoney" src={homeMoney} alt="homeMoney"/> </a>
+              <a href ="/cost" className="pick">Help with Childcare Cost</a>
+            </Col>
           </div>
           <div className="counties">
-            <Container>
+          <Container>
             <p className="searchBy">Search by Counties </p>
           <Row>
           <Col>
             <p className="regions">East Midlands</p>
-          <ul>
-              <li><a href ="/Search"> Derbyshire</a></li>
-              <li><a href ="/Search"> Leicestershire</a></li>
-              <li><a href ="/Search"> Northamptonshire</a></li>
-              <li><a href ="/Search"> Nottinghamshire</a></li>
-          </ul>
-          </Col>
-          <Col>
-            <p className="regions">West Midlands</p>
-          <ul>
-              <li><a href ="/Search"> Herefordshire</a></li>
-              <li><a href ="/Search"> Shropshire</a></li>
-              <li><a href ="/Search"> Staffordshire</a></li>
-              <li><a href ="/Search"> Warwickshire</a></li>
-              <li><a href ="/Search"> West Midlands</a></li>
-              <li><a href ="/Search"> Worcestershire</a></li>
+            <ul>
+                <li><a href ="/Search"> Derbyshire</a></li>
+                <li><a href ="/Search"> Leicestershire</a></li>
+                <li><a href ="/Search"> Northamptonshire</a></li>
+                <li><a href ="/Search"> Nottinghamshire</a></li>
             </ul>
           </Col>
           <Col>
-              <p className="regions">London</p>
-          <ul>
-              <li><a href ="/Search"> Barking & Dagenham Borough</a></li>
-              <li><a href ="/Search"> Barnet Borough</a></li>
-              <li><a href ="/Search"> Camden Borough</a></li>
-              <li><a href ="/Search"> Croydon Borough</a></li>
-              <li><a href ="/Search"> Ealing Borough</a></li>
-              <li><a href ="/Search"> Hackney Borough</a></li>
-              <li><a href ="/Search"> Hammersmith & Fulham Borough</a></li>
-              <li><a href ="/Search"> Kensington & Chelsea Borough</a></li>
-          </ul>
+            <p className="regions">West Midlands</p>
+            <ul>
+                <li><a href ="/Search"> Herefordshire</a></li>
+                <li><a href ="/Search"> Shropshire</a></li>
+                <li><a href ="/Search"> Staffordshire</a></li>
+                <li><a href ="/Search"> Warwickshire</a></li>
+                <li><a href ="/Search"> West Midlands</a></li>
+                <li><a href ="/Search"> Worcestershire</a></li>
+              </ul>
+          </Col>
+          <Col>
+            <p className="regions">London</p>
+            <ul>
+                <li><a href ="/Search"> Barking & Dagenham Borough</a></li>
+                <li><a href ="/Search"> Barnet Borough</a></li>
+                <li><a href ="/Search"> Camden Borough</a></li>
+                <li><a href ="/Search"> Croydon Borough</a></li>
+                <li><a href ="/Search"> Ealing Borough</a></li>
+                <li><a href ="/Search"> Hackney Borough</a></li>
+                <li><a href ="/Search"> Hammersmith & Fulham Borough</a></li>
+                <li><a href ="/Search"> Kensington & Chelsea Borough</a></li>
+            </ul>
           </Col>
           </Row>
-      </Container>
+         </Container>
         </div>
-    </>  
+       </>  
   );
 }
 

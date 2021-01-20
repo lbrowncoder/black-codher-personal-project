@@ -299,6 +299,7 @@ submit:after {
 
 .searchBox {
   border: solid grey 1px;
+  margin-top:2rem;
 }
 
 .search {
@@ -312,6 +313,11 @@ submit:after {
 .searchContainer {
   margin-left: 35%;
   width: 30%;
+}
+
+.results {
+  text-align: center;
+  list-style:none;
 }
 
 /* about page */
@@ -440,10 +446,26 @@ submit:after {
      margin-left: 2rem;
      margin-top: 3rem;
      border: solid grey;
-    height: 300px;
-    width: 300px;
-
+    height: 250px;
+    width: 250px;
+    margin-left: 10%;
+    margin-bottom: 1rem;
 }
+
+
+.homeMoney {
+  height:250px;
+  width: 250px;
+  margin-left: 10%;
+  margin-top: 3rem;
+  border: solid grey;
+}
+
+.pick {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
  .helpCost {
      margin-left: 1rem;
  }
@@ -464,8 +486,10 @@ submit:after {
  .cardTwo {
    margin-right: 2rem;
  }
- .writeup {
-     text-align: center;
+ .writeUp{
+    margin-top: 7rem;
+    /* font-size: 1.3rem; */
+
  }
  
  .topRated {
@@ -490,12 +514,16 @@ submit:after {
  }
  
  .counties {
-     margin-top: 10rem;
-     margin-bottom: 0;
+    border: solid grey 1px;
+    border-bottom-style: none;
+    border-left:none;
+    border-right:none;
+    margin-top: 4rem;
  }
  
  .regions {
      font-style: italic;
+     margin-left: 2.7rem;
  }
  
  .searchBy {
@@ -517,34 +545,190 @@ submit:after {
   margin-left: 4rem;
 }
 
-.homeMoney {
-  height:300px;
-  width: 300px;
-}
-
-.homecost {
-  display: block;
-} 
-
-/* .pick {
-  vertical-align:top;
-  display:list-item;
-
-} */
-/* 
-
 /* footer */
 
-/* .homeMoney {
-  height: 300px;
-  width: 300px;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.column {
+  float: left;
+  width: 33.33%;
 }
 
 
 
+.footerListOne {
+  list-style-position: inside;
+  list-style-type: square;
+  padding-top: 0.3rem;
+  border-right: solid black 1px;
+  height: 130px;
+}
+
+.footerListTwo {
+  list-style-position: inside;
+  list-style-type: square;
+  padding-top: 0.3rem;
+  border-right: solid black 1px;
+  height: 130px;
+}
+.footerListThree {
+  list-style-position: inside;
+  list-style-type: square;
+  padding-top: 0.3rem;
+}
 
 
-.ofsted{
+.footer {
+  text-align: center;
+  display: flex;
+  min-height: 90vh;
+  /* padding-top: 70px;
+  padding-bottom: 70px; */
+}
+
+.site-footer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.container-fluid {
+  margin-top:auto;
+  background-color: lightgrey;
+}
+
+
+.footerText {
+  padding-top: 1rem;
+}
+
+.copyRight {
+  margin-top: 2.5rem;
+  color: orange;
+} 
+
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+    
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: black;
+  }
+/* 
+  search details */
+
+  .header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact {
+    border: black solid 2px;
+    text-align: center;
+    border-style: double;
+    size: 60px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.phone {
+    margin-right: 30px;
+}
+
+.email {
+    margin-right: 30px;
+}
+
+.website {
+    margin-right: 30px;
+}
+.pic {
+    height:300px;
+    width: 300px;
+    border: solid grey 2.6px;
+    margin-top: 6rem;
+}
+
+
+.address {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.postcode {
+    text-align: center;
+    font-size: 1.2rem;
+} 
+
+.content-css {
+ padding-top: 12rem;
+}
+
+.searchImages {
+  margin-top: 4rem;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+  
+a.facebook-two {
+  color: #4968ad;
+
+}
+
+a.twitter-two {
+  color: #49a1eb;
+}
+
+a.instagram-two {
+  color: black;
+  margin-left:40%;
+  margin-bottom:3rem;
+  margin-top: 1rem;
+
+}
+
+.reveiw{
+  border: black solid 2px;
+  text-align: center;
+  border-style: double;
+  font-size: 1.6rem;
+  margin-left:10%;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.soon {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+/* .ofsted{
   height: 100px;
   width: 100px;
   clear: both;
@@ -561,7 +745,7 @@ submit:after {
   width: 300px;
   height: 300px;
   overflow: auto;
-} */
+}  */
 
 /* cost page */
 
