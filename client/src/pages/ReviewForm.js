@@ -3,7 +3,7 @@ import axios from 'axios';
 import {ToggleButtonGroup, Container} from "react-bootstrap";
 import {ToggleButton} from "react-bootstrap";
 import StarRating from '../components/StarRating';
-import './ReviewForm.css';
+import '../App.css'
 import { Checkbox, FormControlLabel, Radio,Select, TextField, MenuItem, Switch } from '@material-ui/core';
 import {Button} from "react-bootstrap";
 
@@ -56,10 +56,10 @@ const ReviewForm = () => {
     return (
         <>
         <div>
-          <h2 className="review">Review A Nursery</h2>
+          <h2 className="reviewNursery">Review A Nursery</h2>
           <Container className="container">
-          <form onSubmit={(event) => handleSubmit(event)} className="form">
-                    <TextField placeholder="Name" id="filled-basic"  variant="filled" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+          <form onSubmit={(event) => handleSubmit(event)} className="reviewForm">
+                    <TextField placeholder="Name" className='reviewContact' id="filled-basic"  variant="filled" type="text" value={name} onChange={(e) => setName(e.target.value)} />
                      <TextField placeholder="Contact Number" id="filled-basic"  variant="filled" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
                      <TextField placeholder="Email" id="filled-basic"  variant="filled" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                      <TextField placeholder="Review" id="filled-basic"  variant="filled" type="text" fullWidth value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />

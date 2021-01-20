@@ -634,14 +634,15 @@ html, body {
 
   .header {
     text-align: center;
-    margin-top: 2rem;
+    margin-top:2.3rem;
 }
+
 
 .contact {
     border: black solid 2px;
     text-align: center;
     border-style: double;
-    size: 60px;
+    width:80%;
     margin-top: 2rem;
     padding: 1rem;
 }
@@ -662,6 +663,7 @@ html, body {
     width: 300px;
     border: solid grey 2.6px;
     margin-top: 6rem;
+    margin-left: 23%;
 }
 
 
@@ -687,6 +689,7 @@ a.social {
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
+
 }
 
 a.social:hover {
@@ -695,7 +698,6 @@ a.social:hover {
   
 a.facebook-two {
   color: #4968ad;
-
 }
 
 a.twitter-two {
@@ -723,11 +725,104 @@ a.instagram-two {
 .soon {
   text-align: center;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 
 }
 
+.example {
+  font-style:italic;
+  margin-left: 12%;
+  margin-top: 4%;
+}
+
+.great {
+  font-style: italic;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.reviewer {
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 57%;
+}
+
+.rating {
+  margin-left: 30%; 
+}
+
+.starExample {
+  margin-left: 70%;
+}
+
+.score {
+  border: solid orange 3px;
+  width: 10%;
+  margin-left:80%;
+  border-radius: 80%;
+}
+
+.amountReviews {
+  margin-left:75%;
+}
+
+.nine {
+  font-style: italic;
+  text-align: center;
+  font-style: bold;
+
+}
+
+.ten {
+  font-size:0.6rem;
+  line-height: 80%;
+  text-align: center;
+  font-style: italic;
+}
+
+.faq {
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: 10%;
+  width: 80%;
+  font-size: 1.4rem;
+  border-style: double;
+}
+
+
+.fees {
+  /* text-align: center; */
+  list-style-position: inside;
+  list-style:square;
+  font-weight: normal;
+  margin-left: 10%;
+
+}
+
+.feesMain {
+  margin-left:20%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top:2rem;
+}
+
+.questions {
+  margin-left: 23%;
+  font-size: 1.1rem;
+}
+
+/* review page */
+
+.reviewNursery {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reviewContact{
+  display: block;
+}
 /* .ofsted{
   height: 100px;
   width: 100px;

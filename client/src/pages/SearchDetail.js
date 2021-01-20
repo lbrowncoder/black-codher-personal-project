@@ -13,6 +13,8 @@ import '../App.css';
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitterSquare} from 'react-icons/fa';
 import {FaFacebookSquare} from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import * as bsIcons from "react-icons/bs";
 
 const SearchDetails = (props) => {
   
@@ -29,8 +31,10 @@ const SearchDetails = (props) => {
   return (
         <>
         <div>
+        </div>
           <h1 className='header'>{nurseries.name}</h1>
-          <a href='/'  className='instagram-two social'>
+          <div className='socialMedia'>
+          <a href='/' className='instagram-two social'>
             <FaInstagram size="30px"/>
           </a>
            <a href='/' className='twitter-two social'>
@@ -39,6 +43,10 @@ const SearchDetails = (props) => {
             <a href='/' className='facebook-two social'>
               <FaFacebookSquare size="30px" />
             </a>
+            <div className='score'>
+              <p className='nine'>9.3</p>
+              <p className='ten'>out of 10</p>
+            </div>
           <Container className='contact'>
         <FaIcons.FaPhone className='phone' size="25px" />
         <a className="phone" href="tel:{nurseries.phone}">{nurseries.phone}</a>
@@ -47,11 +55,6 @@ const SearchDetails = (props) => {
           <BiIcons.BiPointer className='website' size="25px" />
           <a className="website" href = {nurseries.website}>{nurseries.website}</a>
           </Container>
-
-    
-
-
-
           <Container>
             <Row className='row'>
             <Col xs={6} md={6}>
@@ -92,29 +95,39 @@ const SearchDetails = (props) => {
         </div>
         <p className='reveiw'>Read the latest reviews on this childcare provider</p>
         <p className='soon'>...Coming Soon</p>
+        <p className='example'>Example</p>
+        <p className='great'>Great nursery - our son has been attending for 2 years. All the staff are so helpful and supportive and my son has really developed into a confident and independent boy. Most importantly, he really enjoys going to nursery and always looks forward to it.</p>
+        <p className='reviewer'>Review from R P (Father of Child) published on 12 January 2021</p>
+        <div>
+        <AiIcons.AiFillStar className='starExample'size="1.8rem"/>
+        <AiIcons.AiFillStar size="1.8rem"/>
+        <AiIcons.AiFillStar  size="1.8rem"/>
+        <AiIcons.AiFillStar  size="1.8rem"/>
+        <bsIcons.BsStarHalf  size="1.6rem"/>
+        </div>
         <div>
           </div>
-        <h2>
+        <h2 className='faq'>
           FAQ
           </h2>
-          <ul>
+          <ul className='feesMain'>
             Fees: 
-          <li id= "fees">Full time: {nurseries.fullTime}</li>
-          <li> Full Day: {nurseries.fullDay}</li>
-          <li>Half Day: {nurseries.halfDay}</li>
+          <li className='fees' id= "fees">Full time: {nurseries.fullTime}</li>
+          <li className='fees'> Full Day: {nurseries.fullDay}</li>
+          <li className='fees'>Half Day: {nurseries.halfDay}</li>
           
           </ul>
-          <p>Opening Hours: {nurseries.openingHours}</p>
-          <p>Opening times: {nurseries.openingTimes}</p>
-          <p>Ofsted Rating: {nurseries.ofstedRating}</p>
-          <p> Ofsted Report: <a href = {nurseries.ofstedLink}> {nurseries.ofstedLink}</a></p>
-          <p>Open Bank Hoildays: {nurseries.isOpenBankHolidays ? 'Yes' : 'No'}</p>
-          <p>Number of spaces: {nurseries.numberOfPlaces}</p>
-          <p>Dietary Requirments Caterted for:  {nurseries.isDietaryRequirementsCateredFor ? 'Yes' : 'No'}</p>
-          <p>Age Range:  {nurseries.ageRange}</p>
-          <p>Fifthteen Hours Free: {nurseries.isFifteenHoursFree ? 'Yes' : 'No'}</p>
-          <p>Thirty Hours Free: {nurseries.isThirtyHoursFree ? 'Yes' : 'No'}</p>
-          <p>All staff First  Aid Trained: {nurseries.isFirstAidTrained ? 'Yes' : 'No'}</p>
+          <p className='questions'>Opening Hours: {nurseries.openingHours}</p>
+          <p className='questions'>Opening times: {nurseries.openingTimes}</p>
+          <p className='questions'>Ofsted Rating: {nurseries.ofstedRating}</p>
+          <p className='questions'> Ofsted Report: <a href = {nurseries.ofstedLink}> {nurseries.ofstedLink}</a></p>
+          <p className='questions'>Open Bank Hoildays: {nurseries.isOpenBankHolidays ? 'Yes' : 'No'}</p>
+          <p className='questions'>Number of spaces: {nurseries.numberOfPlaces}</p>
+          <p className='questions'>Dietary Requirments Caterted for:  {nurseries.isDietaryRequirementsCateredFor ? 'Yes' : 'No'}</p>
+          <p className='questions'>Age Range:  {nurseries.ageRange}</p>
+          <p className='questions'>Fifthteen Hours Free: {nurseries.isFifteenHoursFree ? 'Yes' : 'No'}</p>
+          <p className='questions'>Thirty Hours Free: {nurseries.isThirtyHoursFree ? 'Yes' : 'No'}</p>
+          <p className='questions'>All staff First  Aid Trained: {nurseries.isFirstAidTrained ? 'Yes' : 'No'}</p>
 
           </>
         )}
