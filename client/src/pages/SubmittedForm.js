@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const SubmittedForm = ({SubmittedForm}) => {
   return (
       <div>

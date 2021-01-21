@@ -26,58 +26,52 @@ const SearchDetails = (props) => {
     const {nurseries} = location.state
   },[location])
 
-
-
   return (
         <>
-        <div>
-        </div>
           <h1 className='header'>{nurseries.name}</h1>
-          <div className='socialMedia'>
-          <a href='/' className='instagram-two social'>
-            <FaInstagram size="30px"/>
-          </a>
-           <a href='/' className='twitter-two social'>
-              <FaTwitterSquare size="30px"/>
-            </a>
-            <a href='/' className='facebook-two social'>
-              <FaFacebookSquare size="30px" />
-            </a>
-            <div className='score'>
-              <p className='nine'>9.3</p>
-              <p className='ten'>out of 10</p>
+            <div className='socialMedia'>
+              <a href='/' className='instagram-two social'>
+                <FaInstagram size="30px"/>
+              </a>
+              <a href='/' className='twitter-two social'>
+                  <FaTwitterSquare size="30px"/>
+              </a>
+              <a href='/' className='facebook-two social'>
+                  <FaFacebookSquare size="30px" />
+              </a>
+              <div className='score'>
+                <p className='nine'>9.3</p>
+                <p className='ten'>out of 10</p>
             </div>
           <Container className='contact'>
-        <FaIcons.FaPhone className='phone' size="25px" />
-        <a className="phone" href="tel:{nurseries.phone}">{nurseries.phone}</a>
-        <HiIcons.HiOutlineMail className='email' size="25px" />
-        <a className="email" href = {nurseries.email}>{nurseries.email}</a>
-          <BiIcons.BiPointer className='website' size="25px" />
-          <a className="website" href = {nurseries.website}>{nurseries.website}</a>
+            <FaIcons.FaPhone className='phone' size="25px" />
+            <a className="phone" href="tel:{nurseries.phone}">{nurseries.phone}</a>
+            <HiIcons.HiOutlineMail className='email' size="25px" />
+            <a className="email" href = {nurseries.email}>{nurseries.email}</a>
+            <BiIcons.BiPointer className='website' size="25px" />
+            <a className="website" href = {nurseries.website}>{nurseries.website}</a>
           </Container>
           <Container>
             <Row className='row'>
-            <Col xs={6} md={6}>
-              <AliceCarousel autoPlay 
-                autoPlayInterval="2500"
-                infinate={false} 
-                disableAutoPlayOnAction={true}
-                mouseTrackingEnable={true}
-                fadeOutAnimation={true}>  
-                <img src={nurseries.profilePicture} className='pic' alt="profilePicture" />
-                <img src={nurseries.pictures.imageOne} className='pic'  alt="pictureOne" />
-                <img src={nurseries.pictures.imageTwo} className='pic'alt="pictureTwo" />
-                <img src={nurseries.pictures.imageThree} className='pic' alt="pictureThree" />
-                <img src={nurseries.pictures.imageFour} className='pic' alt="pictureFour" />
-                <img src={nurseries.pictures.imageFive} className='pic' alt="pictureFive"/>
-              </AliceCarousel>
-            <p className='address'>{nurseries.address} </p>
-            <p className='postcode'>{nurseries.postcode}</p>
-
-          </Col>
-          <Col xs={4} md={4}>
-          <ShowMoreText
- 
+              <Col xs={6} md={6}>
+                <AliceCarousel autoPlay 
+                  autoPlayInterval="2500"
+                  infinate={false} 
+                  disableAutoPlayOnAction={true}
+                  mouseTrackingEnable={true}
+                  fadeOutAnimation={true}>  
+                  <img src={nurseries.profilePicture} className='pic' alt="profilePicture" />
+                  <img src={nurseries.pictures.imageOne} className='pic'  alt="pictureOne" />
+                  <img src={nurseries.pictures.imageTwo} className='pic'alt="pictureTwo" />
+                  <img src={nurseries.pictures.imageThree} className='pic' alt="pictureThree" />
+                  <img src={nurseries.pictures.imageFour} className='pic' alt="pictureFour" />
+                  <img src={nurseries.pictures.imageFive} className='pic' alt="pictureFive"/>
+                </AliceCarousel>
+                <p className='address'>{nurseries.address} </p>
+                <p className='postcode'>{nurseries.postcode}</p>
+              </Col>
+              <Col xs={4} md={4}>
+                <ShowMoreText
                       lines={7}
                       more='Show more'
                       less='Show less'
@@ -88,34 +82,31 @@ const SearchDetails = (props) => {
                       className='writeUp'
                       id="about"
                       >{nurseries.writeUp}</ShowMoreText>
-          {/* <p className='writeUp'>{nurseries.writeUp}</p> */}
-          </Col>
-        </Row>
-      </Container>
+              {/* <p className='writeUp'>{nurseries.writeUp}</p> */}
+              </Col>
+            </Row>
+          </Container>
         </div>
-        <p className='reveiw'>Read the latest reviews on this childcare provider</p>
-        <p className='soon'>...Coming Soon</p>
-        <p className='example'>Example</p>
-        <p className='great'>Great nursery - our son has been attending for 2 years. All the staff are so helpful and supportive and my son has really developed into a confident and independent boy. Most importantly, he really enjoys going to nursery and always looks forward to it.</p>
-        <p className='reviewer'>Review from R P (Father of Child) published on 12 January 2021</p>
+          <p className='reveiw'>Read the latest reviews on this childcare provider</p>
+          <p className='soon'>...Coming Soon</p>
+          <p className='example'>Example</p>
+          <p className='great'>Great nursery - our son has been attending for 2 years. All the staff are so helpful and supportive and my son has really developed into a confident and independent boy. Most importantly, he really enjoys going to nursery and always looks forward to it.</p>
+          <p className='reviewer'>Review from R P (Father of Child) published on 12 January 2021</p>
         <div>
-        <AiIcons.AiFillStar className='starExample'size="1.8rem"/>
-        <AiIcons.AiFillStar size="1.8rem"/>
-        <AiIcons.AiFillStar  size="1.8rem"/>
-        <AiIcons.AiFillStar  size="1.8rem"/>
-        <bsIcons.BsStarHalf  size="1.6rem"/>
+          <AiIcons.AiFillStar className='starExample'size="1.8rem"/>
+          <AiIcons.AiFillStar size="1.8rem"/>
+          <AiIcons.AiFillStar  size="1.8rem"/>
+          <AiIcons.AiFillStar  size="1.8rem"/>
+          <bsIcons.BsStarHalf  size="1.6rem"/>
         </div>
-        <div>
-          </div>
         <h2 className='faq'>
           FAQ
-          </h2>
+        </h2>
           <ul className='feesMain'>
-            Fees: 
-          <li className='fees' id= "fees">Full time: {nurseries.fullTime}</li>
-          <li className='fees'> Full Day: {nurseries.fullDay}</li>
-          <li className='fees'>Half Day: {nurseries.halfDay}</li>
-          
+              Fees: 
+            <li className='fees' id= "fees">Full time: {nurseries.fullTime}</li>
+            <li className='fees'> Full Day: {nurseries.fullDay}</li>
+            <li className='fees'>Half Day: {nurseries.halfDay}</li>
           </ul>
           <p className='questions'>Opening Hours: {nurseries.openingHours}</p>
           <p className='questions'>Opening times: {nurseries.openingTimes}</p>
@@ -128,8 +119,7 @@ const SearchDetails = (props) => {
           <p className='questions'>Fifthteen Hours Free: {nurseries.isFifteenHoursFree ? 'Yes' : 'No'}</p>
           <p className='questions'>Thirty Hours Free: {nurseries.isThirtyHoursFree ? 'Yes' : 'No'}</p>
           <p className='questions'>All staff First  Aid Trained: {nurseries.isFirstAidTrained ? 'Yes' : 'No'}</p>
-
-          </>
-        )}
+        </>
+      )}
 
 export default SearchDetails

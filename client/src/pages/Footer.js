@@ -13,28 +13,25 @@ const footer =({footer}) => {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="column">
-                        <p className='footerText'> Join the Eggshells Family</p>
-                            <ul className='footerListOne'>
-                                <li >
-                                    <a href='/'  className='instagram social'>
-                                        <FaInstagram size="19.5px"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='/' className='twitter social'>
-                                        <FaTwitterSquare size="19.5px"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='/' className='facebook social'>
-                                        <FaFacebookSquare size="19.5px" />
-                                    </a>
-                                </li>
-                            </ul>
-                            </div>
-                    
-                    
-                  
+                            <p className='footerText'> Join the Eggshells Family</p>
+                                <ul className='footerListOne'>
+                                    <li >
+                                        <a href='/'  className='instagram social'>
+                                            <FaInstagram size="19.5px"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='/' className='twitter social'>
+                                            <FaTwitterSquare size="19.5px"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='/' className='facebook social'>
+                                            <FaFacebookSquare size="19.5px" />
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
                         <div class="column">
                             <p className='footerText'>Guides</p>
                                 <ul className='footerListTwo'>
@@ -46,11 +43,9 @@ const footer =({footer}) => {
                                     </li>
                                 </ul>
                           </div>      
-
-                    <div className='contactCol'>
-                        <ul className='footerListThree'>
-                            <p className='footerText'>Quick links</p>
-                    
+                        <div className='contactCol'>
+                            <ul className='footerListThree'>
+                                <p className='footerText'>Quick links</p>
                                 <li>
                                     <NavLink to="/contact">Contact</NavLink>
                                 </li>
@@ -61,12 +56,12 @@ const footer =({footer}) => {
                                     <NavLink to="/signupform">Register Your Nursery</NavLink>
                                 </li>
                                 <p className="copyRight">
-                        &copy;{new Date().getFullYear()} LB Desgins- All Rights Reservered</p>
-                        </ul>
-                    </div>
+                                    &copy;{new Date().getFullYear()} LB Desgins- All Rights Reservered</p>
+                            </ul>
                         </div>
-                     
                     </div>
+                     
+                </div>
             </footer>
         </>
     )}

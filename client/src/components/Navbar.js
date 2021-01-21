@@ -15,10 +15,10 @@ function Navbar(props) {
       <IconContext.Provider value={{ color: '#8B008B' }}>
         <div className='navbar'>
               <VscIcons.VscThreeBars className='bars'size="2rem" onClick={showSidebar} />
-            <Link to={{pathname: '#', state: {from: props.location}}} className='menu-bars' />   
-            <Link to='/'>
+              <Link to={{pathname: '#', state: {from: props.location}}} className='menu-bars' />   
+              <Link to='/'>
               <AiIcons.AiFillHome size="2rem" />
-            </Link>
+              </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
@@ -28,17 +28,17 @@ function Navbar(props) {
             </li>
             {Sidebar.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
+                      <li key={index} className={item.cName}>
+                        <Link to={item.path}>
+                          {item.icon}
+                          <span>{item.title}</span>
+                        </Link>
+                      </li>
+                      );
+                    })}
           </ul>
         </nav>
-              </IconContext.Provider>
+            </IconContext.Provider>
     </>
   );
 }

@@ -132,10 +132,12 @@ span {
   color: white;
   border: 1px sold rgb(70, 153, 179);
   background-color: 250ms;
-  width: 30%;
+  width: 20%;
   margin-left: 40%;
   border-radius: 10px;
 }
+
+
 
 .signSubmit:hover {
   background-color: white;
@@ -555,9 +557,6 @@ html, body {
   float: left;
   width: 33.33%;
 }
-
-
-
 .footerListOne {
   list-style-position: inside;
   list-style-type: square;
@@ -820,10 +819,67 @@ a.instagram-two {
   margin-bottom: 2rem;
 }
 
-.reviewContact{
-  display: block;
+.reviewForm{
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
 }
-/* .ofsted{
+
+.rateOverall {
+  display: flex;
+  flex-direction: column;
+  width:60%;
+}
+
+.checkbox {
+  width:50%;
+}
+
+.checkboxTwo {
+  width:83%;
+}
+
+.boxItems {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.points {
+  margin-left: 22%;
+}
+
+.overall {
+  margin-top: 2rem;
+}
+
+.rate {
+  margin-top: 3.9rem;
+  font-weight: bold;
+  font-size:1.1rem;
+}
+
+.ratingForm {
+  margin-left: 27%; 
+  margin-bottom:3rem;
+  width:60%;
+}
+
+
+.overallOne {
+  margin-top: 3rem;
+}
+
+.reviewButton {
+  margin-left: 50%;
+  margin-top: 2rem;
+  margin-bottom:1rem;
+  width:10%;
+  height: 20%;
+} 
+
+.ofsted{
   height: 100px;
   width: 100px;
   clear: both;
@@ -832,29 +888,10 @@ a.instagram-two {
 .ofstedText {
   float: left;
   margin-left: 40%;
-
-
-}
-
-.card {
-  width: 300px;
-  height: 300px;
-  overflow: auto;
-}  */
-
-/* cost page */
-
-/* search page */
-/* .nurseryList {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem; */
-/* border: 1.5px solid lightgray; */
-/* padding-left: auto;
-} */
+} 
 
 /* submitted Form*/
-/* .thankYou {
+.thankYou {
   font-size: 1.8rem;
   text-align: center;
   margin-top: 4rem;
@@ -864,5 +901,27 @@ a.instagram-two {
   font-size: 1.8rem;
   text-align: center;
   margin-top: 3.5rem;
+}
 
-} */
+/* nursery sign up */
+.registerForm {
+  display:flex;
+  flex-direction: column;
+  width:40%;
+  margin-left:30%;
+}
+
+.signUp {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top:2rem;
+}
+
+.provide {
+  margin-top:2rem;
+}
+
+.yourRating {
+  margin-bottom: 3rem;
+  font-style: italic;
+}

@@ -1,10 +1,9 @@
 
-
-<!-- PROJECT LOGO -->
+<import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 <br />
 <p align="center">
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="EggshellsHomepage.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">EggsShells</h3>
@@ -14,7 +13,7 @@
     <br />
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com//lbrowncoder/black-codher-personal-project.git">View Demo</a>
   </p>
 </p>
 
@@ -39,7 +38,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -58,16 +56,16 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
-* []()
+* HTML    
+* REACT
+* CSS
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get a local copy up and run 'npm run develop'
 
 ### Prerequisites
 
@@ -99,20 +97,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
 <!-- LICENSE -->
 ## License
 
@@ -126,16 +110,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Lamara Bown - [https://uk.linkedin.com/in/lamara-brown-10473167(https://twitter.com/twitter_handle) - lbrown22@hotmail.co.uk
 
 Project Link: [https://github.com/lbrowncoder/black-codher-personal-project.git](https://github.com/lbrowncoder/black-codher-personal-project.git)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
 
 
 
