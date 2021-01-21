@@ -16,21 +16,21 @@ const ReviewForm = () => {
     let [reviewName, setReviewName] = useState("");
     let [comment, setComment] = useState('');
     let [value, setValue] = useState([1, 3,]);
-    let [standard] = useState([]);
-    let [outdoor] = useState([]);
-    let [learning] = useState([])
-    let [ict] = useState([]);
-    let [care] = useState([]);
-    let [activities] = useState([]);
-    let [staff] = useState([]);
-    let [food] = useState([]);
-    let [managment] = useState([]);
-    let [clean] = useState([]);
-    let [safe] = useState([]);
-    let [money] = useState([]);
-    let [recommend] = useState([]);
-    let [overall] = useState([]);
-    const [setSubmit] = useState(true);
+    let [standard, setStandard] = useState([]);
+    let [outdoor, setOutdoor] = useState([]);
+    let [learning, setLearning] = useState([])
+    let [ict, setICT] = useState([]);
+    let [care, setCare] = useState([]);
+    let [activities, setActivities] = useState([]);
+    let [staff, setStaff] = useState([]);
+    let [food, setFood] = useState([]);
+    let [managment, setManagement] = useState([]);
+    let [clean, setClean] = useState([]);
+    let [safe, setSafe] = useState([]);
+    let [money, setMoney] = useState([]);
+    let [recommend, setRecommend] = useState([]);
+    let [overall, setOverall] = useState([]);
+    const [isSubmitted, setIsSubmitted]= useState(false)
    
         const handleSubmit = async (event) => {
             event.preventDefault()
@@ -46,10 +46,10 @@ const ReviewForm = () => {
                 const review= await axios.get('/api/review').then (res => res.data)
                 const result =review[review.length -1]
                 setComment (result.reviewComment);  
-                setReviewName (result.name)
-                setSubmit(false)
-                //  setOverall (result.recommend)
+                setReviewName (result.name);
+                setEmail(result.email);
               })
+              setIsSubmitted(true)
   }
  
         const handleChange = (val) => setValue(val);
@@ -60,10 +60,10 @@ const ReviewForm = () => {
                         <Container className="container">
                           <form onSubmit={(event) => handleSubmit(event)}>
                               <div  className="reviewForm">
-                                    <TextField placeholder="Name" className='reviewContact' id="filled-basic"  variant="filled" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                                    <TextField placeholder="Contact Number" id="filled-basic"  variant="filled" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
-                                    <TextField placeholder="Email" id="filled-basic"  variant="filled" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-                                    <TextField placeholder="Review" id="filled-basic"  variant="filled" type="text" fullWidth value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
+                                    <TextField placeholder="Name*" className='reviewContact' id="filled-basic"  variant="filled" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                                    <TextField placeholder="Contact Number*" id="filled-basic"  variant="filled" type="text" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
+                                    <TextField placeholder="Email*" id="filled-basic"  variant="filled" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <TextField placeholder="Review*" id="filled-basic"  variant="filled" type="text" fullWidth value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
                                   <p className="overallOne">How likely are you to recommend this nursery?</p>
                                 <ToggleButtonGroup className="checkbox" type="checkbox" value={recommend} size="sm" onChange={onclick}>
                                     <ToggleButton value={1}>Very Likely</ToggleButton>
@@ -186,9 +186,11 @@ const ReviewForm = () => {
                             <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
                           </form>
                         </Container>
-                      <h2>Please Check your review</h2>
-                        <p>{reviewName}</p>
-                        <p>{comment}</p>
+
+
+                      { isSubmitted && <h3 className='checkReview'>Please check your review</h3> }
+                      { isSubmitted && <p className='checkReview'>Name: {reviewName}</p>}
+                      { isSubmitted && <p className='checkReview'>Review Comment: {comment}</p>}
                    </div>
                 </>
         )}

@@ -47,9 +47,9 @@ const SearchDetails = (props) => {
             <FaIcons.FaPhone className='phone' size="25px" />
             <a className="phone" href="tel:{nurseries.phone}">{nurseries.phone}</a>
             <HiIcons.HiOutlineMail className='email' size="25px" />
-            <a className="email" href = {nurseries.email}>{nurseries.email}</a>
+            <a className="email" href = {nurseries.email} target="_blank">{nurseries.email}</a>
             <BiIcons.BiPointer className='website' size="25px" />
-            <a className="website" href = {nurseries.website}>{nurseries.website}</a>
+            <a className="website" href = {nurseries.website} target="_blank">{nurseries.website}</a>
           </Container>
           <Container>
             <Row className='row'>
@@ -111,7 +111,7 @@ const SearchDetails = (props) => {
           <p className='questions'>Opening Hours: {nurseries.openingHours}</p>
           <p className='questions'>Opening times: {nurseries.openingTimes}</p>
           <p className='questions'>Ofsted Rating: {nurseries.ofstedRating}</p>
-          <p className='questions'> Ofsted Report: <a href = {nurseries.ofstedLink}> {nurseries.ofstedLink}</a></p>
+          <p className='questions'> Ofsted Report: <a href = {nurseries.ofstedLink} target="_blank"> {nurseries.ofstedLink}</a></p>
           <p className='questions'>Open Bank Hoildays: {nurseries.isOpenBankHolidays ? 'Yes' : 'No'}</p>
           <p className='questions'>Number of spaces: {nurseries.numberOfPlaces}</p>
           <p className='questions'>Dietary Requirments Caterted for:  {nurseries.isDietaryRequirementsCateredFor ? 'Yes' : 'No'}</p>

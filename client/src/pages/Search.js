@@ -52,8 +52,7 @@ const NurserySearch = ({NurserySearch}) => {
                   <Button onClick={onKeyword} variant="outline-primary"> Submit </Button>
                   {filteredNurseries.length && setHasSearched ? filteredNurseries.map((nursery, index) => (     
                     <NurseryDetail key={index} nursery={nursery} /> ))
-                      : 
-                      <p>No results found</p>
+                      : ''   
                     }
                 </div>
               </Container>

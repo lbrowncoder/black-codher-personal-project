@@ -93,14 +93,15 @@ const SignUpForm = () => {
                 <div>
                     <h1 className='signUp'>Sign Up</h1>
                   <Form autoComplete="off" className='registerForm'>
-                    <MyTextField className='fullName' placeholder="Full Name" name='name' type='input' />                    <MyTextField placeholder='Email'name='email' type='input' />
-                    <TextField placeholder='Password 'name='password' type='password' id="filled-basic"  variant="filled" />
-                    <MyTextField placeholder='Contact' name='contact' type='input' />
-                    <MyTextField placeholder='Website' name='website' type='input' /> 
-                    <MyLargeTextField placeholder='Tell us about your Nursery' name='writeup' type='input' />
-                    <MyLargeTextField placeholder='Continued' name='writeup' type='input' />
-                    <MyLargeTextField placeholder='Address' name='address' type='input' />
-                    <MyTextField placeholder='Postcode' name='postcode' type='input' />
+                    <MyTextField className='fullName' placeholder="Full Name*" name='name' type='input' />                    
+                    <MyTextField placeholder='Email*'name='email' type='input' />
+                    <TextField placeholder='Password* 'name='password' type='password' id="filled-basic"  variant="filled" />
+                    <MyTextField placeholder='Contact*' name='contact' type='input' />
+                    <MyTextField placeholder='Website*' name='website' type='input' /> 
+                    <MyLargeTextField placeholder='Tell us about your Nursery*' name='writeup' type='input' />
+                    <MyLargeTextField placeholder='Continued*' name='writeup' type='input' />
+                    <MyLargeTextField placeholder='Address*' name='address' type='input' />
+                    <MyTextField placeholder='Postcode*' name='postcode' type='input' />
                     <label className='provide' htmlFor="ofsted">Please provide your Ofstead rating and date of the report</label>
                   <div className='container p-5'>
                       <select className='custom-select'

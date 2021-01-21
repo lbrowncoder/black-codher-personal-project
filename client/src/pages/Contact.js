@@ -56,23 +56,27 @@ const Contact = () => {
                                 <h1 className='contactTitle'>Contact</h1>
                             <Form  className='contactForm' autoComplete="off">
                                 <div className="fields">
-                                    <label className='contactInfo' htmlFor="Contactname">Name</label>
+                                    <label className='contactInfo' htmlFor="Contactname">Name:*</label>
                                         <Field className='contactInput' style ={{width: '50%'}}  type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
                                             {errors.name && touched.name && (
                                                 <div className="input-feedback">{errors.name}</div>)}
 
-                                    <label className='contactInfo'htmlFor="email">Email</label>
+                                    <label className='contactInfo'htmlFor="email">Email:*</label>
                                         <Field className='contactInput' style ={{width: '50%'}}  type="text" name="email" onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
                                             {errors.email && touched.email && (
                                                 <div className="input-feedback">{errors.email}</div>)}
 
-                                    <label className='contactInfo' htmlFor="message">Message</label>
+                                    <label className='contactInfo' htmlFor="message">Message:*</label>
                                         <Field className='contactField' style ={{width: '50%'}} type="message" name="message" onBlur={handleBlur}  className={errors.message && touched.message && "error" } />
                                             {errors.message && touched.message && (
                                                 <div className="input-feedback">{errors.message}</div>)}
                                 </div>
+                                <div className='signButton'>
                                 <button className='signSubmit' type="submit" disabled={isSubmitting} value='submit'>Contact</button>
+                                </div>
+                                <div className='signButton2'>
                                 <button className='signSubmit' type="reset">Reset</button>
+                                </div>
                             </Form>
                     </Container>
                     )

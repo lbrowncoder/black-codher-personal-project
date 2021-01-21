@@ -58,7 +58,7 @@ const HomePage = (props) => {
                                   {feature1.address}
                                 </Card.Text>
                                 <Card.Text className="writeup">
-                                Ofsted Rating: {feature1.ofstedRating}
+                                <p className="ofstedGrade">Ofsted Rating: {feature1.ofstedRating}</p>
                                 </Card.Text>
                             <Button className="moreInfoBtn" variant="primary">More Info</Button>
                             </Card.Body>
@@ -74,7 +74,7 @@ const HomePage = (props) => {
                                   {feature2.address}
                               </Card.Text>
                               <Card.Text className="writeup">
-                                Ofsted Rating: {feature2.ofstedRating}
+                              <p className="ofstedGrade">Ofsted Rating: {feature2.ofstedRating}</p>
                               </Card.Text>
                             <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
                             </Card.Body>
@@ -90,7 +90,7 @@ const HomePage = (props) => {
                                 {feature3.address}
                               </Card.Text>
                               <Card.Text className="writeup">
-                                Ofsted Rating: {feature3.ofstedRating}
+                              <p className="ofstedGrade">Ofsted Rating: {feature3.ofstedRating}</p>
                               </Card.Text>
                             <Button className="moreInfoBtnTwo" variant="primary">More Info</Button>
                           </Card.Body>

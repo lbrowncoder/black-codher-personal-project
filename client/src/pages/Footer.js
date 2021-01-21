@@ -17,17 +17,17 @@ const footer =({footer}) => {
                                 <ul className='footerListOne'>
                                     <li >
                                         <a href='/'  className='instagram social'>
-                                            <FaInstagram size="19.5px"/>
+                                            <FaInstagram size="30px"/>
                                         </a>
                                     </li>
                                     <li>
                                         <a href='/' className='twitter social'>
-                                            <FaTwitterSquare size="19.5px"/>
+                                            <FaTwitterSquare size="30px"/>
                                         </a>
                                     </li>
                                     <li>
                                         <a href='/' className='facebook social'>
-                                            <FaFacebookSquare size="19.5px" />
+                                            <FaFacebookSquare size="30px" />
                                         </a>
                                     </li>
                                 </ul>

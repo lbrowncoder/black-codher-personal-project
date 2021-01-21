@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  cursor: pointer;
 }
 
 .bars {
@@ -56,6 +57,8 @@ body {
   padding: 8px 0px 8px 16px;
   list-style: none;
   height: 60px;
+  border:0;
+  text-decoration: none;
 }
 
 .nav-text a {
@@ -68,10 +71,12 @@ body {
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .nav-text a:hover {
   background-color: #8b008b;
+  text-decoration: none;
 }
 
 .nav-menu-items {
@@ -137,6 +142,15 @@ span {
   border-radius: 10px;
 }
 
+.signButton {
+display: flex;
+
+}
+
+.signButton2{
+  display: flex;
+
+}
 
 
 .signSubmit:hover {
@@ -262,10 +276,15 @@ submit:after {
   background-position: 100% 0%;
 }
 
+
+.form-inner .form-group label {
+  color:black;
+}
+
+
 .welcome {
   width: 100%;
   max-width: 480px;
-  /* background-color: grey; */
   padding: 15px 30px;
 }
 
@@ -306,6 +325,7 @@ submit:after {
 
 .search {
   text-align: center;
+  margin-top: 1.2rem;
 }
 
 .perfect {
@@ -314,7 +334,10 @@ submit:after {
 
 .searchContainer {
   margin-left: 35%;
+  height: 2.2rem;
   width: 30%;
+  margin-bottom: 2rem;
+  
 }
 
 .results {
@@ -345,7 +368,8 @@ submit:after {
 
 .guideTitle {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .quality {
@@ -353,33 +377,35 @@ submit:after {
   margin-right: 5rem;
   margin-left: 5rem;
   font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .leave {
-  margin-top: 5rem;
-  margin-left: 1.5rem;
+  margin-top: 7rem;
+  margin-left: 3.5rem;
   font-size: 1.2rem;
 }
 
-.points {
+.guidePoints {
   margin-top: 2rem;
+  margin-left: 3.5rem;
 }
 
 .guideText {
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
 }
 
 .listGuide {
-  margin-left: 2rem;
+  margin-left: 4.5rem;
 }
 
 .guideHeader {
-  text-align: center;
-  padding-top: 1rem;
+ margin-left: 3.5rem;
+  padding-top: 2rem;
 }
 
 .h3Guide {
-  margin-left: 1.5rem;
+  margin-left: 3.5rem;
 }
 
 .guidePic {
@@ -395,7 +421,8 @@ submit:after {
 /* childcare cost */
 .helpCost {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .click {
@@ -403,7 +430,7 @@ submit:after {
 }
 
 .costText {
-  margin-left: 8%;
+  margin-left: 7.5%;
   margin-right: 8%;
   text-align: justify;
 }
@@ -411,15 +438,26 @@ submit:after {
   height: 300px;
   width: 300px;
   margin-left: 2rem;
-  margin-right: auto;
+  margin-right: 2rem;
   margin-bottom: 2rem;
   float: left;
   clear: both;
 }
 
 .h2Cost {
+  margin-left:5.5rem;
+  margin-top: 3.5rem;
+}
+
+.h2CostFirst{
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4.5rem;
+  margin-right: 14rem;
+}
+
+.couple{
+  margin-top:0.5rem;
+  margin-left:6%;
 }
 
 
@@ -429,15 +467,18 @@ submit:after {
   text-align: center;
   font-size:3rem;
   padding-bottom: 2.4rem;
+  margin-top:2rem;
 }
 
 .moreInfoBtn {
   margin-left:30%;
+  margin-top: 1rem;
  }
  
  .moreInfoBtnTwo {
      margin-left:30%;
      margin-bottom: 1%;
+     margin-top: 1rem;
  }
  
  .checkOut {
@@ -490,15 +531,19 @@ submit:after {
  }
  .writeUp{
     margin-top: 7rem;
-    /* font-size: 1.3rem; */
-
  }
  
+ .ofstedGrade{
+   text-align: center;
+
+ }
  .topRated {
      font-style: italic;
      font-size: 1.7rem;
      margin-top: 5rem;
      margin-left: 4rem;
+     margin-bottom: 1.5rem;
+     text-align: center;
  }
  
  .secondTitle {
@@ -521,6 +566,7 @@ submit:after {
     border-left:none;
     border-right:none;
     margin-top: 4rem;
+    margin-bottom: 0;
  }
  
  .regions {
@@ -545,6 +591,7 @@ submit:after {
   font-size: 1.7rem;
   margin-top: 5rem;
   margin-left: 4rem;
+  text-align: center;
 }
 
 /* footer */
@@ -559,22 +606,25 @@ html, body {
 }
 .footerListOne {
   list-style-position: inside;
-  list-style-type: square;
+  list-style-type: none;
   padding-top: 0.3rem;
   border-right: solid black 1px;
   height: 130px;
+  display: flex;
+  margin-left:5rem;
+
 }
 
 .footerListTwo {
   list-style-position: inside;
-  list-style-type: square;
+  list-style-type: none;
   padding-top: 0.3rem;
   border-right: solid black 1px;
   height: 130px;
 }
 .footerListThree {
   list-style-position: inside;
-  list-style-type: square;
+  list-style-type: none;
   padding-top: 0.3rem;
 }
 
@@ -600,6 +650,7 @@ html, body {
 
 .footerText {
   padding-top: 1rem;
+  font-weight: bold;
 }
 
 .copyRight {
@@ -823,6 +874,8 @@ a.instagram-two {
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
+  width: 60%;
+  justify-content: center;
 }
 
 .rateOverall {
@@ -847,7 +900,7 @@ a.instagram-two {
 }
 
 .points {
-  margin-left: 22%;
+  margin-left:2rem;
 }
 
 .overall {
@@ -861,11 +914,18 @@ a.instagram-two {
 }
 
 .ratingForm {
-  margin-left: 27%; 
+  margin-left: 2rem;
   margin-bottom:3rem;
   width:60%;
 }
 
+.checkReview{
+  margin-left:8.3rem;
+}
+
+.MuiInputBase-root-18 {
+  margin-top: 1rem;
+}
 
 .overallOne {
   margin-top: 3rem;
@@ -882,12 +942,11 @@ a.instagram-two {
 .ofsted{
   height: 100px;
   width: 100px;
-  clear: both;
+
 }
 
 .ofstedText {
-  float: left;
-  margin-left: 40%;
+margin-left:3.5rem;
 } 
 
 /* submitted Form*/
