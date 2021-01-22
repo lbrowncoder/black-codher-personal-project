@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Formik, Form, Field, useField, FieldArray} from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import './CustomerSignUp.css';
+import '../App.css';
 import { Checkbox, FormControlLabel, Radio,Select, TextField, MenuItem, Switch } from '@material-ui/core';
 
 
@@ -28,18 +28,16 @@ const SignUpForm = () => {
 
         const MyTextField = ({placeholder,...props}) => {
           const [field, meta] = useField(props);
-          const errorText = meta.error && meta.touched ? meta.error : '';
           return (
-            <TextField  placeholder={placeholder} {...field} helperText={errorText} id="filled-basic"  variant="filled" />
+            <TextField  placeholder={placeholder} {...field} id="filled-basic"  variant="filled" />
             // <TextField placeholder={placeholder} {...field} helperText={errorText} />
-          )
+          ) 
         }
 
         const MyLargeTextField = ({placeholder,...props}) => {
           const [field, meta] = useField(props);
-          const errorText = meta.error && meta.touched ? meta.error : '';
           return (
-            <TextField placeholder={placeholder} {...field} helperText={errorText} fullWidth />
+            <TextField placeholder={placeholder} {...field} fullWidth />
           )
         }        
  
@@ -69,12 +67,15 @@ const SignUpForm = () => {
                     email: Yup.string()
                     .email('Email is invalid')
                     .required('Email is Required'),
-                        contact: Yup.number()
+                    contact: Yup.number()
                     .min(11, 'Must be 11 digits long')
                     .required('Required'),
                     writeup: Yup.string()
                     .min(10, 'Description can not be empty')
-                    .required('Required'),     
+                    .required('Required'), 
+                    password: Yup.string()
+                    .min(6, 'Password must be atleast 6 charaters or more')
+                    .required('Password is Required'),    
                   })}
             >
             {props => {
@@ -93,12 +94,24 @@ const SignUpForm = () => {
                 <div>
                     <h1 className='signUp'>Sign Up</h1>
                   <Form autoComplete="off" className='registerForm'>
-                    <MyTextField className='fullName' placeholder="Full Name*" name='name' type='input' />                    
+                    <MyTextField  placeholder="Full Name*" name='name' type='input' />  
+                      {errors.name && touched.name && (
+                        <div className="input-feedback">{errors.name}</div>)}                  
                     <MyTextField placeholder='Email*'name='email' type='input' />
+                      {errors.email && touched.email && (
+                        <div className="input-feedback">{errors.email}</div>)}
                     <TextField placeholder='Password* 'name='password' type='password' id="filled-basic"  variant="filled" />
+                      {errors.password && touched.password && (
+                        <div className="input-feedback">{errors.password}</div>)}
                     <MyTextField placeholder='Contact*' name='contact' type='input' />
+                      {errors.contact && touched.contact && (
+                        <div className="input-feedback">{errors.contact}</div>)}
                     <MyTextField placeholder='Website*' name='website' type='input' /> 
+                      {errors.website && touched.website && (
+                        <div className="input-feedback">{errors.website}</div>)}
                     <MyLargeTextField placeholder='Tell us about your Nursery*' name='writeup' type='input' />
+                        {errors.writeup && touched.writeup && (
+                          <div className="input-feedback">{errors.writeup}</div>)}
                     <MyLargeTextField placeholder='Continued*' name='writeup' type='input' />
                     <MyLargeTextField placeholder='Address*' name='address' type='input' />
                     <MyTextField placeholder='Postcode*' name='postcode' type='input' />

@@ -15,7 +15,7 @@ const ReviewForm = () => {
     let [reviewComment,setReviewComment] = useState("");
     let [reviewName, setReviewName] = useState("");
     let [comment, setComment] = useState('');
-    let [value, setValue] = useState([1, 3,]);
+    let [value, setValue] = useState([1,2,3,4,5]);
     let [standard, setStandard] = useState([]);
     let [outdoor, setOutdoor] = useState([]);
     let [learning, setLearning] = useState([])
@@ -186,11 +186,10 @@ const ReviewForm = () => {
                             <Button className="reviewButton" onClick={handleSubmit} variant="btn btn-outline-dark"> Submit </Button>{' '}
                           </form>
                         </Container>
-
-
                       { isSubmitted && <h3 className='checkReview'>Please check your review</h3> }
                       { isSubmitted && <p className='checkReview'>Name: {reviewName}</p>}
                       { isSubmitted && <p className='checkReview'>Review Comment: {comment}</p>}
+                      {/* Ability to edit review- added later */}
                    </div>
                 </>
         )}

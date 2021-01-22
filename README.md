@@ -1,9 +1,9 @@
 
-<import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
+
 <br />
 <p align="center">
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
-    <img src="EggshellsHomepage.svg" alt="Logo" width="80" height="80">
+    <img src="./imagesMain/EggshellsHomepage.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">EggsShells</h3>
@@ -25,16 +25,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -46,8 +39,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
  Eggshells is a App where users can serach for local childcare providers in their area. Users can read reviews for other parents/guardians as well as leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**

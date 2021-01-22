@@ -20,11 +20,12 @@ const Login = () => {
                     name: details.name,
                     email: details.email
                 });
+                window.location = '/profile'
             } else {
                 console.log("Details does not match");
                 setError("Details does not match");
             }
-                window.location = '/profile'
+               
             }
 
                 return (

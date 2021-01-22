@@ -54,7 +54,7 @@ const Contact = () => {
                     return (
                         <Container>
                                 <h1 className='contactTitle'>Contact</h1>
-                            <Form  className='contactForm' autoComplete="off">
+                            <Form className='contactForm' autoComplete="off">
                                 <div className="fields">
                                     <label className='contactInfo' htmlFor="Contactname">Name:*</label>
                                         <Field className='contactInput' style ={{width: '50%'}}  type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
@@ -71,11 +71,9 @@ const Contact = () => {
                                             {errors.message && touched.message && (
                                                 <div className="input-feedback">{errors.message}</div>)}
                                 </div>
-                                <div className='signButton'>
-                                <button className='signSubmit' type="submit" disabled={isSubmitting} value='submit'>Contact</button>
-                                </div>
-                                <div className='signButton2'>
-                                <button className='signSubmit' type="reset">Reset</button>
+                                <div className='mainButtonContact'>
+                                <button className='signSubmitContact' type="submit" disabled={isSubmitting} value='submit'>Contact</button>
+                                <button className='resetSubmitContact' type="reset">Reset</button>
                                 </div>
                             </Form>
                     </Container>

@@ -131,19 +131,4 @@ app.post(`/api/users`, async (req, res) => {
           return res.status(200).send(allUsers);
           });
           
-  // app.post('/users/login', async (req, res) => {
-  //   const user = SignUp.find(user=> SignUp.name = req.body.name)
-  //   if (user == null) {
-  //     return res.status(400).send('Cant not find user')
-  //   } 
-  //   try {
-  //     if (await bcrypt.compare(req.body.password, user.password)) {
-  //       res.send('success')
-  //     } else {
-  //       res.send('Details do not match')}
-  //      } catch {
-  //     res.status(500).send
-  //   }
-  // })  
-
 }

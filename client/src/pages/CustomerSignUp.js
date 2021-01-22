@@ -77,9 +77,10 @@ const Login = () => {
                             <Field type="password" name="confirmPassword" onBlur={handleBlur}  className={errors.confirmPassword && touched.confirmPassword && "error" } />
                                 {errors.confirmPassword && touched.confirmPassword && (
                                     <div className="input-feedback">{errors.name}</div>)}
-
-                        <button className='signSubmit' type="submit" disabled={isSubmitting} value='submit'>Sign Up</button>
-                        <button className='signSubmit'type="reset">Reset</button>
+                        <div className='mainButton'>
+                            <button className='signSubmit' type="submit" disabled={isSubmitting} value='submit'>Sign Up</button>
+                            <button className='resetSubmit'type="reset">Reset</button>
+                        </div>
                             <p className='already'>Already have an account?<NavLink to='/login'> Login </NavLink> here</p>
                     </Form>
                 </div>
