@@ -1,7 +1,6 @@
 import React from 'react';
 import Guide from '../imagesMain/guide.jpg';
 import '../App.css';
-import ofsted from '../imagesMain/ofsted.png'
 
 const guide = () => {
             return (
@@ -29,7 +28,6 @@ const guide = () => {
                         <h2 className='guideHeader'>Read Reviews</h2>
                             <p className='guideText'>The best way to find out what a nursery is really like is to ask the parents of children at the nursery. The easiest way to do this is to read reviews of the nurseries at eggshells.co.uk. Look on social media sites and online forums to see what people are saying about it.</p>  
                         <h2 className='ofstedText'>Ofstead</h2> 
-                            {/* <img className="ofsted" src={ofsted} alt="ofsted" /> */}
                             <p className='guideText'>Every nursery is inspected by an education watchdog and there will be reports of these inspections online. In England, you can check the Ofsted website, Ofsted visits all registered childcare services and makes sure that standards are being met and that children are safe. You can check Ofsted's grade and report for the childcare providers you are considering at www.ofsted.gov.uk. </p>
                         <h2 className='guideHeader'>Visit your shortlist</h2>
                             <p className='guideText'>It's a good idea to visit several settings and ask questions in person about the childcare provided. It might help to take a friend and/or your child on the visits to help you decide.</p>

@@ -44,10 +44,10 @@ const Contact = () => {
                             touched,
                             errors,
                             isSubmitting,
-                            handleChange,
-                            handleSubmit,
+                            // handleChange,
+                            // handleSubmit,
                             handleBlur,
-                            onSubmit
+                            // onSubmit
                         }  = props;
 
                 
@@ -56,18 +56,18 @@ const Contact = () => {
                                 <h1 className='contactTitle'>Contact</h1>
                             <Form className='contactForm' autoComplete="off">
                                 <div className="fields">
-                                    <label className='contactInfo' htmlFor="Contactname">Name:*</label>
-                                        <Field className='contactInput' style ={{width: '50%'}}  type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
+                                    <label className='contactInfo' htmlFor="Contactname" >Name:*</label>
+                                        <Field className='contactInput' style ={{width: '50%'}} placeholder='Name'  type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
                                             {errors.name && touched.name && (
                                                 <div className="input-feedback">{errors.name}</div>)}
 
-                                    <label className='contactInfo'htmlFor="email">Email:*</label>
-                                        <Field className='contactInput' style ={{width: '50%'}}  type="text" name="email" onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
+                                    <label className='contactInfo'htmlFor="email" >Email:*</label>
+                                        <Field className='contactInput' style ={{width: '50%'}} placeholder='Email'  type="text" name="email" onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
                                             {errors.email && touched.email && (
                                                 <div className="input-feedback">{errors.email}</div>)}
 
-                                    <label className='contactInfo' htmlFor="message">Message:*</label>
-                                        <Field className='contactField' style ={{width: '50%'}} type="message" name="message" onBlur={handleBlur}  className={errors.message && touched.message && "error" } />
+                                    <label className='contactInfo' htmlFor="message" >Message:*</label>
+                                        <Field className='contactField' style ={{width: '50%'}} type="message" placeholder='Message' name="message" onBlur={handleBlur}  className={errors.message && touched.message && "error" } />
                                             {errors.message && touched.message && (
                                                 <div className="input-feedback">{errors.message}</div>)}
                                 </div>

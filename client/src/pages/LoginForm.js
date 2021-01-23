@@ -16,7 +16,7 @@ const LoginForm = ({ Login, error}) => {
             <form classname="submit" onSubmit={submitHandler}>
                 <div className="form-inner">
                     <h2 className='loginTitle'>Login</h2>
-                    {(error !="") ? (<div className="error">{error}</div>) : ""}
+                    {(error !=="") ? (<div className="error">{error}</div>) : ""}
                         <div className="form-group">
                             <label  htmlFor="name">Name*</label>
                             <input className='loginInput' type="text" name="name" placeholder='Name' id="name" onChange={e => setDetails({...details, name:e.target.value})} value={details.name} />

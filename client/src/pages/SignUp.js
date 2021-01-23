@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
-import {Formik, Form, Field, useField, FieldArray} from 'formik';
+import {Formik, Form, useField} from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import '../App.css';
-import { Checkbox, FormControlLabel, Radio,Select, TextField, MenuItem, Switch } from '@material-ui/core';
-
+import { Checkbox, FormControlLabel, TextField, Switch } from '@material-ui/core';
 
 const SignUpForm = () => {
 
   const [ofsted, setOfsted] = useState ("")
-  const [fees, setFees] = useState ("")
+  // const [fees, setFees] = useState ("")
 
     const handleSubmit = (values, {setSubmitting, resetForm}) => {
       axios.post('/api/info', values)
@@ -27,7 +26,7 @@ const SignUpForm = () => {
         }
 
         const MyTextField = ({placeholder,...props}) => {
-          const [field, meta] = useField(props);
+          const [field] = useField(props);
           return (
             <TextField  placeholder={placeholder} {...field} id="filled-basic"  variant="filled" />
             // <TextField placeholder={placeholder} {...field} helperText={errorText} />
@@ -35,7 +34,7 @@ const SignUpForm = () => {
         }
 
         const MyLargeTextField = ({placeholder,...props}) => {
-          const [field, meta] = useField(props);
+          const [field] = useField(props);
           return (
             <TextField placeholder={placeholder} {...field} fullWidth />
           )
@@ -83,11 +82,11 @@ const SignUpForm = () => {
                   values,
                   touched,
                   errors,
-                  isSubmitting,
-                  handleChange,
-                  handleSubmit,
-                  handleBlur,
-                  onSubmit
+                  // isSubmitting,
+                  // handleChange,
+                  // handleSubmit,
+                  // handleBlur,
+                  // onSubmit
               }  = props;
 
               return (

@@ -8,8 +8,6 @@
         "@testing-library/react": "^11.2.2",
         "@testing-library/user-event": "^12.2.2",
         "axios": "^0.21.0",
-        "bcryptjs": "^2.4.3",
-        "ejs": "^3.1.5",
         "formik": "^2.2.6",
         "mdbreact": "^5.0.1",
         "react": "^17.0.1",
@@ -21,7 +19,6 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.1",
         "react-show-more-text": "^1.4.6",
-        "react-slick": "^0.27.13",
         "react-svg-star-rating": "^1.1.5",
         "web-vitals": "^1.0.1",
         "yup": "^0.32.8"

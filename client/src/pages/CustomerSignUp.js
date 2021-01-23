@@ -48,33 +48,33 @@ const Login = () => {
                         touched,
                         errors,
                         isSubmitting,
-                        handleChange,
-                        handleSubmit,
+                        // handleChange,
+                        // handleSubmit,
                         handleBlur,
-                        onSubmit
+                        // onSubmit
                     }  = props;
 
               return (
                 <div>
                         <h1 className='signTitle'>Sign Up</h1>
                     <Form className='customerForm' autoComplete="off">
-                        <label className="signLabel" htmlFor="name">Name</label>
-                            <Field className='fieldInput' type="text"  name="name" onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
+                        <label className="signLabel" htmlFor="name">Name*</label>
+                            <Field className='fieldInput' type="text" name="name" placeholder='Name' onBlur={handleBlur}  className={errors.name && touched.name && "error" } />
                                 {errors.name && touched.name && (
                                     <div className="input-feedback">{errors.name}</div>)}
 
-                        <label className="signLabel" htmlFor="email">Email</label>
-                            <Field type="text" name="email" onBlur={handleBlur}  className={errors.email && touched.email && "error" } />
+                        <label className="signLabel" htmlFor="email" >Email*</label>
+                            <Field type="text" name="email" onBlur={handleBlur} placeholder='Email' className={errors.email && touched.email && "error" } />
                                 {errors.email && touched.email && (
                                     <div className="input-feedback">{errors.email}</div>)}
 
-                        <label className="signLabel" htmlFor="password">Password</label>
-                            <Field type="password" name="password" onBlur={handleBlur}  className={errors.password && touched.password && "error" } />
+                        <label className="signLabel" htmlFor="password">Password*</label>
+                            <Field type="password" name="password" onBlur={handleBlur} placeholder='Password'  className={errors.password && touched.password && "error" } />
                                 {errors.password && touched.password && (
                                     <div className="input-feedback">{errors.password}</div>)}
 
-                        <label className="signLabel" htmlFor="confirmPassword">Confirm Password</label>
-                            <Field type="password" name="confirmPassword" onBlur={handleBlur}  className={errors.confirmPassword && touched.confirmPassword && "error" } />
+                        <label className="signLabel" htmlFor="confirmPassword">Confirm Password*</label>
+                            <Field type="password" name="confirmPassword"  placeholder='Confirm Password' onBlur={handleBlur}  className={errors.confirmPassword && touched.confirmPassword && "error" } />
                                 {errors.confirmPassword && touched.confirmPassword && (
                                     <div className="input-feedback">{errors.name}</div>)}
                         <div className='mainButton'>

@@ -29,8 +29,9 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#Features">Features</a></li>
+    <li><a href="#development">Development</a></li>
+       <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -38,11 +39,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
- Eggshells is a App where users can serach for local childcare providers in their area. Users can read reviews for other parents/guardians as well as leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+ Eggshells is a full stack App where users can serach for local childcare providers in their area. Users can view the childcare providers contact details, pictures and important information. As well as read reviews for other parents/guardians and leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
 
 
 ### Built With
@@ -50,21 +47,24 @@ Here's a blank template to get started:
 * HTML    
 * REACT
 * CSS
+* Javascript
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and run 'npm run develop'
+To get a local copy up clone and run 'npm run develop'
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+List of software used and how to install them.
+
+  Express
+  Material UI
+  Bootstrap
+ 
+
 
 ### Installation
 
@@ -74,24 +74,39 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
-   npm install
+  npm install axios
+  npm install formik
+  npm install yup
+  npm install alice-carousel
+  npm install svg-star-rating
    ```
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Features
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Search by childcare provider name
+    * View your results with pictures, important information and external links to contact details 
+Leave reviews on a childcare provider
+Childcare providers can register their organisations
+Users can have an account and sign up
+Login(admin only)
+Read a guide on picking the right childcare proivder
+Read a guide on help with childcare cost
+Contact Eggshells directly 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
+<!-- development -->
+## development
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Features coming soon:
+Search by postcode (using Google API)
+Full user login
+Save favourite childcare provider
+Ability to edit reviews 
+Real-time childcare prodiver rating 
 
 
 
@@ -101,21 +116,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Lamara Bown - [https://uk.linkedin.com/in/lamara-brown-10473167(https://twitter.com/twitter_handle) - lbrown22@hotmail.co.uk
 
 Project Link: [https://github.com/lbrowncoder/black-codher-personal-project.git](https://github.com/lbrowncoder/black-codher-personal-project.git)
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username

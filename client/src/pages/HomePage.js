@@ -5,7 +5,7 @@ import homeMoney from "../imagesMain/homeMoney.jpg";
 import homeGuide from "../imagesMain/homeGuide.jpg";
 import '../App.css'
 import NurserySearch from './Search';
-import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
+// import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 
 const HomePage = (props) => {
       const [feature1, setFeature1] = useState([]);
@@ -60,7 +60,9 @@ const HomePage = (props) => {
                                 <Card.Text className="writeup">
                                 <p className="ofstedGrade">Ofsted Rating: {feature1.ofstedRating}</p>
                                 </Card.Text>
+                                <a href ='/search/{feature1}'>
                             <Button className="moreInfoBtn" variant="primary">More Info</Button>
+                            </a>
                             </Card.Body>
                           </Card>
                         </div>

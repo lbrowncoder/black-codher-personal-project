@@ -3,7 +3,6 @@ import axios from "axios";
 import {Link} from 'react-router-dom'
 import '../App.css';
 import {Button,Container} from "react-bootstrap";
-import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
 
 const NurserySearch = ({NurserySearch}) => {
   const [nurseries, setNurseries] = useState([]);
@@ -11,7 +10,7 @@ const NurserySearch = ({NurserySearch}) => {
   const [keyword, setKeyword] = useState("");
   const [filteredNurseries, setFilteredNurseries] = useState([]);
   const [hasSearched, setHasSearched] = useState(false);
-  const [result, setResult] = useState([]);
+  // const [result, setResult] = useState([]);
   
       useEffect(() => {
         setLoading(true);

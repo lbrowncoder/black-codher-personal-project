@@ -1,9 +1,7 @@
 import React, {useState } from 'react';
-import LoginForm from './LoginForm';
 
 const Profile = () => {
     const [user, setUser] = useState ({name: "", email: ""});
-    const [error, setError] = useState ("");
 
         const logout = () => {
             setUser({name:"", email:""})

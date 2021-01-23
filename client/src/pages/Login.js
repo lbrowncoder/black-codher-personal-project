@@ -30,7 +30,7 @@ const Login = () => {
 
                 return (
                     <div className="login">
-                        {(user.email !="") ? (
+                        {(user.email !=="") ? (
                             <div className="welcome">
                     </div>
                 ) : (

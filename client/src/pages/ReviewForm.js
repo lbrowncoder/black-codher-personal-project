@@ -16,20 +16,20 @@ const ReviewForm = () => {
     let [reviewName, setReviewName] = useState("");
     let [comment, setComment] = useState('');
     let [value, setValue] = useState([1,2,3,4,5]);
-    let [standard, setStandard] = useState([]);
-    let [outdoor, setOutdoor] = useState([]);
-    let [learning, setLearning] = useState([])
-    let [ict, setICT] = useState([]);
-    let [care, setCare] = useState([]);
-    let [activities, setActivities] = useState([]);
-    let [staff, setStaff] = useState([]);
-    let [food, setFood] = useState([]);
-    let [managment, setManagement] = useState([]);
-    let [clean, setClean] = useState([]);
-    let [safe, setSafe] = useState([]);
-    let [money, setMoney] = useState([]);
-    let [recommend, setRecommend] = useState([]);
-    let [overall, setOverall] = useState([]);
+    let [standard] = useState([]);
+    let [outdoor] = useState([]);
+    let [learning] = useState([])
+    let [ict] = useState([]);
+    let [care] = useState([]);
+    let [activities] = useState([]);
+    let [staff] = useState([]);
+    let [food] = useState([]);
+    let [managment] = useState([]);
+    let [clean] = useState([]);
+    let [safe] = useState([]);
+    let [money] = useState([]);
+    let [recommend] = useState([]);
+    let [overall] = useState([]);
     const [isSubmitted, setIsSubmitted]= useState(false)
    
         const handleSubmit = async (event) => {
@@ -66,13 +66,12 @@ const ReviewForm = () => {
                                     <TextField placeholder="Review*" id="filled-basic"  variant="filled" type="text" fullWidth value={reviewComment} onChange={(e) => setReviewComment(e.target.value)} />
                                   <p className="overallOne">How likely are you to recommend this nursery?</p>
                                 <ToggleButtonGroup className="checkbox" type="checkbox" value={recommend} size="sm" onChange={onclick}>
-                                    <ToggleButton value={1}>Very Likely</ToggleButton>
+                                    <ToggleButton value={1}>VeryLikely</ToggleButton>
                                     <ToggleButton value={2}>Likely</ToggleButton>
                                     <ToggleButton value={3}>Neutral</ToggleButton>
                                     <ToggleButton value={4}>Unlikely</ToggleButton>
                                     <ToggleButton value={5}>Very Unlikely</ToggleButton>
                                 </ToggleButtonGroup>
-                
                             <div className='rateOverall'>
                                 <p className="overall">How would you rate the nursery overall?</p>
                                 <ToggleButtonGroup className="checkboxTwo" type="checkbox" value={overall} size="sm" onChange={onclick}>
