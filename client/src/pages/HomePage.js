@@ -5,9 +5,9 @@ import homeMoney from "../imagesMain/homeMoney.jpg";
 import homeGuide from "../imagesMain/homeGuide.jpg";
 import '../App.css'
 import NurserySearch from './Search';
-// import EggshellsHomepage from "../imagesMain/EggshellsHomepage.svg";
+import eggshells1 from "../imagesMain/eggshells1.jpg";
 
-const HomePage = (props) => {
+  const HomePage = (props) => {
       const [feature1, setFeature1] = useState([]);
       const [feature2, setFeature2] = useState([]);
       const [feature3, setFeature3] = useState([]);
@@ -41,10 +41,12 @@ const HomePage = (props) => {
           return (
                   <>
                     <div>
+                      <div className='mainLogo'>
                         <h1 className="mainTitle">Welcome to Eggshells</h1>
-                            {/* <img className="shells" src={EggshellsHomepage} alt="eggshells" />  */}
+                            <img className="shells" src={eggshells1} alt="eggshells" /> 
+                            </div>
                           < h2 className="secondTitle">A Cracking Start To A Life Full Of Adventure</h2>
-                            < h3 className="thirdTitle">The Newest UK Nursery review website</h3>
+                            < h3 className="thirdTitle">The Newest UK Nursery Review Website</h3>
                           <div> <NurserySearch/></div>
                           <p className="topRated">Our Top Rated Nurseries This Week</p>
                       <Container className="row">
@@ -153,6 +155,6 @@ const HomePage = (props) => {
                     </div>
                 </>  
             );
-          }
+  }
 
 export default HomePage

@@ -25,7 +25,6 @@ const InfoSchema = new Schema({
   fifteenHours: String,
   thirtyHours: String,
   terms: false,
- 
 });
 
 mongoose.model('info', InfoSchema, "info");

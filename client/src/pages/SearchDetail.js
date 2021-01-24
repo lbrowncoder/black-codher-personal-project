@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {useLocation} from 'react-router-dom'
-// import NurserySearch from "./Search";
 import {Container, Col, Row} from "react-bootstrap";
 import * as FaIcons from 'react-icons/fa';
 import * as HiIcons from 'react-icons/hi';
@@ -32,22 +31,22 @@ const SearchDetails = (props) => {
   },[location])
 
   return (
-        <>
-          <h1 className='header'>{nurseries.name}</h1>
-            <div className='socialMedia'>
-              <a href='/' className='instagram-two social'>
-                <FaInstagram size="30px"/>
-              </a>
-              <a href='/' className='twitter-two social'>
-                  <FaTwitterSquare size="30px"/>
-              </a>
-              <a href='/' className='facebook-two social'>
-                  <FaFacebookSquare size="30px" />
-              </a>
-              {/* <div className='score'>
-                <p className='nine'>9.3</p>
-                <p className='ten'>out of 10</p>
-            </div> */}
+    <>
+      <h1 className='header'>{nurseries.name}</h1>
+      <div className='socialMedia'>
+        <a href='/' className='instagram-two social'>
+        <FaInstagram size="30px"/>
+        </a>
+        <a href='/' className='twitter-two social'>
+        <FaTwitterSquare size="30px"/>
+        </a>
+        <a href='/' className='facebook-two social'>
+        <FaFacebookSquare size="30px" />
+        </a>
+    {/* <div className='score'>
+        <p className='nine'>9.3</p>
+        <p className='ten'>out of 10</p>
+        </div> */}
           <Container className='contact'>
             <FaIcons.FaPhone className='phone' size="25px" />
             <a className="phone" href="tel:{nurseries.phone}">{nurseries.phone}</a>
@@ -87,7 +86,6 @@ const SearchDetails = (props) => {
                       className='writeUp'
                       id="about"
                       >{nurseries.writeUp}</ShowMoreText>
-              {/* <p className='writeUp'>{nurseries.writeUp}</p> */}
               </Col>
             </Row>
           </Container>
@@ -108,16 +106,16 @@ const SearchDetails = (props) => {
           FAQ
         </h2>
       
-          <ul className='feesMain'>   <RiIcons.RiMoneyPoundBoxLine size="25px" className='questionIcons'  />
+          <ul className='feesMain'><RiIcons.RiMoneyPoundBoxLine size="25px" className='questionIcons'  />
               Fees: 
             <li className='fees' id= "fees">Full time: {nurseries.fullTime}</li>
             <li className='fees'> Full Day: {nurseries.fullDay}</li>
             <li className='fees'>Half Day: {nurseries.halfDay}</li>
           </ul>
-          <p className='questionDetails'> <BiIcons.BiTimeFive size="25px" className='questionIcons' /> Opening Hours: {nurseries.openingHours}</p>
-          <p className='questionDetails'> <bsIcons.BsCalendar size="25px" className='questionIcons' />Opening times: {nurseries.openingTimes}</p>
-          <p className='questionDetails'> <GrIcons.GrScorecard size="25px" className='questionIcons' /> Ofsted Rating: {nurseries.ofstedRating}</p>
-          <p className='questionDetails'> <HiIcons.HiDocumentReport size="25px" className='questionIcons' />Ofsted Report: <a href = {nurseries.ofstedLink} target="_blank"> {nurseries.ofstedLink}</a></p>
+          <p className='questionDetails'><BiIcons.BiTimeFive size="25px" className='questionIcons' /> Opening Hours: {nurseries.openingHours}</p>
+          <p className='questionDetails'><bsIcons.BsCalendar size="25px" className='questionIcons' />Opening times: {nurseries.openingTimes}</p>
+          <p className='questionDetails'><GrIcons.GrScorecard size="25px" className='questionIcons' /> Ofsted Rating: {nurseries.ofstedRating}</p>
+          <p className='questionDetails'><HiIcons.HiDocumentReport size="25px" className='questionIcons' />Ofsted Report: <a href = {nurseries.ofstedLink} target="_blank"> {nurseries.ofstedLink}</a></p>
           <p className='questionDetails'><BiIcons.BiCalendarEvent size="25px" className='questionIcons'/>Open Bank Hoildays: {nurseries.isOpenBankHolidays ? 'Yes' : 'No'}</p>
           <p className='questionDetails'><IoIcons.IoIosPeople size="25px" className='questionIcons'  />Number of spaces: {nurseries.numberOfPlaces}</p>
           <p className='questionDetails'><GiIcons.GiForkKnifeSpoon size="25px" className='questionIcons' />Dietary Requirments Caterted for:  {nurseries.isDietaryRequirementsCateredFor ? 'Yes' : 'No'}</p>

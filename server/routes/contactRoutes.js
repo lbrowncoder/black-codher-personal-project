@@ -6,7 +6,8 @@ const mongoose = require ('mongoose');
 const ContactSchema = new mongoose.Schema({
     name: {
         type:String, 
-      required: true},
+        required: true
+    },
     email:{
         type: String,
         required: true,
@@ -14,11 +15,11 @@ const ContactSchema = new mongoose.Schema({
     message:{
       type: String,
       required: true,
-  },
-  date: {
+    },
+    date: {
       type: Date,
       default: Date.now
-  }
+    }
   })
   
   const Contact = mongoose.model('Contact', ContactSchema)

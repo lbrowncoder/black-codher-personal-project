@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@media screen and (max-width:500px) 
+@media screen and (max-width:600px) 
 
 * {
   font-family: "Roboto Condensed", sans-serif;
-}
-
-body {
-  /* background-image: url(/client/public/ES.png); */
 }
 
 /* NavBar */
@@ -101,6 +97,7 @@ span {
 }
 
 /* Star Rating */
+
 .starInput[type="radio"] {
   display: none;
 }
@@ -271,11 +268,6 @@ span {
 }
 
 /* login page */
-
-
-/* .login {
-margin-left: 30%;
-} */
 
 .loginTitle {
   text-align: center;
@@ -578,11 +570,17 @@ submit:after {
 
 /* Homepage */
 
+
+.shells{
+  height:130px;
+  width:130px;
+  margin-left: 45%;
+}
+
 .mainTitle {
   text-align: center;
   font-size:3rem;
-  padding-bottom: 2.4rem;
-  margin-top:2rem;
+  padding-top: 2rem;
 }
 
 .moreInfoBtn {
@@ -746,14 +744,11 @@ html, body {
   padding-top: 0.3rem;
 }
 
-
 .footer {
   text-align: center;
   display: flex;
   min-height: 90vh;
   margin-top: 0;
-  /* padding-top: 70px;
-  padding-bottom: 70px; */
 }
 
 .site-footer{
@@ -766,7 +761,6 @@ html, body {
   background-color: lightgrey;
 }
 
-
 .footerText {
   padding-top: 1rem;
   font-weight: bold;
@@ -777,13 +771,13 @@ html, body {
   color: orange;
 } 
 
-  a.social {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
+a.social {
+  margin: 0 1rem;
+   transition: transform 250ms;
+   display: inline-block;
   }
   
-  a.social:hover {
+a.social:hover {
     transform: translateY(-2px);
   }
     

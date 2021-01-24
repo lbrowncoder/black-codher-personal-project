@@ -2,10 +2,9 @@ const mongoose = require('mongoose');
 const Info = mongoose.model('info');
 const SignUp = require('../routes');
 const Contact = require('../routes/contactRoutes');
-// const bcrypt = require('bcrypt');
-// import SignUp from '../routes.js';
 
-//Main Schema
+
+// Main Schema
 const Schema = mongoose.Schema;
 const ReviewSchema = new Schema({
     name: String,
@@ -14,16 +13,16 @@ const ReviewSchema = new Schema({
     reviewComment: String,
 });
 
-//model
+// Model
 const Review = mongoose.model('Review', ReviewSchema)
 
 module.exports = (app) => {
     app.get(`/api/info`, async (req, res) => {
       const nursery = await Info.find();
-    return res.status(200).send(nursery);
+      return res.status(200).send(nursery);
   });
 
-//update nursery json
+// Update nursery json
   app.post(`/api/info`, async (req, res) => {
     const info = await Info.create(req.body);
     return res.status(201).send({
@@ -32,8 +31,8 @@ module.exports = (app) => {
     });
   });
 
-  //post to review
-  app.post("/api/review", (req, res) => {
+  // Post to review
+app.post("/api/review", (req, res) => {
     let myData = new Review(req.body);
     myData.save()
     .then(item => {
@@ -44,22 +43,14 @@ module.exports = (app) => {
     });
   });
   
-//get review posted
+// Get review posted
   app.get("/api/review", async (req, res) => {
     const submittedReview = await Review.find({},
       {reviewComment:1, _id:0, name:1})
     return res.status(200).send(submittedReview);
   });
 
-//post contact
-// app.post(`/api/contact`, (req, res) => {
-//   let contact = new Contact(req.body);
-//   contact.save()
-//   .then (item => {
-//     res.send("Recieved")
-//   });
-// });
-
+// post to contacts
 app.post(`/api/contacts`, async (req, res) => {
   const contact = await Contact.create(req.body);
   contact.save()
@@ -80,8 +71,7 @@ return res.status(200).send(allContacts);
 });
 
 
- 
-//update id of nursery json file
+// Update id of nursery json file
   app.put(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
     const info = await Info.findByIdAndUpdate(id, req.body);
@@ -91,7 +81,7 @@ return res.status(200).send(allContacts);
     });
   });
 
-  //delete nursery from json using ID
+ // Delete nursery from json using ID
   app.delete(`/api/info/:id`, async (req, res) => {
     const { id } = req.params;
     const info = await Info.findByIdAndDelete(id);
@@ -101,7 +91,7 @@ return res.status(200).send(allContacts);
     });
   });
 
-//get nursery by id
+// Get nursery by id
 app.get(`/api/info/:id`, async (req, res) => {
       let id = req.params.id;
       const info = await Info.findById(id, function(err, todo) {
@@ -109,7 +99,7 @@ app.get(`/api/info/:id`, async (req, res) => {
 });
 });
 
-// add new user
+// Add new user
 app.post(`/api/users`, async (req, res) => {
   const user = await SignUp.create(req.body);
   user.save()
@@ -124,11 +114,11 @@ app.post(`/api/users`, async (req, res) => {
   }); 
 });
 
-//get users
-        app.get(`/api/users`, async (req, res) => {
-            const allUsers = await SignUp.find();
-            console.log(allUsers)
-          return res.status(200).send(allUsers);
-          });
+// Get users
+app.get(`/api/users`, async (req, res) => {
+  const allUsers = await SignUp.find();
+  console.log(allUsers)
+    return res.status(200).send(allUsers);
+});
           
 }

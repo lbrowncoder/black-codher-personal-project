@@ -84,7 +84,7 @@ List of software used and how to install them.
 
 
 <!-- USAGE EXAMPLES -->
-## Features
+## Features 
 
 Search by childcare provider name
     * View your results with pictures, important information and external links to contact details 

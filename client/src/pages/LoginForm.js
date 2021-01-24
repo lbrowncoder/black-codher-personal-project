@@ -10,7 +10,7 @@ const LoginForm = ({ Login, error}) => {
         Login(details);  
     }
 
-    //Only works with admin user- backend to be added later//
+    // Only works with admin user- backend to be added later//
 
         return (
             <form classname="submit" onSubmit={submitHandler}>
