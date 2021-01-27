@@ -55,7 +55,7 @@ const footer = ({ footer }) => {
          <NavLink to='/signupform'>Register Your Nursery</NavLink>
         </li>
         <p className='copyRight'>
-         &copy;{new Date().getFullYear()} LB Desgins- All Rights Reservered
+         &copy;{new Date().getFullYear()} LB Design- All Rights Reserved
         </p>
        </ul>
       </div>

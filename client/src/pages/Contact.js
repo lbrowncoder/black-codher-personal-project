@@ -25,7 +25,7 @@ const Contact = () => {
    onSubmit={handleContact}
    validationSchema={Yup.object().shape({
     name: Yup.string()
-     .min(2, "must be two charaters or more")
+     .min(2, "must be two characters or more")
      .required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     message: Yup.string()
@@ -39,6 +39,7 @@ const Contact = () => {
      touched,
      errors,
      isSubmitting,
+
      handleBlur,
     } = props;
 

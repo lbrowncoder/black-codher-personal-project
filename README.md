@@ -95,6 +95,11 @@ Features coming soon:
 
 ## Contact
 
-Lamara Bown - [https://uk.linkedin.com/in/lamara-brown-10473167(https://twitter.com/twitter_handle) - lbrown22@hotmail.co.uk
+Lamara Bown - [https://uk.linkedin.com/in/lamara-brown-10473167] -
 
 Project Link: [https://github.com/lbrowncoder/black-codher-personal-project.git](https://github.com/lbrowncoder/black-codher-personal-project.git)
+
+
+## Other project
+
+Link: [https://github.com/lbrowncoder]

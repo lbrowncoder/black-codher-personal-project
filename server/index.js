@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
+require("dotenv").config();
 require("./models/nurseryInfo");
 
 const app = express();
@@ -9,7 +10,7 @@ const app = express();
 mongoose.Promise = global.Promise;
 mongoose.connect(
  process.env.MONGODB_URI ||
-  `mongodb://localhost:27017/black-codher-personal-project`,
+  `mongodb+srv://lbrown:Theloft0607@mern.wiwpv.mongodb.net/info?retryWrites=true&w=majority`,
  {
   useNewUrlParser: true,
   useUnifiedTopology: true,

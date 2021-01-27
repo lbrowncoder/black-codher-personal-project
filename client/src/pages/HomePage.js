@@ -64,7 +64,7 @@ const HomePage = (props) => {
         src={feature1.profilePicture}
         alt='profilePicture'
        />
-       <Card.Body clasName='card'>
+       <Card.Body className='card'>
         <Card.Title className='titleCard'>{feature1.name}</Card.Title>
         <Card.Text className='titleCard'>{feature1.address}</Card.Text>
         <Card.Text className='writeup'>

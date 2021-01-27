@@ -58,7 +58,7 @@ const SignUpForm = () => {
     website: "",
     firstAid: "",
     CCTV: false,
-    bankHoilday: false,
+    bankHoliday: false,
     fifteenHours: false,
     thirtyHours: false,
     terms: false,
@@ -66,7 +66,7 @@ const SignUpForm = () => {
    onSubmit={handleSubmit}
    validationSchema={Yup.object().shape({
     name: Yup.string()
-     .min(2, "must be two charaters or more")
+     .min(2, "must be two characters or more")
      .required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     contact: Yup.number()
@@ -181,21 +181,21 @@ const SignUpForm = () => {
         type="bankHoliday"
         values="no"
        />
-       <label htmlFor="fifteenhours">
+       <label htmlFor="fifthteenhours">
         Do you offer 15 Hours free for two year olds?
        </label>
        <MyCheckbox
         placeholder="yes"
         label="Yes"
-        name="fifteenhours"
-        type="fifteenhours"
+        name="fifthteenhours"
+        type="fifthteenhours"
         values="yes"
        />
        <MyCheckbox
         placeholder="no"
         label="No"
-        name="fifteenhours"
-        type="fifteenhours"
+        name="fifthteenhours"
+        type="fifthteenhours"
         values="no"
        />
        <label htmlFor="thirtyHours">

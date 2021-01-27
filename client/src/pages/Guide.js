@@ -66,7 +66,7 @@ const guide = () => {
     the nurseries at eggshells.co.uk. Look on social media sites and online
     forums to see what people are saying about it.
    </p>
-   <h2 className='ofstedText'>Ofstead</h2>
+   <h2 className='ofstedText'>Ofsted</h2>
    <p className='guideText'>
     Every nursery is inspected by an education watchdog and there will be
     reports of these inspections online. In England, you can check the Ofsted
@@ -166,8 +166,8 @@ const guide = () => {
     </li>
     <li>
    
-     What is the philosophy of the nursery? Does it have a Montessori approach
-     or Froebelian or Curiosity approach?
+     What is the philosophy of the nursery? Does it have a Montessori
+     or Curiosity approach?
     </li>
     <li>
      Does it run Forest School or Beach School sessions?

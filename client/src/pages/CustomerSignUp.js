@@ -26,15 +26,15 @@ const Login = () => {
    onSubmit={handleSignUp}
    validationSchema={Yup.object().shape({
     name: Yup.string()
-     .min(2, "must be two charaters or more")
+     .min(2, "must be two characters or more")
      .required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     password: Yup.string()
-     .min(6, "Password must be atleast 6 charaters or more")
-     .required("Pssword is Required"),
+     .min(6, "Password must be atleast 6 characters or more")
+     .required("Password is Required"),
     confirmPassword: Yup.string()
      .oneOf([Yup.ref("password"), null], "Password Must Match")
-     .required("Pssword is Required"),
+     .required("Password is Required"),
    })}
   >
    {props => {

@@ -55,7 +55,7 @@ const LoginForm = ({ Login, error }) => {
     </div>
     <input className='signSubmitLogin' type='Submit' value='login' />
     <p className='account'>
-     Dont have an account?<NavLink to='/signup'> Sign up </NavLink> here
+     Don't have an account?<NavLink to='/signup'> Sign up </NavLink> here
     </p>
    </div>
   </form>

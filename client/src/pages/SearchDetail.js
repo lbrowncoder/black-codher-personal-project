@@ -179,7 +179,7 @@ const SearchDetails = (props) => {
    </p>
    <p>
     <GiIcons.GiForkKnifeSpoon size='25px' className='questionIcons' />
-    Dietary Requirments Caterted for: 
+    Dietary Requirements Caterted for:  
     {nurseries.isDietaryRequirementsCateredFor ? "Yes" : "No"}
    </p>
    <p>

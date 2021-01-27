@@ -8,7 +8,7 @@
     "client": "npm run start --prefix client",
     "server": "nodemon server/index.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start": "node server/index.js",
+    "start": "node index.js",
     "type": "module"
   },
   "keywords": [],
@@ -19,7 +19,9 @@
     "@material-ui/icons": "^4.11.2",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
+
     "express": "^4.17.1",
+  
     "icons": "^1.0.0",
     "mongoose": "^5.10.18",
     "react": "^17.0.1",
