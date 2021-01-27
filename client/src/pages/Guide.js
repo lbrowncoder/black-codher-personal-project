@@ -5,7 +5,7 @@ import "../App.css";
 const guide = () => {
  return (
   <div className='guide'>
-   <h1 className='guideTitle'>Guide To Choosing The Right Nursery</h1>
+   <h1 className='guideTitle'>Guide To Choosing The Right Childcare</h1>
    <img className='guidePic' src={Guide} alt='Guide' />
    <p className='quality'>
     Finding good quality childcare can be a difficult task for parents. There
@@ -29,16 +29,16 @@ const guide = () => {
     Draw up a shortlist of childcare providers. Things to consider first:
     <ul>
      <li>
-      Decide which nursery setting will work best for you.
+      Decide which childcare provider setting will work best for you.
      </li>
      <li>
-      Do you want a nursery close to home or close to your place of work?{" "}
+      Do you want a childcare provider close to home or close to your place of work?
      </li>
      <li>
-      Do you want a large or a small nursery for your child?
+      Do you want a large or a small childcare provider for your child?
      </li>
      <li>
-      Is the nursery open just in term-time or does it offer all year round
+      Is the childcare provider open just in term-time or does it offer all year round
       provision?
      </li>
      <li>

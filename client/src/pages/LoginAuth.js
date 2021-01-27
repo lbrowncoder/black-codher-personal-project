@@ -1,8 +1,7 @@
-import { AllInboxOutlined } from "@material-ui/icons";
-import Axios from "axios";
+import axios from "axios";
 const express = require("express");
 
-Axios.post("/api/login", async (req, res) => {
+axios.post("/api/login", async (req, res) => {
  const { email, password } = req.body;
 
  const userEmail = await User.findOne({ where: { email } }).catch((err) => {

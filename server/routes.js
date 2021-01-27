@@ -2,7 +2,6 @@ const { response, request } = require("express");
 const express = require("express");
 const routes = express.Router();
 const mongoose = require("mongoose");
-// const SignUpSchema = require('../models/SignUpModels')
 
 const SignUpSchema = new mongoose.Schema({
  name: {

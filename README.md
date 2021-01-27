@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
-    <img src="./imagesMain/EggshellsHomepage.svg" alt="Logo" width="80" height="80">
+    <img src="client\src\imagesMain\eggshells1.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">EggsShells</h3>
@@ -24,7 +24,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#Features">Features</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#development">Development</a></li>
        <li><a href="#contact">Contact</a></li>
   </ol>
@@ -40,11 +40,12 @@ Eggshells is a full stack App where users can serach for local childcare provide
 - REACT
 - CSS
 - Javascript
+- MongoDb
 
 
 ## Getting Started
 
-To get a local copy up clone and run 'npm run develop'
+To get a local copy up clone the repository and run 'npm run develop'
 
 ### Prerequisites
 
@@ -53,6 +54,7 @@ List of software used and how to install them.
 Express
 Material UI
 Bootstrap
+Axios
 
 ### Installation
 
@@ -69,25 +71,27 @@ Bootstrap
    npm install svg-star-rating
    ```
 
-## Features
+## features
 
-Search by childcare provider name \* View your results with pictures, important information and external links to contact details
-Leave reviews on a childcare provider
-Childcare providers can register their organisations
-Users can have an account and sign up
-Login(admin only)
-Read a guide on picking the right childcare proivder
-Read a guide on help with childcare cost
-Contact Eggshells directly
+- Search by childcare provider name 
+- View your results with pictures, important information and external links to contact details
+- Leave reviews on a childcare provider
+- Childcare providers can register their organisations
+- Users can have an account and sign up
+- Login(admin only)
+- Read a guide on picking the right childcare proivder
+- Read a guide on help with childcare cost
+- Contact Eggshells directly
 
 ## development
 
 Features coming soon:
-Search by postcode (using Google API)
-Full user login
-Save favourite childcare provider
-Ability to edit reviews
-Real-time childcare prodiver rating
+
+- Search by postcode (using Google API)
+- Full user login
+- Save favourite childcare provider
+- Ability to edit reviews
+- Real-time childcare provider rating
 
 ## Contact
 

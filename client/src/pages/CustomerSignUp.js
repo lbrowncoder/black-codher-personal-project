@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const Login = () => {
  const handleSignUp = (values, { setSubmitting, resetForm }) => {
   axios.post(`/api/users`, values)
-  .then(response => {
+  .then(() => {
     setSubmitting(false);
     resetForm();
   });
@@ -39,14 +39,10 @@ const Login = () => {
   >
    {props => {
     const {
-     values,
      touched,
      errors,
      isSubmitting,
-     handleChange,
-     // handleSubmit,
      handleBlur,
-     onSubmit
     } = props;
 
     return (

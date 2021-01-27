@@ -14,8 +14,8 @@ const ChildCareCost = () => {
       Early Years Free Entitlement for All 3 and 4 Year Olds
      </h2>
      <p>
-      All 3 and 4-year-old children (and many 2-year olds) are entitled to free
-      childcare here at our nursery, up to a maximum of 30 hours per week (term
+      All 3 and 4-year-old children are entitled to free
+      childcare, up to a maximum of 30 hours per week (term
       time only).
      </p>
      <h2 className="h2CostHours">15 Universal Hours</h2>
@@ -23,7 +23,7 @@ const ChildCareCost = () => {
       This free entitlement for eligible 2-year olds and all 3- and 4-year olds
       is at the heart of the Government’s vision for all children to have access
       to high quality early years provision in order to help them reach their
-      full potential. It offers free provision universally, from the term
+      full potential. It offers free provision universally childcare, from the term
       following a child’s third birthday up until they reach compulsory school
       age. This free entitlement equates to 15 hours per week (570 hours a year)
       over a minimum 38 weeks of the year.
@@ -32,9 +32,9 @@ const ChildCareCost = () => {
       Some two-year-olds in England are entitled to 15 hours free childcare a
       week in term time with an approved provider. This entitlement is for the
       most disadvantaged two-year-olds with families in England receiving some
-      forms of support.The 15 hours funded childcare equates to 15 hours a week
+      form of support.The 15 hours funded childcare equates to 15 hours a week
       for 38 weeks of the year. Some providers will allow parents to stretch
-      these urs over 52 weeks, using fewer hours per week, subject to a maximum
+      this over 52 weeks, using fewer hours per week, subject to a maximum
       of 570 hours a year.
      </p>
      <h2>15 Extended Hours (total 30 hours of funding)</h2>
@@ -44,7 +44,7 @@ const ChildCareCost = () => {
       hours childcare if you (and your partner, if you have one) are in work and
       each are earning at least the National Minimum Wage or Living Wage for 16
       hours a week and earn less than £100,000 per annum. Eligibility can be
-      checked at{" "}
+      checked at
       <a
        href="https://www.childcarechoices.gov.uk"
        target="_blank"
@@ -80,8 +80,7 @@ const ChildCareCost = () => {
       employer still offers childcare vouchers and a parent doesn’t leave their
       company or take an unpaid career break of longer than a year, parents can
       continue using the scheme. They can do this by renewing their vouchers
-      once a year. In 2019, parents had to renew before the October 4, 2019
-      deadline.Childcare vouchers are only available if your employer offers
+      once a year. Childcare vouchers are only available if your employer offers
       them. Only one parent needs to work to be eligible. There is no limit to
       the income a parent can earn to be eligible. The maximum benefit is £933 a
       year per parent - so you can get £1,866 if you're part of a couple and
@@ -104,7 +103,7 @@ const ChildCareCost = () => {
      <p>
       Universal credit replaces working tax credit and child tax credit. If you
       receive either of these two benefits, you cannot claim for Universal
-      credit at the same time. For the 2020/21 tax year, families can claim back
+      credit at the same time. For the 2021/22 tax year, families can claim back
       up to 85 per cent of their eligible childcare costs up to a cap under
       Universal Credit but they have to cover the upfront costs first and then
       apply for a reimbursement. Parents in work on Universal Credit with one

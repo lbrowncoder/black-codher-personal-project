@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import * as FaIcons from "react-icons/fa";
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
-import "./SearchDetail.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import ShowMoreText from "react-show-more-text";
@@ -24,10 +23,6 @@ const SearchDetails = (props) => {
  let location = useLocation();
  let { nurseries } = location.state;
 
- useEffect(() => {
-  const { history } = props;
-  const { nurseries } = location.state;
- }, [location]);
 
  return (
   <>
@@ -169,7 +164,7 @@ const SearchDetails = (props) => {
    <p>
     <HiIcons.HiDocumentReport size='25px' className='questionIcons' />
     Ofsted Report:{" "}
-    <a href={nurseries.ofstedLink} target='_blank'>
+    <a href={nurseries.ofstedLink} target='_blank' rel="noopener noreferrer" >
      {" "}
      {nurseries.ofstedLink}
     </a>

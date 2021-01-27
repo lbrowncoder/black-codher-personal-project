@@ -31,8 +31,7 @@ const NurserySearch = ({ NurserySearch }) => {
    )
   );
   if (loading) {
-   return;
-   <p>Were finding the perfect match for you...</p>;
+   return <p>Were finding the perfect match for you...</p>;
   }
  };
 

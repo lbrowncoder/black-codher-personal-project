@@ -13,7 +13,7 @@ const Profile = () => {
     <h2>
      Welcome
     </h2>
-    <p>See your favourite childcare </p>
+    <p>See your favourite childcare provider</p>
     <button  onClick={logout}>Log Out</button>
    </div>
   </div>

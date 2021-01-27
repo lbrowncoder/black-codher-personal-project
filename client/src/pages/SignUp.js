@@ -79,14 +79,8 @@ const SignUpForm = () => {
   >
    {props => {
     const {
-     values,
      touched,
      errors,
-     // isSubmitting,
-     // handleChange,
-     // handleSubmit,
-     // handleBlur,
-     // onSubmit
     } = props;
 
     return (

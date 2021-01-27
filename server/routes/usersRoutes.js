@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Info = mongoose.model("info");
 const SignUp = require("../routes");
-const Contact = require("../routes/contactRoutes");
+const Contact = require("./contactRoutes");
 
 // Main Schema
 const Schema = mongoose.Schema;
@@ -31,6 +31,34 @@ module.exports = (app) => {
   return res.status(201).send({
    error: false,
    info,
+  });
+ });
+
+  // Update id of nursery json file
+  app.put(`/api/info/:id`, async (req, res) => {
+    const { id } = req.params;
+    const info = await Info.findByIdAndUpdate(id, req.body);
+    return res.status(202).send({
+     error: false,
+     info,
+    });
+   });
+  
+   // Delete nursery from json using ID
+   app.delete(`/api/info/:id`, async (req, res) => {
+    const { id } = req.params;
+    const info = await Info.findByIdAndDelete(id);
+    return res.status(202).send({
+     error: false,
+     info,
+    });
+   });
+
+  // Get nursery by id
+ app.get(`/api/info/:id`, async (req, res) => {
+  let id = req.params.id;
+  const info = await Info.findById(id, function (err, todo) {
+   res.json(todo);
   });
  });
 
@@ -77,33 +105,6 @@ module.exports = (app) => {
   return res.status(200).send(allContacts);
  });
 
- // Update id of nursery json file
- app.put(`/api/info/:id`, async (req, res) => {
-  const { id } = req.params;
-  const info = await Info.findByIdAndUpdate(id, req.body);
-  return res.status(202).send({
-   error: false,
-   info,
-  });
- });
-
- // Delete nursery from json using ID
- app.delete(`/api/info/:id`, async (req, res) => {
-  const { id } = req.params;
-  const info = await Info.findByIdAndDelete(id);
-  return res.status(202).send({
-   error: false,
-   info,
-  });
- });
-
- // Get nursery by id
- app.get(`/api/info/:id`, async (req, res) => {
-  let id = req.params.id;
-  const info = await Info.findById(id, function (err, todo) {
-   res.json(todo);
-  });
- });
 
  // Add new user
  app.post(`/api/users`, async (req, res) => {
