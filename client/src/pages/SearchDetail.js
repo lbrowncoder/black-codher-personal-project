@@ -109,7 +109,7 @@ const SearchDetails = (props) => {
         anchorClass='my-anchor-css-class'
         expanded={true}
         width={300}
-        className='writeUp'
+        // className='writeUp'
         id='about'
        >
         {nurseries.writeUp}

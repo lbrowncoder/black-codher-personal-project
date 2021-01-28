@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ToggleButtonGroup, Container } from "react-bootstrap";
-import { ToggleButton } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import StarRating from "../components/StarRating";
 import "../App.css";
 import { TextField } from "@material-ui/core";
-import { Button } from "react-bootstrap";
 import  ButtonGroup from '../components/Button';
 
 const ReviewForm = () => {
@@ -15,10 +13,7 @@ const ReviewForm = () => {
  let [reviewComment, setReviewComment] = useState("");
  let [reviewName, setReviewName] = useState("");
  let [comment, setComment] = useState("");
- let [setValue] = useState([1, 2, 3, 4, 5]);
- let [standard] = useState([]);
  let [recommend] = useState([]);
- let [overall] = useState([]);
  const [isSubmitted, setIsSubmitted] = useState(false);
 
  const handleSubmit = async event => {
@@ -42,6 +37,7 @@ const ReviewForm = () => {
   setIsSubmitted(true);
  };
 
+
  return (
   <>
    <div>
@@ -50,7 +46,7 @@ const ReviewForm = () => {
     <Container className="container">
      <form onSubmit={event => handleSubmit(event)}>
       <div className="reviewForm">
-       <TextField
+         <TextField
         placeholder="Name*"
         className="reviewContact"
         id="filled-basic"
@@ -92,9 +88,7 @@ const ReviewForm = () => {
        <p className="rate">How would you rate the nurseries:</p>
        <p>Overall Standard</p>
        <ButtonGroup />
-       <p className="points" Two>
-        Facilities/Outdoor Space
-       </p>
+       <p className="points" Two>Facilities/Outdoor Space</p>
        <ButtonGroup />
        <p>Learning</p>
        <ButtonGroup />

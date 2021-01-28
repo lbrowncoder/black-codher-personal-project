@@ -35,7 +35,6 @@ const Contact = () => {
   >
    {(props) => {
     const {
-     values,
      touched,
      errors,
      isSubmitting,
@@ -52,7 +51,6 @@ const Contact = () => {
          Name:*
         </label>
         <Field
-         className='contactInput'
          style={{ width: "50%" }}
          placeholder='Name'
          type='text'
@@ -67,7 +65,6 @@ const Contact = () => {
          Email:*
         </label>
         <Field
-         className='contactInput'
          style={{ width: "50%" }}
          placeholder='Email'
          type='text'
@@ -82,7 +79,6 @@ const Contact = () => {
          Message:*
         </label>
         <Field
-         className='contactField'
          style={{ width: "50%" }}
          type='message'
          placeholder='Message'

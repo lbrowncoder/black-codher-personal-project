@@ -53,7 +53,6 @@ const Login = () => {
         Name*
        </label>
        <Field
-        className="fieldInput"
         type="text"
         name="name"
         placeholder="Name"

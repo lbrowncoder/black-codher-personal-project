@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const ButtonGroup = ({ styleClass, value, onClick }) => {
  return (
   <>
-   <ToggleButtonGroup
+    <ToggleButtonGroup
     type="radio"
     name="togbtn"
     value={value}

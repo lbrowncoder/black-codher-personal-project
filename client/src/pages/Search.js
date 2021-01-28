@@ -33,6 +33,7 @@ const NurserySearch = ({ NurserySearch }) => {
   if (loading) {
    return <p>Were finding the perfect match for you...</p>;
   }
+  setHasSearched(true)
  };
 
  return (
@@ -50,12 +51,13 @@ const NurserySearch = ({ NurserySearch }) => {
      <Button onClick={onKeyword} variant="outline-primary">
       Submit
      </Button>
-     {filteredNurseries.length && setHasSearched ? (
+     {filteredNurseries.length ? (
       filteredNurseries.map((nursery, index) => (
        <NurseryDetail key={index} nursery={nursery} />
       ))
-     ) : (
-      <p>'</p>
+     ) : ( hasSearched ? (
+      <p>No result found</p>
+     ): (<p></p>)
      )}
     </div>
    </Container>
