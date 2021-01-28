@@ -2,15 +2,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-require("./models/nurseryInfo");
 require("dotenv").config();
+require("./models/nurseryInfo");
 
 const app = express();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
  process.env.MONGODB_URI ||
-  `mongodb+srv://lbrown:Theloft0607@mern.wiwpv.mongodb.net/black-codher-personal-project?retryWrites=true&w=majority`,
+  `mongodb://localhost:27017/black-codher-personal-project`,
  {
   useNewUrlParser: true,
   useUnifiedTopology: true,

@@ -44,13 +44,13 @@ const ChildCareCost = () => {
       hours childcare if you (and your partner, if you have one) are in work and
       each are earning at least the National Minimum Wage or Living Wage for 16
       hours a week and earn less than £100,000 per annum. Eligibility can be
-      checked at
+      checked at 
       <a
        href="https://www.childcarechoices.gov.uk"
        target="_blank"
        rel="noreferrer"
       >
-       Here.
+        Here.
       </a>
       You can apply online from gov.uk website for the extra 15 hours (known as
       30 hours childcare). If approved, you'll get a childcare account and an

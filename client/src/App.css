@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px);
+
+* {
  font-family: "Roboto Condensed", sans-serif;
 }
+
 
 /* NavBar */
 
@@ -104,6 +107,12 @@ span {
 .star {
  cursor: pointer;
  transition: color 200ms;
+}
+
+.starForm {
+	margin-top:3rem;
+	margin-left: 2.5rem;
+	margin-bottom: 2rem;
 }
 
 /* customer sign */
@@ -503,9 +512,15 @@ margin-left:110%;
 }
 
 .childCost h2 {
-  margin-left: 5.5rem;
+  margin-left: 4.5rem;
   margin-top: 3.5rem;
 }
+
+.childCost p {
+	margin-left: 4.5rem;
+	margin-right: 2.7rem;
+	margin-top: 1.3rem;
+  }
 
 .childcare p {
   margin-left: 7.5%;
@@ -988,14 +1003,6 @@ a.instagram-two {
  width: 60%;
 }
 
-.checkbox {
- width: 50%;
-}
-
-.checkboxTwo {
- width: 83%;
-}
-
 .boxItems {
  display: flex;
  flex-direction: column;
@@ -1003,16 +1010,17 @@ a.instagram-two {
  margin-left: 3rem;
 }
 
-.points {
- margin-left: 2rem;
+.points p {
+ margin-left: 0.3rem;
+ margin-top:3rem;
 }
 
 .overall {
- margin-top: 2rem;
+ margin-top: 3rem;
 }
 
 .rate {
- margin-top: 3.9rem;
+ margin-bottom: 0.5rem;
  font-weight: bold;
  font-size: 1.1rem;
 }
@@ -1035,14 +1043,37 @@ a.instagram-two {
  margin-top: 3rem;
 }
 
-.reviewButton {
- margin-left: 50%;
- margin-top: 2rem;
- margin-bottom: 1rem;
- width: 10%;
- height: 20%;
-}
+.reviewButton btn btn-btn btn-outline-dark {
+	padding: 10px 15px;
+	margin-top: 20px;
+	background-color: blue;
+	color: white;
+	border: 1px sold rgb(70, 153, 179);
+	background-color: 250ms;
+	width: 20%;
+	border-radius: 10px;
+   }
+   
+   .reviewButton {
+	padding: 10px 15px;
+	margin-top: 20px;
+	background-color: blue;
+	color: white;
+	border: 1px sold rgb(70, 153, 179);
+	background-color: 250ms;
+	width: 20%;
+	border-radius: 10px;
+	margin-left: 40%;
+   }
 
+.reviewButton:hover {
+	background-color: white;
+	color: rgb(70, 153, 179);
+   }
+
+.btn btn btn-warning btn-sm btn btn-primary {
+	padding-top: 80px;
+}
 .ofsted {
  height: 100px;
  width: 100px;
