@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Profile = () => {
- const [setUser] = useState({ name: "", email: "" });
+ const [user, setUser] = useState({ name: "", email: "" });
 
  const logout = () => {
   setUser({ name: "", email: "" });
@@ -14,7 +14,7 @@ const Profile = () => {
      Welcome
     </h2>
     <p>See your favourite childcare provider</p>
-    <button  onClick={logout}>Log Out</button>
+    <button onClick={logout}>Log Out</button>
    </div>
   </div>
  );

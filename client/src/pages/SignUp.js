@@ -3,15 +3,13 @@ import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import "../App.css";
-import {
- Checkbox,
- FormControlLabel,
- TextField,
- Switch,
-} from "@material-ui/core";
+import { Checkbox, FormControlLabel, TextField, Switch } from "@material-ui/core";
+import * as GrIcons from "react-icons/gr";
+import * as IoIcons from "react-icons/io";
 
 const SignUpForm = () => {
  const [ofsted, setOfsted] = useState("");
+ const [fees, setFees] = useState([{ fullDay: "", halfDay: "", fullWeek: "" }]);
 
  const handleSubmit = (values, { setSubmitting, resetForm }) => {
   axios.post("/api/info", values).then(response => {
@@ -20,6 +18,22 @@ const SignUpForm = () => {
    resetForm();
   });
   window.location = "/submittedform";
+ };
+
+ const handleChangeInput = (index, event) => {
+  const values = [...fees];
+  values[index][event.target.fullDay] = event.target.value;
+  setFees(values);
+ };
+
+ const handleAddFees = () => {
+  setFees([...fees, { fullDay: "", halfDay: "", fullWeek: "" }]);
+ };
+
+ const handleRemoveFees = index => {
+  const values = [...fees];
+  values.splice(index, 1);
+  setFees(values);
  };
 
  const MyCheckbox = ({ label, ...props }) => {
@@ -78,10 +92,7 @@ const SignUpForm = () => {
    })}
   >
    {props => {
-    const {
-     touched,
-     errors,
-    } = props;
+    const { touched, errors } = props;
 
     return (
      <div>
@@ -136,6 +147,26 @@ const SignUpForm = () => {
         </select>
        </div>
        <p className="yourRating">Your ofsted rating: {ofsted}</p>
+       <label>Fees</label>
+       <p className='tellUs'>Please tell us how much you charge for a full day, half day and a full week</p>
+       {fees.map((fee, index) => (
+        <div key={index} className="feesInput">
+           <TextField id="standard-size-small" label="Full/Half Day etc" size="small" />
+         <TextField
+          name="fullDay"
+          variant="outlined"
+          label="Amount"
+          onChange={event => handleChangeInput(index, event)}
+         />
+         <div className='plus'>
+         <GrIcons.GrFormAdd size="40px" onClick={() => handleAddFees()} />
+         <IoIcons.IoMdRemove
+          size="40px"
+          onClick={() => handleRemoveFees(index)}
+         />
+         </div>
+        </div>
+       ))}
        <label htmlFor="firstAid">Are all staff first aid trained?</label>
        <MyCheckbox
         placeholder="yes"

@@ -49,12 +49,15 @@ To get a local copy up clone the repository and run 'npm run develop'
 
 ### Prerequisites
 
-List of software used and how to install them.
+List of software used.
 
-Express
-Material UI
-Bootstrap
-Axios
+- React
+- Express
+- Material UI
+- Bootstrap
+- Axios
+- NodeJs
+- MongoDb
 
 ### Installation
 

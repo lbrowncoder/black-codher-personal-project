@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Card, Button, Col, Row, Container } from "react-bootstrap";
+import { Card, Button, Col, Container } from "react-bootstrap";
 import homeMoney from "../imagesMain/homeMoney.jpg";
 import homeGuide from "../imagesMain/homeGuide.jpg";
 import "../App.css";

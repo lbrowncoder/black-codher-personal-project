@@ -100,6 +100,7 @@ module.exports = (app) => {
    });
  });
 
+//  get contacts
  app.get(`/api/contact`, async (req, res) => {
   const allContacts = await Contact.find();
   return res.status(200).send(allContacts);

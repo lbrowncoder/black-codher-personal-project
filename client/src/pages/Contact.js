@@ -38,7 +38,6 @@ const Contact = () => {
      touched,
      errors,
      isSubmitting,
-
      handleBlur,
     } = props;
 

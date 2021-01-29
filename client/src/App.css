@@ -1129,7 +1129,7 @@ a.animated-button.thar-three {
 a.animated-button.thar-three:hover {
 	color: #000 !important;
 	background-color: transparent;
-	text-shadow: nthree;
+	text-shadow: three;
 }
 a.animated-button.thar-three:hover:before {
 	left: 0%;
@@ -1148,4 +1148,15 @@ a.animated-button.thar-three:before {
 	color: #000 !important;
 	background: #FBBC05;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.feesInput {
+	display: flex;
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+.tellUs {
+	font-style: italic;
+	font-size: 0.8rem;
 }

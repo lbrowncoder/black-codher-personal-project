@@ -42,9 +42,9 @@ const Login = () => {
      touched,
      errors,
      isSubmitting,
+     onSubmit,
      handleBlur,
     } = props;
-
     return (
      <div>
       <h1 className="signTitle">Sign Up</h1>
