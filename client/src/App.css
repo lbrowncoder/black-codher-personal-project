@@ -6,7 +6,6 @@
  font-family: "Roboto Condensed", sans-serif;
 }
 
-
 /* NavBar */
 
 .navbar {
@@ -110,9 +109,9 @@ span {
 }
 
 .starForm {
-	margin-top:3rem;
-	margin-left: 2.5rem;
-	margin-bottom: 2rem;
+ margin-top: 3rem;
+ margin-left: 2.5rem;
+ margin-bottom: 2rem;
 }
 
 /* customer sign */
@@ -385,12 +384,12 @@ submit:after {
  font-weight: 500;
  margin-bottom: 2rem;
  margin-top: 2rem;
-margin-left:110%;
+ margin-left: 110%;
 }
 
 .welcome p {
-  font-style: italic;
-  margin-left:2rem;
+ font-style: italic;
+ margin-left: 2rem;
 }
 
 .error {
@@ -439,9 +438,6 @@ margin-left:110%;
  text-align: center;
 }
 
-.container {
-}
-
 .results {
  text-align: center;
  list-style: none;
@@ -454,6 +450,11 @@ margin-left:110%;
  -moz-transition: 0.26s ease;
  -o-transition: 0.26s ease;
  transition: 0.26s ease;
+}
+
+.found {
+ text-align: center;
+ font-style: italic;
 }
 
 /* about page */
@@ -512,20 +513,20 @@ margin-left:110%;
 }
 
 .childCost h2 {
-  margin-left: 4.5rem;
-  margin-top: 3.5rem;
+ margin-left: 4.5rem;
+ margin-top: 3.5rem;
 }
 
 .childCost p {
-	margin-left: 4.5rem;
-	margin-right: 2.7rem;
-	margin-top: 1.3rem;
-  }
+ margin-left: 4.5rem;
+ margin-right: 2.7rem;
+ margin-top: 1.3rem;
+}
 
 .childcare p {
-  margin-left: 7.5%;
-  margin-right: 8%;
-  text-align: justify;
+ margin-left: 7.5%;
+ margin-right: 8%;
+ text-align: justify;
 }
 
 .guideHeader {
@@ -654,7 +655,6 @@ margin-left:110%;
 .cardTwo {
  margin-right: 2rem;
 }
-
 
 .ofstedGrade {
  text-align: center;
@@ -801,7 +801,7 @@ a.instagram {
  color: black;
 }
 
-  /* search details  */
+/* search details  */
 
 .header {
  text-align: center;
@@ -830,11 +830,11 @@ a.instagram {
 }
 
 .socialMedia img {
-  height: 300px;
-  width: 300px;
-  border: solid grey 2.6px;
-  margin-top: 6rem;
-  margin-left: 23%;
+ height: 300px;
+ width: 300px;
+ border: solid grey 2.6px;
+ margin-top: 6rem;
+ margin-left: 23%;
 }
 
 .address {
@@ -1009,7 +1009,7 @@ a.instagram-two {
 
 .points p {
  margin-left: 0.3rem;
- margin-top:3rem;
+ margin-top: 3rem;
 }
 
 .overall {
@@ -1041,35 +1041,35 @@ a.instagram-two {
 }
 
 .reviewButton btn btn-btn btn-outline-dark {
-	padding: 10px 15px;
-	margin-top: 20px;
-	background-color: blue;
-	color: white;
-	border: 1px sold rgb(70, 153, 179);
-	background-color: 250ms;
-	width: 20%;
-	border-radius: 10px;
-   }
-   
-   .reviewButton {
-	padding: 10px 15px;
-	margin-top: 20px;
-	background-color: blue;
-	color: white;
-	border: 1px sold rgb(70, 153, 179);
-	background-color: 250ms;
-	width: 20%;
-	border-radius: 10px;
-	margin-left: 40%;
-   }
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+}
+
+.reviewButton {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+ margin-left: 40%;
+}
 
 .reviewButton:hover {
-	background-color: white;
-	color: rgb(70, 153, 179);
-   }
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
 
 .btn btn btn-warning btn-sm btn btn-primary {
-	padding-top: 80px;
+ padding-top: 80px;
 }
 .ofsted {
  height: 100px;
@@ -1119,44 +1119,44 @@ a.instagram-two {
 }
 
 a.animated-button.thar-three {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #FBBC05;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+ color: #fff;
+ cursor: pointer;
+ display: block;
+ position: relative;
+ border: 2px solid #fbbc05;
+ transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 a.animated-button.thar-three:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: three;
+ color: #000 !important;
+ background-color: transparent;
+ text-shadow: three;
 }
 a.animated-button.thar-three:hover:before {
-	left: 0%;
-	right: auto;
-	width: 100%;
+ left: 0%;
+ right: auto;
+ width: 100%;
 }
 a.animated-button.thar-three:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #FBBC05;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+ display: block;
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ height: 100%;
+ width: 0px;
+ z-index: -1;
+ content: "";
+ color: #000 !important;
+ background: #fbbc05;
+ transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .feesInput {
-	display: flex;
-	cursor: pointer;
-	margin-bottom: 2rem;
+ display: flex;
+ cursor: pointer;
+ margin-bottom: 2rem;
 }
 
 .tellUs {
-	font-style: italic;
-	font-size: 0.8rem;
+ font-style: italic;
+ font-size: 0.8rem;
 }

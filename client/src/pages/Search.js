@@ -56,7 +56,7 @@ const NurserySearch = ({ NurserySearch }) => {
        <NurseryDetail key={index} nursery={nursery} />
       ))
      ) : ( hasSearched ? (
-      <p>No result found</p>
+      <p className='found'>No results found</p>
      ): (<p></p>)
      )}
     </div>
