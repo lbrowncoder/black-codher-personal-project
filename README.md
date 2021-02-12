@@ -3,6 +3,7 @@
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
     <img src="client\src\imagesMain\eggshells1.jpg" alt="Logo" width="80" height="80">
   </a>
+  <div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:53.61%;position:relative;"><iframe width="360" height="193" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/4xr0jc"></iframe></div><p><a href="https://imgflip.com/gif/4xr0jc">via Imgflip</a></p></div>
 
   <h3 align="center">EggsShells</h3>
 
