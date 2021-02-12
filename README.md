@@ -1,8 +1,5 @@
 <br />
-<p align="center">
-  <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
-    <img src="client\src\imagesMain\eggshells1.jpg" alt="Logo" width="80" height="80">
-  </a>
+
   
   <p align="center">
     During the Black-Codher bootcamp we were tasked to make a full stack app. 
@@ -21,19 +18,14 @@ Eggshells is a full stack App where users can serach for local childcare provide
   ![React App - Google Chrome 2021-02-12 11-39-36](https://user-images.githubusercontent.com/69154212/107763978-5446a480-6d27-11eb-9e21-79e294f63ba5.gif)
   Review Page
 
-
-
-
-
-    <br />
-    <br />
-    <br />
-    <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+<p>
   </p>
-</p>
+
 
 
 <details open="open">
+      <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+  <br/>
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
