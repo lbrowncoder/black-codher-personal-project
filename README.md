@@ -3,9 +3,9 @@
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
     <img src="client\src\imagesMain\eggshells1.jpg" alt="Logo" width="80" height="80">
   </a>
-<img scr="https://imgflip.com/gif/4xr1cq">
 
   <h3 align="center">EggsShells</h3>
+
 
   <p align="center">
     During the Black-Codher bootcamp we were tasked to make a full stack app. 
@@ -13,6 +13,7 @@
     <br />
     <br />
     <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+  ![4xr1cq](https://user-images.githubusercontent.com/69154212/107762665-42fc9880-6d25-11eb-8420-33ec72e5724c.gif)
   </p>
 </p>
 
