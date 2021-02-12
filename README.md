@@ -3,8 +3,15 @@
   <a href="https://github.com/lbrowncoder/black-codher-personal-project.git">
     <img src="client\src\imagesMain\eggshells1.jpg" alt="Logo" width="80" height="80">
   </a>
+  
+  <p align="center">
+    During the Black-Codher bootcamp we were tasked to make a full stack app. 
 
   <h3 align="center">EggsShells</h3>
+  
+  ## About The Project
+
+Eggshells is a full stack App where users can serach for local childcare providers in their area. Users can view the childcare providers contact details, pictures and important information. As well as read reviews for other parents/guardians and leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
   
   ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/69154212/107763528-adfa9f00-6d26-11eb-97e1-d187f05bb5ca.gif)
   Home Page
@@ -18,8 +25,6 @@
 
 
 
-  <p align="center">
-    During the Black-Codher bootcamp we were tasked to make a full stack app. 
     <br />
     <br />
     <br />
@@ -43,9 +48,7 @@
   </ol>
 </details>
 
-## About The Project
 
-Eggshells is a full stack App where users can serach for local childcare providers in their area. Users can view the childcare providers contact details, pictures and important information. As well as read reviews for other parents/guardians and leave thier own reviews. Local business can sign up their organisation so potential customers can find them.
 
 ### Built With
 
