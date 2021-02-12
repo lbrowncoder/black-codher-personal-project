@@ -7,9 +7,6 @@
   <h3 align="center">EggsShells</h3>
   
   ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/69154212/107763528-adfa9f00-6d26-11eb-97e1-d187f05bb5ca.gif)
-![React App - Google Chrome 2021-02-12 11-39-36](https://user-images.githubusercontent.com/69154212/107763978-5446a480-6d27-11eb-9e21-79e294f63ba5.gif)
-
-
 
 
   <p align="center">
@@ -18,8 +15,10 @@
     <br />
     <br />
     <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+  ![React App - Google Chrome 2021-02-12 11-39-36](https://user-images.githubusercontent.com/69154212/107763978-5446a480-6d27-11eb-9e21-79e294f63ba5.gif)
   </p>
 </p>
+
 
 
 <details open="open">
