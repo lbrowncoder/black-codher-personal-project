@@ -13,9 +13,10 @@
     <br />
     <br />
     <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
-  ![4xr1cq](https://user-images.githubusercontent.com/69154212/107762665-42fc9880-6d25-11eb-8420-33ec72e5724c.gif)
   </p>
 </p>
+
+  ![4xr1cq](https://user-images.githubusercontent.com/69154212/107762665-42fc9880-6d25-11eb-8420-33ec72e5724c.gif)
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
