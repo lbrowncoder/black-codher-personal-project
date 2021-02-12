@@ -12,7 +12,7 @@
     <br />
     <br />
     <br />
-    <a href="https://github.com//lbrowncoder/black-codher-personal-project.git">View Demo</a>
+    <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
   </p>
 </p>
 
