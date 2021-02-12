@@ -24,10 +24,13 @@ Eggshells is a full stack App where users can serach for local childcare provide
 
 
 <details open="open">
-      <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+
   <br/>
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
+  <li>     
+    <a href="https://lbrowncoder.github.io/black-codher-personal-project/">View Demo</a>
+  </li> 
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
