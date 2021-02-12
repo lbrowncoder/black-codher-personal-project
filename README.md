@@ -5,6 +5,10 @@
   </a>
 
   <h3 align="center">EggsShells</h3>
+  
+  ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/69154212/107763528-adfa9f00-6d26-11eb-97e1-d187f05bb5ca.gif)
+
+
 
 
   <p align="center">
@@ -16,7 +20,6 @@
   </p>
 </p>
 
-  ![4xr1cq](https://user-images.githubusercontent.com/69154212/107762665-42fc9880-6d25-11eb-8420-33ec72e5724c.gif)
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
