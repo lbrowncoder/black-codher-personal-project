@@ -1,0 +1,1162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+@media screen and (max-width: 600px);
+
+* {
+ font-family: "Roboto Condensed", sans-serif;
+}
+
+/* NavBar */
+
+.navbar {
+ background-color: #ba55d3;
+ height: 80px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ cursor: pointer;
+}
+
+.bars {
+ display: flex;
+ justify-content: left;
+}
+
+.menu-bars {
+ margin-left: 2rem;
+ font-size: 2rem;
+ background: none;
+ display: flex;
+ justify-content: left;
+}
+
+.nav-menu {
+ background-color: white;
+ width: 250px;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ position: fixed;
+ z-index: 100;
+ top: 0;
+ left: -100%;
+ transition: 850ms;
+}
+
+.nav-menu.active {
+ left: 0;
+ transition: 350ms;
+}
+
+.nav-text {
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ padding: 8px 0px 8px 16px;
+ list-style: none;
+ height: 60px;
+ border: 0;
+ text-decoration: none;
+}
+
+.nav-text a {
+ text-decoration: none;
+ color: #ba55d3;
+ font-size: 18px;
+ width: 95%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ padding: 0 16px;
+ border-radius: 4px;
+}
+
+.nav-text a:hover {
+ background-color: orange;
+ text-decoration: none;
+}
+
+.nav-menu-items {
+ width: 100%;
+}
+
+.navbar-toggle {
+ background-color: white;
+ width: 100%;
+ height: 80px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+}
+
+span {
+ margin-left: 16px;
+}
+
+.homeButton {
+ justify-content: right;
+}
+
+/* Star Rating */
+
+.starInput[type="radio"] {
+ display: none;
+}
+
+.star {
+ cursor: pointer;
+ transition: color 200ms;
+}
+
+.starForm {
+ margin-top: 3rem;
+ margin-left: 2.5rem;
+ margin-bottom: 2rem;
+}
+
+/* customer sign */
+
+.input-feedback {
+ color: red;
+ margin-top: 15px;
+ font-size: 14px;
+ margin-bottom: 20px;
+}
+
+.input.error {
+ border-color: red;
+}
+
+.input-feedback {
+ color: red;
+ margin-top: 15px;
+ font-size: 14px;
+ margin-bottom: 20px;
+}
+
+.signSubmit btn btn-btn btn-outline-dark {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+}
+
+.signSubmit {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+}
+
+.signSubmit:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.resetSubmit {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ margin-left: 40%;
+ border-radius: 10px;
+ display: inline;
+}
+
+.resetSubmit:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.account {
+ margin-left: 40%;
+ margin-top: 0.5rem;
+}
+
+.signSubmitLogin {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 10%;
+ border-radius: 10px;
+ margin-left: 45%;
+}
+
+.signSubmitLogin:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.mainButton {
+ display: flex;
+ margin-top: 2rem;
+}
+
+.mainButtonContact {
+ display: flex;
+ margin-top: 2rem;
+ margin-right: 1rem;
+}
+
+.signSubmitContact {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 10%;
+ border-radius: 10px;
+ margin-left: 30%;
+ margin-right: 2rem;
+}
+
+.signSubmitContact:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.resetSubmitContact {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 10%;
+ margin-left: 20%;
+ border-radius: 10px;
+ display: inline;
+}
+
+.resetSubmitContact:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.customerForm {
+ display: flex;
+ flex-direction: column;
+ max-width: 500px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.signLabel {
+ text-align: left;
+}
+
+.signTitle {
+ text-align: center;
+ padding-bottom: 50px;
+ padding-top: 20px;
+}
+
+.already {
+ text-align: center;
+ padding-top: 20px;
+}
+
+/* login page */
+
+.loginTitle {
+ text-align: center;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+}
+
+.loginInput {
+ width: 30rem;
+}
+
+.submit {
+ display: block;
+ position: relative;
+}
+
+submit:after {
+ content: "";
+ display: block;
+ position: absolute;
+ left: -5px;
+ top: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: 1;
+ background-image: linear-gradient(to bottom right, #ffce00, #fe4880);
+}
+
+.submit .form-inner {
+ position: relative;
+ display: block;
+ background-color: white;
+ padding: 30px;
+ z-index: 2;
+}
+.submit .form-inner h2 {
+ color: black;
+ font-size: 1rem;
+ font-weight: 28px;
+ font-weight: 500;
+ margin-bottom: 30px;
+}
+
+.form-group {
+ margin-left: 30%;
+}
+.submit .form-inner.form-group {
+ display: block;
+ width: 300px;
+ margin-bottom: 15px;
+}
+
+.form-inner .form-group label {
+ display: block;
+ color: red;
+ font-size: 12px;
+ margin-bottom: 5px;
+ transition: 0.4s;
+}
+
+.form-inner .form-group:focus-within label {
+ color: black;
+}
+
+.submit .form-inner .form-group input {
+ display: block;
+ width: 100%;
+ padding: 10px 15px;
+ background-color: #f8f8f8;
+ border-radius: 8px;
+ transition: 0.4s;
+}
+
+.submit .form-inner .form-group input:focus {
+ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.submit .form-inner input[type="submit"],
+.welcome button {
+ display: inline-block;
+ padding: 10px 15px;
+ border-radius: 8px;
+ background-image: linear-gradient(to right, orange 50%, darkorange 50%);
+ background-size: 200%;
+ transition: 0.4s;
+ color: #fff;
+ font-weight: 700;
+ cursor: pointer;
+ margin-top: 7rem;
+ margin-left: 2rem;
+}
+
+.submit .form-inner input[type="submit"]:hover,
+.welcome button:hover {
+ background-position: 100% 0%;
+}
+
+.form-inner .form-group label {
+ color: black;
+}
+
+.welcome {
+ width: 100%;
+ max-width: 480px;
+ padding: 15px 30px;
+}
+
+.welcome h2 {
+ font-size: 40px;
+ font-weight: 500;
+ margin-bottom: 2rem;
+ margin-top: 2rem;
+ margin-left: 110%;
+}
+
+.welcome p {
+ font-style: italic;
+ margin-left: 2rem;
+}
+
+.error {
+ color: red;
+}
+
+.contactTitle {
+ margin-top: 2rem;
+ margin-bottom: 3rem;
+ text-align: center;
+}
+
+.fields {
+ display: flex;
+ flex-direction: column;
+ margin-left: 30%;
+ width: 87%;
+}
+
+.form-wrapper .field-list .field {
+ position: relative;
+ margin: -6px -10px 12px;
+}
+
+/* search page */
+
+.searchBox {
+ border: solid grey 1px;
+ margin-top: 2rem;
+}
+
+.search {
+ text-align: center;
+ margin-top: 1.2rem;
+}
+
+.perfect {
+ text-align: center;
+}
+
+.searchContainer {
+ margin-left: 35%;
+ height: 2.2rem;
+ width: 30%;
+ margin-bottom: 2rem;
+ text-align: center;
+}
+
+.results {
+ text-align: center;
+ list-style: none;
+}
+
+.results a:hover {
+ text-decoration: none;
+ font-size: 150%;
+ -webkit-transition: 0.26s ease;
+ -moz-transition: 0.26s ease;
+ -o-transition: 0.26s ease;
+ transition: 0.26s ease;
+}
+
+.found {
+ text-align: center;
+ font-style: italic;
+}
+
+/* about page */
+
+.eggshells {
+ text-align: center;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+}
+
+.about {
+ text-align: justify;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+.moreInfo {
+ text-align: center;
+ margin-top: 4rem;
+}
+
+/* guide page */
+
+.guideTitle {
+ text-align: center;
+ margin-top: 3rem;
+ margin-bottom: 2rem;
+}
+
+.quality {
+ margin-top: 4rem;
+ margin-right: 5rem;
+ margin-left: 5rem;
+ font-size: 1.1rem;
+ margin-bottom: 2rem;
+}
+
+.leave {
+ margin-top: 7rem;
+ margin-left: 3.5rem;
+ font-size: 1.2rem;
+}
+
+.guidePoints {
+ margin-top: 2rem;
+ margin-left: 3.5rem;
+}
+
+.guideText {
+ margin-left: 3.5rem;
+}
+
+.guide li {
+ margin-left: 4.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.childCost h2 {
+ margin-left: 4.5rem;
+ margin-top: 3.5rem;
+}
+
+.childCost p {
+ margin-left: 4.5rem;
+ margin-right: 2.7rem;
+ margin-top: 1.3rem;
+}
+
+.childcare p {
+ margin-left: 7.5%;
+ margin-right: 8%;
+ text-align: justify;
+}
+
+.guideHeader {
+ margin-left: 3.5rem;
+ margin-top: 3rem;
+ margin-bottom: 2rem;
+}
+
+.h3Guide {
+ margin-left: 3.5rem;
+ margin-bottom: 1rem;
+ margin-top: 3rem;
+}
+
+.guidePic {
+ height: 300px;
+ width: 300px;
+ float: left;
+ margin-top: 1rem;
+ padding-right: 1.5rem;
+ padding-left: 1rem;
+ margin-top: 2rem;
+}
+
+/* childcare cost */
+.helpCost {
+ text-align: center;
+ margin-bottom: 4rem;
+ margin-top: 2rem;
+}
+
+.click {
+ text-align: center;
+}
+
+.money {
+ height: 300px;
+ width: 300px;
+ margin-left: 2rem;
+ margin-right: 2rem;
+ margin-bottom: 2rem;
+ float: left;
+ clear: both;
+}
+
+.h2CostFirst {
+ text-align: center;
+ margin-top: 4.5rem;
+ margin-right: 14rem;
+}
+
+.couple {
+ margin-top: 0.5rem;
+ margin-left: 6%;
+}
+
+/* Homepage */
+
+.shells {
+ height: 130px;
+ width: 130px;
+ margin-left: 45%;
+}
+
+.mainTitle {
+ text-align: center;
+ font-size: 3rem;
+ padding-top: 2rem;
+}
+
+.moreInfoBtn {
+ margin-left: 30%;
+ margin-top: 1rem;
+}
+
+.moreInfoBtnTwo {
+ margin-left: 30%;
+ margin-bottom: 1%;
+ margin-top: 1rem;
+}
+
+.checkOut {
+ margin-top: 3rem;
+ margin-left: 2rem;
+}
+.homeGuide {
+ margin-left: 2rem;
+ margin-top: 3rem;
+ border: solid grey;
+ height: 250px;
+ width: 250px;
+ margin-left: 10%;
+ margin-bottom: 1rem;
+}
+
+.homeMoney {
+ height: 250px;
+ width: 250px;
+ margin-left: 10%;
+ margin-top: 3rem;
+ border: solid grey;
+}
+
+.pick {
+ margin-left: 2rem;
+ font-size: 1.5rem;
+}
+
+.helpCost {
+ margin-left: 1rem;
+}
+
+.featured {
+ text-align: center;
+}
+
+.titleCard {
+ text-align: center;
+}
+
+.cardOne {
+ margin-left: 11rem;
+ margin-right: 2rem;
+}
+
+.cardTwo {
+ margin-right: 2rem;
+}
+
+.ofstedGrade {
+ text-align: center;
+}
+.topRated {
+ font-style: italic;
+ font-size: 1.7rem;
+ margin-top: 5rem;
+ margin-left: 4rem;
+ margin-bottom: 1.5rem;
+ text-align: center;
+}
+
+.secondTitle {
+ text-align: center;
+ font-size: 1.7rem;
+ font-style: italic;
+ color: orange;
+}
+
+.thirdTitle {
+ text-align: center;
+ font-size: 1.2rem;
+ margin-bottom: 3rem;
+ font-style: italic;
+}
+
+.counties {
+ border: solid grey 1px;
+ border-bottom-style: none;
+ border-left: none;
+ border-right: none;
+ margin-top: 4rem;
+ margin-bottom: 0;
+}
+
+.regions {
+ font-style: italic;
+ margin-left: 2.7rem;
+ margin-bottom: 0;
+}
+
+.searchBy {
+ font-style: italic;
+ font-size: 1.2rem;
+ text-align: center;
+ margin-bottom: 3rem;
+ margin-top: 1.5rem;
+}
+
+.imagePic {
+ width: 100px;
+ height: 150px;
+}
+
+.advice {
+ font-style: italic;
+ font-size: 1.7rem;
+ margin-top: 5rem;
+ margin-left: 4rem;
+ text-align: center;
+}
+
+/* footer */
+
+html,
+body {
+ height: 100%;
+ margin: 0;
+}
+.column {
+ float: left;
+ width: 33.33%;
+}
+.footerListOne {
+ list-style-position: inside;
+ list-style-type: none;
+ padding-top: 0.3rem;
+ border-right: solid black 1px;
+ height: 130px;
+ display: flex;
+ margin-left: 5rem;
+}
+
+.footerListTwo {
+ list-style-position: inside;
+ list-style-type: none;
+ padding-top: 0.3rem;
+ border-right: solid black 1px;
+ height: 130px;
+}
+.footerListThree {
+ list-style-position: inside;
+ list-style-type: none;
+ padding-top: 0.3rem;
+}
+
+.footer {
+ text-align: center;
+ display: flex;
+ min-height: 90vh;
+ margin-top: 0;
+}
+
+.site-footer {
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+
+.container-fluid {
+ margin-top: auto;
+ background-color: lightgrey;
+}
+
+.footerText {
+ padding-top: 1rem;
+ font-weight: bold;
+}
+
+.copyRight {
+ margin-top: 2.5rem;
+ color: orange;
+}
+
+a.social {
+ margin: 0 1rem;
+ transition: transform 250ms;
+ display: inline-block;
+}
+
+a.social:hover {
+ transform: translateY(-2px);
+}
+
+a.facebook {
+ color: #4968ad;
+}
+
+a.twitter {
+ color: #49a1eb;
+}
+
+a.instagram {
+ color: black;
+}
+
+/* search details  */
+
+.header {
+ text-align: center;
+ margin-top: 2.3rem;
+}
+
+.contact {
+ border: black solid 2px;
+ text-align: center;
+ border-style: double;
+ width: 80%;
+ margin-top: 2rem;
+ padding: 1rem;
+}
+
+.phone {
+ margin-right: 30px;
+}
+
+.email {
+ margin-right: 30px;
+}
+
+.website {
+ margin-right: 30px;
+}
+
+.socialMedia img {
+ height: 300px;
+ width: 300px;
+ border: solid grey 2.6px;
+ margin-top: 6rem;
+ margin-left: 23%;
+}
+
+.address {
+ text-align: center;
+ font-size: 1.2rem;
+}
+
+.postcode {
+ text-align: center;
+ font-size: 1.2rem;
+}
+
+.content-css {
+ padding-top: 5rem;
+}
+
+.searchImages {
+ margin-top: 4rem;
+}
+
+a.social {
+ margin: 0 1rem;
+ transition: transform 250ms;
+ display: inline-block;
+}
+
+a.social:hover {
+ transform: translateY(-2px);
+}
+
+a.facebook-two {
+ color: #4968ad;
+}
+
+a.twitter-two {
+ color: #49a1eb;
+}
+
+a.instagram-two {
+ color: black;
+ margin-left: 40%;
+ margin-bottom: 3rem;
+ margin-top: 1rem;
+}
+
+.reveiw {
+ border: black solid 2px;
+ text-align: center;
+ border-style: double;
+ font-size: 1.6rem;
+ margin-left: 10%;
+ width: 80%;
+ margin-top: 2rem;
+}
+
+.soon {
+ text-align: center;
+ font-style: italic;
+ font-size: 1.4rem;
+ margin-bottom: 2rem;
+}
+
+.example {
+ font-style: italic;
+ margin-left: 12%;
+ margin-top: 4%;
+}
+
+.great {
+ font-style: italic;
+ margin-left: 15%;
+ margin-right: 15%;
+}
+
+.reviewer {
+ font-style: italic;
+ font-weight: bold;
+ margin-left: 57%;
+}
+
+.rating {
+ margin-left: 30%;
+}
+
+.starExample {
+ margin-left: 70%;
+}
+
+.score {
+ border: solid orange 3px;
+ width: 10%;
+ margin-left: 80%;
+ border-radius: 80%;
+ display: flex;
+}
+
+.amountReviews {
+ margin-left: 75%;
+}
+
+.faq {
+ text-align: center;
+ margin-top: 6rem;
+ margin-left: 10%;
+ width: 80%;
+ font-size: 1.4rem;
+ border-style: double;
+}
+
+.fees {
+ list-style-position: inside;
+ list-style: square;
+ font-weight: normal;
+ margin-left: 8%;
+}
+
+.feesMain {
+ margin-left: 9%;
+ font-weight: bold;
+ font-size: 1.1rem;
+ margin-top: 2rem;
+}
+
+.questions a {
+ margin-left: 23%;
+ font-size: 1.1rem;
+ text-decoration: none;
+}
+
+.questions a:hover {
+ text-decoration: none;
+ font-size: 150%;
+}
+
+.questionDetails p {
+ margin-left: 10rem;
+ margin-bottom: 2.2rem;
+}
+
+.questionIcons {
+ margin-right: 1rem;
+}
+
+/* review page */
+
+.reviewNursery {
+ margin-top: 2rem;
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.reviewForm {
+ margin-left: 3rem;
+ display: flex;
+ flex-direction: column;
+ width: 60%;
+ justify-content: center;
+}
+
+.rateOverall {
+ display: flex;
+ flex-direction: column;
+ width: 60%;
+}
+
+.boxItems {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 1rem;
+ margin-left: 3rem;
+}
+
+.points p {
+ margin-left: 0.3rem;
+ margin-top: 3rem;
+}
+
+.overall {
+ margin-top: 3rem;
+}
+
+.rate {
+ margin-bottom: 0.5rem;
+ font-weight: bold;
+ font-size: 1.1rem;
+}
+
+.ratingForm {
+ margin-left: 2rem;
+ margin-bottom: 3rem;
+ width: 60%;
+}
+
+.checkReview {
+ margin-left: 8.3rem;
+}
+
+.MuiInputBase-root-18 {
+ margin-top: 1rem;
+}
+
+.overallOne {
+ margin-top: 3rem;
+}
+
+.reviewButton btn btn-btn btn-outline-dark {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+}
+
+.reviewButton {
+ padding: 10px 15px;
+ margin-top: 20px;
+ background-color: blue;
+ color: white;
+ border: 1px sold rgb(70, 153, 179);
+ background-color: 250ms;
+ width: 20%;
+ border-radius: 10px;
+ margin-left: 40%;
+}
+
+.reviewButton:hover {
+ background-color: white;
+ color: rgb(70, 153, 179);
+}
+
+.btn btn btn-warning btn-sm btn btn-primary {
+ padding-top: 80px;
+}
+.ofsted {
+ height: 100px;
+ width: 100px;
+}
+
+.ofstedText {
+ margin-left: 3.5rem;
+ margin-top: 3rem;
+}
+
+/* submitted Form*/
+.thankYou {
+ font-size: 1.8rem;
+ text-align: center;
+ margin-top: 4rem;
+}
+
+.respond {
+ font-size: 1.8rem;
+ text-align: center;
+ margin-top: 3.5rem;
+}
+
+/* nursery sign up */
+
+.registerForm {
+ display: flex;
+ flex-direction: column;
+ width: 40%;
+ margin-left: 10%;
+}
+
+.signUp {
+ text-align: center;
+ margin-bottom: 2rem;
+ margin-top: 2rem;
+}
+
+.provide {
+ margin-top: 2rem;
+}
+
+.yourRating {
+ margin-bottom: 3rem;
+ font-style: italic;
+}
+
+a.animated-button.thar-three {
+ color: #fff;
+ cursor: pointer;
+ display: block;
+ position: relative;
+ border: 2px solid #fbbc05;
+ transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-three:hover {
+ color: #000 !important;
+ background-color: transparent;
+ text-shadow: three;
+}
+a.animated-button.thar-three:hover:before {
+ left: 0%;
+ right: auto;
+ width: 100%;
+}
+a.animated-button.thar-three:before {
+ display: block;
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ height: 100%;
+ width: 0px;
+ z-index: -1;
+ content: "";
+ color: #000 !important;
+ background: #fbbc05;
+ transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.feesInput {
+ display: flex;
+ cursor: pointer;
+ margin-bottom: 2rem;
+}
+
+.tellUs {
+ font-style: italic;
+ font-size: 0.8rem;
+}
